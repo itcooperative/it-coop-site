@@ -1,11 +1,15 @@
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'noda-it',
+    title: 'Кооператив Noda-IT',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      {
+        hid: 'description',
+        name: 'Кооператив Noda-IT',
+        content: 'Сделаем ваши сайты, приложения, боты и другие проекты без добавления наёмного труда.'
+      }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
