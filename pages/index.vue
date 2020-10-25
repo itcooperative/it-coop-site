@@ -1,8 +1,8 @@
 <template>
   <div class="h-screen justify-center items-center flex bg-gradient-to-r from-green-400 to-blue-400 flex-col mx-auto px-4">
-    <div class="text-6xl font-bold text-white">Noda-it</div>
-    <div class="text-lg font-semibold text-white">Скоро здесь будет наш сайт</div>
-    <div class="text-lg font-semibold text-white">А пока пишите нам на <a href="mailto:noda@itcoop.ru ">noda@itcoop.ru </a></div>
+    <div class="text-6xl sm:text-8xl text-opacity-75 font-bold text-white">Noda-IT</div>
+    <div class="text-lg font-semibold text-white">Скоро здесь будет сайт нашего кооператива</div>
+    <div class="text-lg font-semibold text-white text-center">А пока пишите нам на <a href="mailto:noda@itcoop.ru ">noda@itcoop.ru </a></div>
   </div>
 
 </template>
