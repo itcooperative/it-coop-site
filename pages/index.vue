@@ -1,8 +1,8 @@
 <template>
-  <div>
-    <Header/>
-    <Body/>
-    <Footer/>
+  <div class="h-screen justify-center items-center flex bg-gradient-to-r from-green-400 to-blue-400 flex-col mx-auto px-4">
+    <div class="text-6xl font-bold text-white">Noda-it</div>
+    <div class="text-lg font-semibold text-white">Скоро здесь будет наш сайт</div>
+    <div class="text-lg font-semibold text-white">А пока пишите нам на <a href="mailto:noda@itcoop.ru ">noda@itcoop.ru </a></div>
   </div>
 
 </template>
