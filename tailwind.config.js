@@ -12,6 +12,13 @@ module.exports = {
       '6xl': '4rem',
       '7xl': '5rem',
       '8xl': '7rem',
-    }
+    },
+    gradientColorStops: theme => ({
+      'brand-first': '#33C030',
+      'brand-second': '#25B3BC',
+    }),
+    fontFamily: {
+        'primary-font': ['Roboto'],
+}
   }
 }

@@ -1,5 +1,5 @@
 <template>
-  <div class="justify-center items-center flex bg-gradient-to-r from-green-400 to-blue-400 flex-col mx-auto px-4 py-24">
+  <div class="justify-center items-center flex bg-gradient-to-br from-brand-first to-brand-second flex-col mx-auto px-4 py-24">
     <div class="container flex-col ">
     <div class=" text-white text-center max-w-2xl">IT-кооператив «Noda»​ - это объединение IT-специалистов из разных городов России, разделяющих
       либертарные ценности: мы не используем наемный труд, общие вопросы решаем совместно на
