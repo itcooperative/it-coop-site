@@ -1,7 +1,7 @@
 <template>
   <div class="h-screen justify-center items-center flex bg-gradient-to-br from-brand-first to-brand-second flex-col mx-auto px-4">
     <div class="primary-font text-6xl sm:text-8xl text-opacity-75 font-bold text-white ">Noda-IT</div>
-    <div class="primary-font text-lg text-white text-center">Скоро здесь будет сайт нашего кооператива</div>
+    <div class="primary-font text-lg text-white text-center">Скоро здесь будет сайт нашего кооператива.</div>
     <div class="primary-font text-lg  text-white text-center">Мы умеем
       <NuxtLink class="underline font-semibold" to="/skills">немало.</NuxtLink>
     </div>
@@ -11,7 +11,7 @@
     <div class="text-lg text-white text-center">
       Нам просто надоел наёмный труд.
     </div>
-    <div class="text-lg pt-4 font-semibold text-white text-center">Интересно? пишите нам на <a href="mailto:noda@itcoop.ru ">noda@itcoop.ru </a></div>
+    <div class="text-lg pt-4 font-semibold text-white text-center">Интересно? Пишите нам на <a href="mailto:noda@itcoop.ru ">noda@itcoop.ru </a></div>
   </div>
 
 </template>
