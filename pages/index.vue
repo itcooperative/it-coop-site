@@ -1,6 +1,6 @@
 <template>
   <div class="main h-screen sm:grid sm:grid-cols-3 sm:grid-rows-3 mx-auto px-3 sm:px-10 py-10">
-    <div class="sm:col-span-1 sm:row-span-1 h-full sm:border-r-4 border-dashed border-black	sm:row-start-1 sm:row-end-3">
+    <div class="sm:col-span-1 sm:row-span-1 sm:h-full sm:border-r-4 border-dashed border-black	sm:row-start-1 sm:row-end-3">
       <h1 class="h1 w-full text-center primary-font text-6xl lg:text-6xl text-opacity-75 font-bold p-4 sm:border-t-4 sm:border-l-4 sm:border-b-4 border-dashed border-black	">Itcoop</h1>
     </div>
     <div class=" sm:col-span-1 self-center sm:row-start-2 sm:col-start-2 sm:h-full border-black flex align-center border-dashed border-black flex items-center">
