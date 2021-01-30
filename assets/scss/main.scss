@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'GostB';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('~assets/fonts/GOST2.304-81typeB/GOST-2304-81typeB.woff') format('woff');
+  unicode-range: U+000-5FF, U+1e00-1fff, U+2000-2300;
+
+}
+
+.h1, .h2, .h3{
+  font-family: 'GostB' , sans-serif;
+}

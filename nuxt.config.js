@@ -7,18 +7,18 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
-        name: 'Кооператив Noda-IT',
+        name: 'Itcoop — айти кооператив',
         content: 'Сделаем ваши сайты, приложения, боты и другие проекты без добавления наёмного труда.'
-      }
+      },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap' }
     ]
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
+  '~/assets/scss/main.scss'
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
@@ -36,8 +36,19 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
+    ["nuxt-social-meta",
+    {
+      url: 'http://itcoop.ru/',
+      title: 'Itcoop — айти кооператив',
+      site_name: 'Itcoop',
+      description: "Сделаем ваши сайты, приложения, боты и другие проекты без добавления наёмного труда.",
+      img: "~asset/images/Frame5.png",
+      locale: "ru_RU",
+      // twitter: "@user",
+      twitter_card: "summary_large_image",
+      themeColor: "#1400FF",
+    }],
   ],
-
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
   }
