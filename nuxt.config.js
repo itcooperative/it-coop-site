@@ -42,7 +42,7 @@ export default {
       title: 'Itcoop — айти кооператив',
       site_name: 'Itcoop',
       description: "Сделаем ваши сайты, приложения, боты и другие проекты без добавления наёмного труда.",
-      img: "/Frame5.png",
+      img: "http://itcoop.ru/Frame5.png",
       locale: "ru_RU",
       // twitter: "@user",
       twitter_card: "summary_large_image",
