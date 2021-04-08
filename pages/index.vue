@@ -1,5 +1,6 @@
 <template>
   <div class="main overflow-hidden	h-screen sm:grid sm:grid-cols-3 lg:grid-cols-8 sm:grid-rows-3 mx-auto px-3 sm:px-10 py-10">
+    <Meta/>
     <div class="sm:col-span-1 lg:col-span-2 sm:row-span-1 sm:h-full sm:border-r-4 border-dashed border-black	sm:row-start-1 sm:row-end-3">
       <h1 class="h1 pb-10 sm:pb-0 pt-10 sm:pt-0 w-full text-center primary-font text-6xl lg:text-6xl text-opacity-75 font-bold p-4 sm:border-t-4 sm:border-l-4 sm:border-b-4 border-dashed border-black	">Itcoop</h1>
     </div>

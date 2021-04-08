@@ -1,5 +1,7 @@
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
+  ssr: false,
+  target:'static',
   head: {
     title: 'Кооператив Noda-IT',
     meta: [
