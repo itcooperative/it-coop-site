@@ -11,6 +11,7 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "nuxt": "^2.14.6",
+    "nuxt-start": "^2.15.4",
     "sass-loader": "^10.1.1"
   },
   "devDependencies": {
