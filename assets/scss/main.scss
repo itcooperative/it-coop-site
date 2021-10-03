@@ -1,13 +1,22 @@
 @font-face {
-  font-family: 'GostB';
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('~assets/fonts/GOST2.304-81typeB/GOST-2304-81typeB.woff') format('woff');
+  src: url('~assets/fonts/Montserrat/Montserrat-Regular.ttf') format('ttf');
   unicode-range: U+000-5FF, U+1e00-1fff, U+2000-2300;
 
 }
 
-.h1, .h2, .h3{
-  font-family: 'GostB' , sans-serif;
+.h1, .h2, .h3, .h4{
+  font-family: 'Montserrat',
+  sans-serif;
+}
+
+.ic-bg
+{
+  background-position: top;
+  background-size: cover;
+  background-image: url('/bg.svg');
+  background-repeat: repeat-y;
 }
