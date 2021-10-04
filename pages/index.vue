@@ -33,55 +33,20 @@ en:
 <template>
   <div class="container mx-auto">
     <Meta />
-    <div class="h-screen">
-      <div
-        class="
-          main
-          overflow-hidden
-          sm:grid sm:grid-cols-3
-          lg:grid-cols-8
-          sm:grid-rows-3
-          mx-auto
-          px-3
-          sm:px-10
-          py-10
-        "
-      >
-        <div
-          class="
-            sm:col-span-1
-            lg:col-span-2
-            sm:row-span-1
-            sm:h-full
-            sm:row-start-1 sm:row-end-3
-          "
-        ></div>
-        <div
-          class="
-            sm:col-span-1
-            lg:col-span-4
-            self-center
-            sm:row-start-2
-            sm:col-start-2
-            sm:h-full
-            flex
-            align-center
-            items-center
-          "
-        >
-          <div class="center p-4">
-            <h1 class="primary-font text-5xl lg:text-6xl text-center">
-              {{ $t("start.title") }}
-            </h1>
-            <h2 class="h2 primary-font text-2xl lg:text-xl text-center pb-6">
-              {{ $t("start.subtitle") }}
-            </h2>
-            <h2 class="h2 primary-font text-xl lg:text-xl text-center pb-6">
-              {{ $t("start.descr") }}
-            </h2>
-            <div class="h2 primary-font text-3xl lg:text-3xl text-center">
-              {{ $t("start.email") }}
-            </div>
+    <div class="h-screen mx-auto">
+      <div class="sm:h-full flex items-center justify-center">
+        <div class="p-4">
+          <h1 class="primary-font text-5xl lg:text-6xl text-center">
+            {{ $t("start.title") }}
+          </h1>
+          <h2 class="h2 primary-font text-2xl lg:text-xl text-center pb-6">
+            {{ $t("start.subtitle") }}
+          </h2>
+          <h2 class="h2 primary-font text-xl lg:text-xl text-center pb-6">
+            {{ $t("start.descr") }}
+          </h2>
+          <div class="h2 primary-font text-3xl lg:text-3xl text-center">
+            {{ $t("start.email") }}
           </div>
         </div>
       </div>
@@ -99,9 +64,9 @@ en:
             class="partner-item mb-10"
           >
             <!-- <div class="partner-item_background">{{ item.name }}</div> -->
-            <NuxtLink :to="item.url">
+            <a :href="item.url" target="_blank">
               <img :src="item.logo" :alt="item.name" class="px-5 w-48" />
-            </NuxtLink>
+            </a>
           </li>
         </ul>
       </div>
@@ -121,32 +86,32 @@ export default {
         },
         {
           name: this.$t("items.agora"),
-          url: "https://hand-help.ru/",
+          url: "https://business.agora.legal",
           logo: "/agora.png",
         },
-        {
-          name: this.$t("items.memo"),
-          url: "https://hand-help.ru/",
-          logo: "/memo.png",
-        },
+        // {
+        //   name: this.$t("items.memo"),
+        //   url: "https://hand-help.ru/",
+        //   logo: "/memo.png",
+        // },
         {
           name: this.$t("items.blagie-dela"),
-          url: "https://hand-help.ru/",
+          url: "https://blagie-dela.ru",
           logo: "/blagie-dela.png",
         },
         {
           name: this.$t("items.smothers"),
-          url: "https://hand-help.ru/",
+          url: "https://soldiersmothers.ru",
           logo: "/smothers.png",
         },
-        {
-          name: this.$t("items.bellona"),
-          url: "https://hand-help.ru/",
-          logo: "/bellona.png",
-        },
+        // {
+        //   name: this.$t("items.bellona"),
+        //   url: "https://hand-help.ru/",
+        //   logo: "/bellona.png",
+        // },
         {
           name: this.$t("items.cwatch"),
-          url: "https://hand-help.ru/",
+          url: "https://game.courtmonitoring.org",
           logo: "/cwatch.png",
         },
       ];
