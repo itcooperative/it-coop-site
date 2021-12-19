@@ -10,12 +10,9 @@
   },
   "dependencies": {
     "@nuxtjs/i18n": "^7.0.3",
-    "@openafg/nuxt-fullpage": "^1.0.5",
     "animate.css": "^4.1.1",
     "core-js": "^3.6.5",
-    "fullpage-nuxt": "0.0.3",
     "nuxt": "^2.14.6",
-    "nuxt-start": "^2.15.4",
     "sass-loader": "^10.1.1"
   },
   "devDependencies": {
@@ -23,8 +20,6 @@
     "@iconify/vue2": "^1.0.0",
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/tailwindcss": "^3.1.0",
-    "add": "^2.0.6",
-    "fibers": "^5.0.0",
     "nuxt-social-meta": "^0.0.5",
     "sass": "^1.32.5",
     "yarn": "^1.22.10"

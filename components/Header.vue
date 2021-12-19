@@ -6,7 +6,7 @@ ru:
 en:
   menu:
     manifest: 'Manifest'
-    npo: 'Who our partners'
+    npo: 'Our partners'
 </i18n>
 <template>
   <header class="bg-black py-2 fixed top-0 w-full">
@@ -30,7 +30,7 @@ en:
             :key="index"
             class="text-white ml-8"
           >
-            <NuxtLink v-if="(item.type = 'int')" :to="item.url">{{
+            <NuxtLink v-if="(item.type = 'int')" :to="localePath(item.url)">{{
               item.name
             }}</NuxtLink>
             <a v-else :href="item.url">{{ item.name }}</a>
@@ -74,7 +74,7 @@ export default {
     menu() {
       return [
         { name: this.$t("menu.manifest"), url: "/manifest", type: "int" },
-        { name: this.$t("menu.npo"), url: "/#NPO", type: "out" },
+        { name: this.$t("menu.npo"), url: "/#NPO", type: "int" },
       ];
     },
   },

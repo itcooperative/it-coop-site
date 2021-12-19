@@ -18,10 +18,10 @@ en:
   start:
     title: 'IT-COOP'
     subtitle: 'IT for social projects'
-    descr: 'Make simple and complicate things: bots, sites, applications'
+    descr: 'We make simple and complex stuff: bots, sites, web-appications.'
     email: 'noda@itcoop.ru'
   partners:
-    title: 'We are work with NGO'
+    title: 'We work with NGO'
     items:
       hand-help: 'Hand-help'
       agora: 'Агора'

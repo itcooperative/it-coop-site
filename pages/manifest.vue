@@ -17,7 +17,7 @@ en:
   <div class="container mx-auto h-screen">
     <Meta :title="$t('title')" :descr="$t('text.start') + $t('text.1st')" />
 
-    <div class="sm:h-full">
+    <div class="sm:h-full mx-auto" style="max-width: 768px">
       <PageTitle>
         {{ $t("title") }}
       </PageTitle>
@@ -33,4 +33,4 @@ en:
 </template>
 
 <script>
-</style>
+</script>
