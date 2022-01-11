@@ -20,7 +20,11 @@ en:
     "
   >
     <div class="text-white text-xs sm:text-md">{{ $t("produce") }}</div>
-    <div class="text-white text-xs sm:text-md">{{ $t("email") }}</div>
+    <a
+      class="block text-white text-xs sm:text-md"
+      :href="'mailto:' + $t('email')"
+      >{{ $t("email") }}</a
+    >
   </div>
 </template>
 <style>

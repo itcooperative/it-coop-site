@@ -30,7 +30,7 @@ en:
             :key="index"
             class="text-white ml-8"
           >
-            <NuxtLink v-if="(item.type = 'int')" :to="localePath(item.url)">{{
+            <NuxtLink v-if="item.type === 'int'" :to="localePath(item.url)">{{
               item.name
             }}</NuxtLink>
             <a v-else :href="item.url">{{ item.name }}</a>

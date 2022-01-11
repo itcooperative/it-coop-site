@@ -46,7 +46,7 @@ en:
             {{ $t("start.descr") }}
           </h2>
           <div class="h2 primary-font text-3xl lg:text-3xl text-center">
-            {{ $t("start.email") }}
+            <a :href="'mailto:' + $t('start.email')">{{ $t("start.email") }}</a>
           </div>
         </div>
       </div>
