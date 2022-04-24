@@ -1,3 +1,5 @@
+import smConfig from "./sm.json";
+
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   ssr: false,
@@ -10,10 +12,10 @@ export default {
         hid: "description",
         name: "description",
         content:
-          "Сделаем ваши сайты, приложения, боты и другие проекты без добавления наёмного труда."
-      }
+          "Сделаем ваши сайты, приложения, боты и другие проекты без добавления наёмного труда.",
+      },
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
@@ -29,40 +31,32 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     "@nuxtjs/tailwindcss",
-    "@nuxtjs/pwa"
+    "@nuxtjs/pwa",
+    "@nuxtjs/prismic",
   ],
+  prismic: {
+    modern: true,
+    endpoint: smConfig.apiEndpoint || "",
+    routes: [
+      // Resolves the Homepage document to "/"
+      {
+        type: "homepage",
+        path: "/:lang?",
+      },
+      {
+        type: "projects",
+        path: "/:lang?/projects",
+      },
+    ],
+    /* see configuration for more */
+  },
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: [
-    [
-      "@nuxtjs/i18n",
-      [
-        "@openafg/nuxt-fullpage",
-        {
-          activeSection: 0,
-          mouseWheelSensitivity: 120,
-          showIndicators: false
-        }
-      ],
-      "nuxt-social-meta",
-      {
-        url: "http://itcoop.ru/",
-        title: "Itcoop — айти кооператив",
-        site_name: "Itcoop",
-        description:
-          "Сделаем ваши сайты, приложения, боты и другие проекты без добавления наёмного труда.",
-        img: "http://itcoop.ru/Frame5.png",
-        locale: "ru_RU",
-        // twitter: "@user",
-        twitter_card: "summary_large_image",
-        themeColor: "#1400FF"
-      }
-    ]
-  ],
+  modules: ["@nuxtjs/i18n"],
   // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {},
+  build: { transpile: ["@prismicio/vue"] },
   pwa: {
-    icon: false // disables the icon module
+    icon: false, // disables the icon module
   },
   i18n: {
     vueI18nLoader: true,
@@ -86,28 +80,28 @@ export default {
         }
 
         return choicesLength < 4 ? 2 : 3;
-      }
+      },
     },
     locales: [
       {
         code: "ru",
         name: "RU",
         nameFull: "Русский",
-        iso: "ru-RU"
+        iso: "ru-RU",
       },
       {
         code: "en",
         name: "EN",
         nameFull: "English",
-        iso: "en-US"
-      }
+        iso: "en-US",
+      },
     ],
-    defaultLocale: "ru",
+    defaultLocale: "en",
     strategy: "prefix_except_default",
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: "itcoop_lang",
-      onlyOnRoot: true // recommended
-    }
-  }
+      onlyOnRoot: true, // recommended
+    },
+  },
 };

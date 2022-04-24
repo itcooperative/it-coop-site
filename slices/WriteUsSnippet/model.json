@@ -1,0 +1,44 @@
+{
+  "id": "write_us_snippet",
+  "type": "SharedSlice",
+  "name": "WriteUsSnippet",
+  "description": "WriteUsSnippet",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "WriteUsSnippet",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": true,
+            "single": "paragraph,strong"
+          }
+        },
+        "BtnText": {
+          "type": "StructuredText",
+          "config": {
+            "label": "BtnText",
+            "placeholder": "A nice description of your product",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          }
+        },
+        "BtnLink": {
+          "config": {
+            "label": "Btn Link",
+            "placeholder": "",
+            "allowTargetBlank": false
+          },
+          "type": "Link"
+        }
+      },
+      "items": {}
+    }
+  ]
+}

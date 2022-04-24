@@ -1,0 +1,24 @@
+{
+  "slices": {
+    "Team": {},
+    "Hero": {},
+    "Logos": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "Projects": {},
+    "Menu": {
+      "default": {
+        "primary": {}
+      }
+    }
+  },
+  "_cts": {
+    "header": {},
+    "footer": {},
+    "main": {},
+    "projects": {},
+    "menu": {}
+  }
+}

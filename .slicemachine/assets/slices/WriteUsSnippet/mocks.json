@@ -1,0 +1,28 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "write_us_snippet",
+    "items": [],
+    "primary": {
+      "title": [
+        {
+          "type": "paragraph",
+          "text": "Nisi ex laborum cillum consectetur labore duis deserunt nostrud ad.",
+          "spans": []
+        }
+      ],
+      "BtnText": [
+        {
+          "type": "paragraph",
+          "text": "Veniam consequat eiusmod incididunt duis enim fugiat ex nulla aliquip labore.",
+          "spans": []
+        }
+      ],
+      "BtnLink": {
+        "link_type": "Web",
+        "url": "http://google.com"
+      }
+    }
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "site_price",
+    "items": [],
+    "primary": {
+      "title": [
+        {
+          "type": "heading1",
+          "text": "Evolve efficient initiatives",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Fugiat culpa consectetur nulla et reprehenderit aliquip ex anim mollit. Lorem incididunt do excepteur excepteur in veniam exercitation aliqua anim sunt.",
+          "spans": []
+        }
+      ],
+      "Background": "#196306"
+    }
+  }
+]

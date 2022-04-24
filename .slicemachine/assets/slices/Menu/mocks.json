@@ -1,0 +1,36 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "menu",
+    "items": [
+      {
+        "link": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        },
+        "Name": [
+          {
+            "type": "paragraph",
+            "text": "Eiusmod est cillum officia commodo. Est velit aliquip aliquip exercitation culpa officia est reprehenderit duis ea dolor ea minim occaecat. Deserunt commodo do ullamco velit laboris reprehenderit ullamco ea deserunt in tempor labore labore ullamco adipisicing.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        },
+        "Name": [
+          {
+            "type": "paragraph",
+            "text": "Magna proident ullamco ad cillum sint adipisicing qui. Nulla fugiat veniam laboris ipsum esse mollit id pariatur elit elit. Laboris Lorem nulla nostrud.",
+            "spans": []
+          }
+        ]
+      }
+    ],
+    "primary": {}
+  }
+]

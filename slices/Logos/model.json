@@ -1,0 +1,34 @@
+{
+  "id": "logos",
+  "type": "SharedSlice",
+  "name": "Logos",
+  "description": "Logos",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Logos",
+      "primary": {
+        "Background": {
+          "config": {
+            "label": "Background",
+            "placeholder": ""
+          },
+          "type": "Color"
+        }
+      },
+      "items": {
+        "logo": {
+          "config": {
+            "label": "Logo",
+            "constraint": {},
+            "thumbnails": []
+          },
+          "type": "Image"
+        }
+      }
+    }
+  ]
+}

@@ -8,13 +8,12 @@
 import { components } from "~/slices";
 
 export default {
-  async asyncData({ $prismic, params, error, store }) {
-    // Languages from API response
-    const document = await $prismic.api.getSingle("main", {
+  async asyncData({ $prismic, params, error }) {
+    const document = await $prismic.api.getSingle("projects", {
       lang: params.lang,
     });
+
     if (document) {
-      store.commit("SET_LANG", document.alternate_languages);
       return { document };
     } else {
       error({ statusCode: 404, message: "Page not found" });

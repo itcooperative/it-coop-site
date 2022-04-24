@@ -1,0 +1,53 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "form_contact",
+    "items": [],
+    "primary": {
+      "title": [
+        {
+          "type": "heading1",
+          "text": "Reintermediate efficient networks",
+          "spans": []
+        }
+      ],
+      "Background": "#d0dfae",
+      "InputName": [
+        {
+          "type": "paragraph",
+          "text": "Nisi deserunt nisi do officia excepteur. Consequat cillum adipisicing quis amet cillum nulla nulla aute amet ex commodo laborum velit. Amet veniam cillum officia irure.",
+          "spans": []
+        }
+      ],
+      "InputContacts": [
+        {
+          "type": "paragraph",
+          "text": "Qui est officia sunt culpa minim commodo occaecat reprehenderit aliquip mollit. Reprehenderit incididunt nostrud occaecat magna. Occaecat pariatur duis dolore ipsum et dolor velit sit irure anim id dolor ad aliquip.",
+          "spans": []
+        }
+      ],
+      "InputMessage": [
+        {
+          "type": "paragraph",
+          "text": "Tempor elit laborum deserunt aute exercitation labore excepteur ad elit deserunt. Ipsum duis anim pariatur dolor veniam voluptate dolor Lorem exercitation excepteur do.",
+          "spans": []
+        }
+      ],
+      "PersonalData": [
+        {
+          "type": "paragraph",
+          "text": "Laborum aliqua deserunt incididunt velit cillum laboris. Magna aliqua ipsum sint sit ex anim aliqua sit.",
+          "spans": []
+        }
+      ],
+      "SubmitBtn": [
+        {
+          "type": "paragraph",
+          "text": "Est minim anim velit qui quis nulla velit voluptate anim est voluptate commodo consequat anim exercitation. Amet mollit tempor consectetur duis nisi aute adipisicing pariatur incididunt culpa amet. Id consequat id consequat amet sit consequat irure ad officia ipsum ex.",
+          "spans": []
+        }
+      ]
+    }
+  }
+]

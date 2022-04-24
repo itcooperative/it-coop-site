@@ -1,0 +1,28 @@
+{
+  "id": "c7904790-9b04-4b01-9287-9bed71bd6ac8",
+  "uid": "expedita-labore-impedit",
+  "type": "header",
+  "data": {
+    "Logo": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?w=900&h=500&fit=crop"
+    },
+    "GetContactsBtn": [
+      {
+        "type": "paragraph",
+        "text": "Labore laborum velit irure non do irure reprehenderit pariatur culpa irure. Lorem voluptate dolor velit. Minim aute ad laboris minim aute dolore cillum.",
+        "spans": []
+      }
+    ],
+    "linkLogo": {
+      "link_type": "Web",
+      "url": "http://twitter.com"
+    },
+    "Background": "#1d81da"
+  }
+}

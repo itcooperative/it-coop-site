@@ -1,0 +1,25 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "about_us",
+    "items": [],
+    "primary": {
+      "title": [
+        {
+          "type": "heading2",
+          "text": "E-enable leading-edge metrics",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Aute amet fugiat anim.",
+          "spans": []
+        }
+      ],
+      "background": "#3901ec"
+    }
+  }
+]

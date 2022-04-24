@@ -1,0 +1,1205 @@
+{
+  "slices": {
+    "components": {
+      "about_us": {
+        "library": "slices",
+        "id": "about_us",
+        "name": "AboutUs",
+        "description": "AboutUs",
+        "model": {
+          "id": "about_us",
+          "type": "SharedSlice",
+          "name": "AboutUs",
+          "description": "AboutUs",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "AboutUs",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "This is where it all begins...",
+                    "allowTargetBlank": true,
+                    "single": "heading2"
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": "A nice description of your product",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph"
+                  }
+                },
+                "background": {
+                  "config": {
+                    "label": "Background",
+                    "placeholder": ""
+                  },
+                  "type": "Color"
+                }
+              },
+              "items": {}
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "about_us",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading2",
+                  "text": "E-enable leading-edge metrics",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Aute amet fugiat anim.",
+                  "spans": []
+                }
+              ],
+              "background": "#3901ec"
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "vue"
+        },
+        "screenshotPaths": {}
+      },
+      "form_contact": {
+        "library": "slices",
+        "id": "form_contact",
+        "name": "FormContact",
+        "description": "FormContact",
+        "model": {
+          "id": "form_contact",
+          "type": "SharedSlice",
+          "name": "FormContact",
+          "description": "FormContact",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "FormContact",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                },
+                "Background": {
+                  "config": {
+                    "label": "Background",
+                    "placeholder": ""
+                  },
+                  "type": "Color"
+                },
+                "InputName": {
+                  "config": {
+                    "label": "Input Name",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  },
+                  "type": "StructuredText"
+                },
+                "InputContacts": {
+                  "config": {
+                    "label": "Input Contacts",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  },
+                  "type": "StructuredText"
+                },
+                "InputMessage": {
+                  "config": {
+                    "label": "Input Message",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  },
+                  "type": "StructuredText"
+                },
+                "PersonalData": {
+                  "config": {
+                    "label": "Personal Data",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  },
+                  "type": "StructuredText"
+                },
+                "SubmitBtn": {
+                  "config": {
+                    "label": "Submit Btn",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  },
+                  "type": "StructuredText"
+                }
+              },
+              "items": {}
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "form_contact",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Reintermediate efficient networks",
+                  "spans": []
+                }
+              ],
+              "Background": "#d0dfae",
+              "InputName": [
+                {
+                  "type": "paragraph",
+                  "text": "Nisi deserunt nisi do officia excepteur. Consequat cillum adipisicing quis amet cillum nulla nulla aute amet ex commodo laborum velit. Amet veniam cillum officia irure.",
+                  "spans": []
+                }
+              ],
+              "InputContacts": [
+                {
+                  "type": "paragraph",
+                  "text": "Qui est officia sunt culpa minim commodo occaecat reprehenderit aliquip mollit. Reprehenderit incididunt nostrud occaecat magna. Occaecat pariatur duis dolore ipsum et dolor velit sit irure anim id dolor ad aliquip.",
+                  "spans": []
+                }
+              ],
+              "InputMessage": [
+                {
+                  "type": "paragraph",
+                  "text": "Tempor elit laborum deserunt aute exercitation labore excepteur ad elit deserunt. Ipsum duis anim pariatur dolor veniam voluptate dolor Lorem exercitation excepteur do.",
+                  "spans": []
+                }
+              ],
+              "PersonalData": [
+                {
+                  "type": "paragraph",
+                  "text": "Laborum aliqua deserunt incididunt velit cillum laboris. Magna aliqua ipsum sint sit ex anim aliqua sit.",
+                  "spans": []
+                }
+              ],
+              "SubmitBtn": [
+                {
+                  "type": "paragraph",
+                  "text": "Est minim anim velit qui quis nulla velit voluptate anim est voluptate commodo consequat anim exercitation. Amet mollit tempor consectetur duis nisi aute adipisicing pariatur incididunt culpa amet. Id consequat id consequat amet sit consequat irure ad officia ipsum ex.",
+                  "spans": []
+                }
+              ]
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "vue"
+        },
+        "screenshotPaths": {}
+      },
+      "hero": {
+        "library": "slices",
+        "id": "hero",
+        "name": "Hero",
+        "description": "Hero",
+        "model": {
+          "id": "hero",
+          "type": "SharedSlice",
+          "name": "Hero",
+          "description": "Hero",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Hero",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "This is where it all begins...",
+                    "allowTargetBlank": true,
+                    "single": "heading1"
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": "A nice description of your product",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph"
+                  }
+                },
+                "BannerText": {
+                  "config": {
+                    "label": "Banner Text",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph"
+                  },
+                  "type": "StructuredText"
+                },
+                "Background": {
+                  "config": {
+                    "label": "Background",
+                    "placeholder": ""
+                  },
+                  "type": "Color"
+                }
+              },
+              "items": {}
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "hero",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Syndicate scalable infomediaries",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Enim in consectetur voluptate deserunt et.",
+                  "spans": []
+                }
+              ],
+              "BannerText": [
+                {
+                  "type": "paragraph",
+                  "text": "Occaecat irure tempor officia magna aute ad consectetur non dolor eu.",
+                  "spans": []
+                }
+              ],
+              "Background": "#2cf44b"
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "vue"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/home/oem/projects/noda_site/.slicemachine/assets/slices/Hero/default/preview.png",
+            "width": 800,
+            "height": 232
+          }
+        }
+      },
+      "logos": {
+        "library": "slices",
+        "id": "logos",
+        "name": "Logos",
+        "description": "Logos",
+        "model": {
+          "id": "logos",
+          "type": "SharedSlice",
+          "name": "Logos",
+          "description": "Logos",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Logos",
+              "primary": {
+                "Background": {
+                  "config": {
+                    "label": "Background",
+                    "placeholder": ""
+                  },
+                  "type": "Color"
+                }
+              },
+              "items": {
+                "logo": {
+                  "config": {
+                    "label": "Logo",
+                    "constraint": {},
+                    "thumbnails": []
+                  },
+                  "type": "Image"
+                }
+              }
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "logos",
+            "items": [
+              {
+                "logo": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?w=900&h=500&fit=crop"
+                }
+              },
+              {
+                "logo": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51?w=900&h=500&fit=crop"
+                }
+              }
+            ],
+            "primary": {
+              "Background": "#af0be7"
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "vue"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/home/oem/projects/noda_site/.slicemachine/assets/slices/Logos/default/preview.png",
+            "width": 800,
+            "height": 315
+          }
+        }
+      },
+      "menu": {
+        "library": "slices",
+        "id": "menu",
+        "name": "Menu",
+        "description": "Menu",
+        "model": {
+          "id": "menu",
+          "type": "SharedSlice",
+          "name": "Menu",
+          "description": "Menu",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Menu",
+              "primary": {},
+              "items": {
+                "link": {
+                  "config": {
+                    "label": "Link",
+                    "placeholder": "",
+                    "allowTargetBlank": false
+                  },
+                  "type": "Link"
+                },
+                "Name": {
+                  "config": {
+                    "label": "Name",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  },
+                  "type": "StructuredText"
+                }
+              }
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "menu",
+            "items": [
+              {
+                "link": {
+                  "link_type": "Web",
+                  "url": "https://prismic.io"
+                },
+                "Name": [
+                  {
+                    "type": "paragraph",
+                    "text": "Eiusmod est cillum officia commodo. Est velit aliquip aliquip exercitation culpa officia est reprehenderit duis ea dolor ea minim occaecat. Deserunt commodo do ullamco velit laboris reprehenderit ullamco ea deserunt in tempor labore labore ullamco adipisicing.",
+                    "spans": []
+                  }
+                ]
+              },
+              {
+                "link": {
+                  "link_type": "Web",
+                  "url": "https://slicemachine.dev"
+                },
+                "Name": [
+                  {
+                    "type": "paragraph",
+                    "text": "Magna proident ullamco ad cillum sint adipisicing qui. Nulla fugiat veniam laboris ipsum esse mollit id pariatur elit elit. Laboris Lorem nulla nostrud.",
+                    "spans": []
+                  }
+                ]
+              }
+            ],
+            "primary": {}
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "vue"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/home/oem/projects/noda_site/.slicemachine/assets/slices/Menu/default/preview.png",
+            "width": 800,
+            "height": 120
+          }
+        }
+      },
+      "projects": {
+        "library": "slices",
+        "id": "projects",
+        "name": "Projects",
+        "description": "Projects",
+        "model": {
+          "id": "projects",
+          "type": "SharedSlice",
+          "name": "Projects",
+          "description": "Projects",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Projects",
+              "primary": {
+                "showalllink": {
+                  "config": {
+                    "label": "Show All Link",
+                    "placeholder": "",
+                    "allowTargetBlank": false
+                  },
+                  "type": "Link"
+                },
+                "ShowAllText": {
+                  "config": {
+                    "label": "Show All Text",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph"
+                  },
+                  "type": "StructuredText"
+                },
+                "Background": {
+                  "config": {
+                    "label": "Background",
+                    "placeholder": ""
+                  },
+                  "type": "Color"
+                }
+              },
+              "items": {
+                "background": {
+                  "config": {
+                    "label": "Background",
+                    "placeholder": ""
+                  },
+                  "type": "Color"
+                },
+                "title": {
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "heading2"
+                  },
+                  "type": "StructuredText"
+                },
+                "client": {
+                  "config": {
+                    "label": "Client",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  },
+                  "type": "StructuredText"
+                },
+                "description": {
+                  "config": {
+                    "label": "Description",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  },
+                  "type": "StructuredText"
+                },
+                "Image": {
+                  "config": {
+                    "label": "Image",
+                    "constraint": {},
+                    "thumbnails": []
+                  },
+                  "type": "Image"
+                },
+                "WhatWeDo": {
+                  "config": {
+                    "label": "What We Do",
+                    "placeholder": ""
+                  },
+                  "type": "Text"
+                },
+                "Logo": {
+                  "config": {
+                    "label": "Logo",
+                    "constraint": {},
+                    "thumbnails": []
+                  },
+                  "type": "Image"
+                }
+              }
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "projects",
+            "items": [
+              {
+                "background": "#f0bceb",
+                "title": [
+                  {
+                    "type": "heading2",
+                    "text": "Leverage intuitive infrastructures",
+                    "spans": []
+                  }
+                ],
+                "client": [
+                  {
+                    "type": "paragraph",
+                    "text": "Est velit sunt cupidatat laborum adipisicing officia consequat officia. Occaecat aliqua ad officia nostrud officia pariatur.",
+                    "spans": []
+                  }
+                ],
+                "description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Eu exercitation laboris officia esse Lorem. In enim veniam deserunt aliquip commodo aliquip tempor exercitation laborum aliquip tempor cupidatat.",
+                    "spans": []
+                  }
+                ],
+                "Image": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04?w=900&h=500&fit=crop"
+                },
+                "WhatWeDo": "syndicate leading-edge channels",
+                "Logo": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51?w=900&h=500&fit=crop"
+                }
+              },
+              {
+                "background": "#d8f5a9",
+                "title": [
+                  {
+                    "type": "heading2",
+                    "text": "Transition cutting-edge experiences",
+                    "spans": []
+                  }
+                ],
+                "client": [
+                  {
+                    "type": "paragraph",
+                    "text": "Anim nisi aute nostrud. Quis mollit elit nulla aute laborum laboris magna ex excepteur. Incididunt fugiat sit proident ipsum duis.",
+                    "spans": []
+                  }
+                ],
+                "description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Et laborum ipsum id aute incididunt.",
+                    "spans": []
+                  }
+                ],
+                "Image": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1531771686035-25f47595c87a?w=900&h=500&fit=crop"
+                },
+                "WhatWeDo": "innovate real-time platforms",
+                "Logo": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1531771686035-25f47595c87a?w=900&h=500&fit=crop"
+                }
+              },
+              {
+                "background": "#2653b5",
+                "title": [
+                  {
+                    "type": "heading2",
+                    "text": "Redefine real-time infrastructures",
+                    "spans": []
+                  }
+                ],
+                "client": [
+                  {
+                    "type": "paragraph",
+                    "text": "Irure velit nulla dolor sit mollit ipsum ipsum amet Lorem non. Ut cupidatat labore quis laborum consectetur esse laboris veniam.",
+                    "spans": []
+                  }
+                ],
+                "description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Eiusmod exercitation nostrud magna do sunt id veniam est ad ullamco laboris occaecat. Nisi excepteur sunt consequat esse. Pariatur tempor officia quis ullamco nulla.",
+                    "spans": []
+                  }
+                ],
+                "Image": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=900&h=500&fit=crop"
+                },
+                "WhatWeDo": "extend open-source applications",
+                "Logo": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea?w=900&h=500&fit=crop"
+                }
+              },
+              {
+                "background": "#d0922e",
+                "title": [
+                  {
+                    "type": "heading2",
+                    "text": "Cultivate impactful interfaces",
+                    "spans": []
+                  }
+                ],
+                "client": [
+                  {
+                    "type": "paragraph",
+                    "text": "Nulla commodo eiusmod proident duis tempor occaecat. Laborum amet aliqua eu proident aute occaecat reprehenderit. Qui qui duis quis.",
+                    "spans": []
+                  }
+                ],
+                "description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Proident magna dolor consectetur. Et dolore anim do enim pariatur et nostrud do fugiat ullamco in quis anim. Nisi sint eu magna incididunt irure deserunt minim veniam cillum Lorem nostrud veniam fugiat id.",
+                    "spans": []
+                  }
+                ],
+                "Image": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a?w=900&h=500&fit=crop"
+                },
+                "WhatWeDo": "repurpose next-generation schemas",
+                "Logo": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117?w=900&h=500&fit=crop"
+                }
+              }
+            ],
+            "primary": {
+              "showalllink": {
+                "link_type": "Web",
+                "url": "https://prismic.io"
+              },
+              "ShowAllText": [
+                {
+                  "type": "paragraph",
+                  "text": "Sunt nisi ex fugiat voluptate nisi adipisicing sint ex. Tempor eiusmod est dolore reprehenderit ex minim amet consequat voluptate cillum ea cillum voluptate in culpa. In exercitation eu in magna nostrud incididunt.",
+                  "spans": []
+                }
+              ],
+              "Background": "#f59add"
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "vue"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/home/oem/projects/noda_site/.slicemachine/assets/slices/Projects/default/preview.png",
+            "width": 800,
+            "height": 200
+          }
+        }
+      },
+      "site_price": {
+        "library": "slices",
+        "id": "site_price",
+        "name": "SitePrice",
+        "description": "SitePrice",
+        "model": {
+          "id": "site_price",
+          "type": "SharedSlice",
+          "name": "SitePrice",
+          "description": "SitePrice",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "SitePrice",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Description",
+                    "placeholder": "A nice description of your product"
+                  }
+                },
+                "Background": {
+                  "config": {
+                    "label": "Background",
+                    "placeholder": ""
+                  },
+                  "type": "Color"
+                }
+              },
+              "items": {}
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "site_price",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Evolve efficient initiatives",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Fugiat culpa consectetur nulla et reprehenderit aliquip ex anim mollit. Lorem incididunt do excepteur excepteur in veniam exercitation aliqua anim sunt.",
+                  "spans": []
+                }
+              ],
+              "Background": "#196306"
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "vue"
+        },
+        "screenshotPaths": {}
+      },
+      "team": {
+        "library": "slices",
+        "id": "team",
+        "name": "Team",
+        "description": "Team",
+        "model": {
+          "id": "team",
+          "type": "SharedSlice",
+          "name": "Team",
+          "description": "Team",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Team",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Description",
+                    "placeholder": "A nice description of your product"
+                  }
+                },
+                "Background": {
+                  "config": {
+                    "label": "Background",
+                    "placeholder": ""
+                  },
+                  "type": "Color"
+                },
+                "Show": {
+                  "config": {
+                    "label": "Show",
+                    "placeholder_false": "false",
+                    "placeholder_true": "true",
+                    "default_value": false
+                  },
+                  "type": "Boolean"
+                }
+              },
+              "items": {
+                "Name": {
+                  "config": {
+                    "label": "Name",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  },
+                  "type": "StructuredText"
+                },
+                "Photo": {
+                  "config": {
+                    "label": "Photo",
+                    "constraint": {},
+                    "thumbnails": []
+                  },
+                  "type": "Image"
+                },
+                "Job": {
+                  "config": {
+                    "label": "Job",
+                    "placeholder": ""
+                  },
+                  "type": "Text"
+                },
+                "Descr": {
+                  "config": {
+                    "label": "Descr",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  },
+                  "type": "StructuredText"
+                }
+              }
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "team",
+            "items": [
+              {
+                "Name": [
+                  {
+                    "type": "paragraph",
+                    "text": "Irure enim pariatur ullamco sit minim esse occaecat. Nulla Lorem ullamco qui et fugiat culpa nostrud aliqua reprehenderit laboris adipisicing non. Eu sint excepteur eu ad amet sint id laborum duis dolor aliquip aliqua duis in et.",
+                    "spans": []
+                  }
+                ],
+                "Photo": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1494173853739-c21f58b16055?w=900&h=500&fit=crop"
+                },
+                "Job": "iterate one-to-one methodologies",
+                "Descr": [
+                  {
+                    "type": "paragraph",
+                    "text": "Magna fugiat ut sit sit officia cupidatat dolor culpa nisi non.",
+                    "spans": []
+                  }
+                ]
+              },
+              {
+                "Name": [
+                  {
+                    "type": "paragraph",
+                    "text": "Incididunt id aliqua commodo id deserunt et tempor id non do aliqua.",
+                    "spans": []
+                  }
+                ],
+                "Photo": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1494173853739-c21f58b16055?w=900&h=500&fit=crop"
+                },
+                "Job": "incentivize synergistic web services",
+                "Descr": [
+                  {
+                    "type": "paragraph",
+                    "text": "Velit veniam do duis mollit consectetur veniam mollit irure fugiat ea id Lorem laboris do.",
+                    "spans": []
+                  }
+                ]
+              },
+              {
+                "Name": [
+                  {
+                    "type": "paragraph",
+                    "text": "Sint commodo ad deserunt consequat. Laboris aliqua ex est consectetur do consectetur veniam consequat adipisicing pariatur cupidatat.",
+                    "spans": []
+                  }
+                ],
+                "Photo": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?w=900&h=500&fit=crop"
+                },
+                "Job": "expedite mission-critical deliverables",
+                "Descr": [
+                  {
+                    "type": "paragraph",
+                    "text": "Dolore incididunt pariatur est incididunt consequat laborum labore adipisicing magna duis consequat proident.",
+                    "spans": []
+                  }
+                ]
+              },
+              {
+                "Name": [
+                  {
+                    "type": "paragraph",
+                    "text": "Sint dolor non consectetur ut esse quis ex aliqua aliqua sint cupidatat ex aute officia. Culpa eu cupidatat quis exercitation aliquip amet fugiat eu et deserunt occaecat minim duis.",
+                    "spans": []
+                  }
+                ],
+                "Photo": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72?w=900&h=500&fit=crop"
+                },
+                "Job": "matrix transparent technologies",
+                "Descr": [
+                  {
+                    "type": "paragraph",
+                    "text": "Id non aliquip enim nostrud eiusmod minim velit mollit et commodo laboris. Duis qui in ullamco.",
+                    "spans": []
+                  }
+                ]
+              }
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Visualize 24/7 networks",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Officia est consectetur qui tempor ut. In ipsum nisi proident magna cupidatat ipsum sit dolor quis ullamco. Ipsum exercitation culpa excepteur quis.",
+                  "spans": []
+                }
+              ],
+              "Background": "#6652e5",
+              "Show": true
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "vue"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/home/oem/projects/noda_site/.slicemachine/assets/slices/Team/default/preview.png",
+            "width": 800,
+            "height": 232
+          }
+        }
+      },
+      "write_us_snippet": {
+        "library": "slices",
+        "id": "write_us_snippet",
+        "name": "WriteUsSnippet",
+        "description": "WriteUsSnippet",
+        "model": {
+          "id": "write_us_snippet",
+          "type": "SharedSlice",
+          "name": "WriteUsSnippet",
+          "description": "WriteUsSnippet",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "WriteUsSnippet",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "This is where it all begins...",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,strong"
+                  }
+                },
+                "BtnText": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "BtnText",
+                    "placeholder": "A nice description of your product",
+                    "allowTargetBlank": true,
+                    "single": "paragraph"
+                  }
+                },
+                "BtnLink": {
+                  "config": {
+                    "label": "Btn Link",
+                    "placeholder": "",
+                    "allowTargetBlank": false
+                  },
+                  "type": "Link"
+                }
+              },
+              "items": {}
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "write_us_snippet",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "paragraph",
+                  "text": "Nisi ex laborum cillum consectetur labore duis deserunt nostrud ad.",
+                  "spans": []
+                }
+              ],
+              "BtnText": [
+                {
+                  "type": "paragraph",
+                  "text": "Veniam consequat eiusmod incididunt duis enim fugiat ex nulla aliquip labore.",
+                  "spans": []
+                }
+              ],
+              "BtnLink": {
+                "link_type": "Web",
+                "url": "http://google.com"
+              }
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "vue"
+        },
+        "screenshotPaths": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": "projects",
+  "label": "Projects",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "Title": {
+        "config": {
+          "label": "Title",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        },
+        "type": "StructuredText"
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "projects": {
+              "type": "SharedSlice"
+            },
+            "write_us_snippet": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "SEO": {
+      "metaTitle": {
+        "config": {
+          "label": "Meta Title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "metaDescr": {
+        "config": {
+          "label": "Meta Descr",
+          "placeholder": ""
+        },
+        "type": "Text"
+      }
+    }
+  }
+}
