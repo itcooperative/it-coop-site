@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header :data="$store.state.header" />
-    <Nuxt class="mt-20 sm:mt-16 px-3 sm:px-0" />
+    <Nuxt />
     <Footer :data="$store.state.footer" />
   </div>
 </template>
@@ -15,4 +15,8 @@ export default {
 };
 </script>
 <style>
+html {
+  font-family: "IBM Plex Sans";
+  font-size: 18px;
+}
 </style>

@@ -1,22 +1,31 @@
 <template>
   <header class="py-2" :style="`background: ${data.Background}`">
-    <div class="flex items-center px-3 sm:px-8 justify-between relative">
+    <div
+      class="flex items-center container mx-auto px-3 justify-between relative"
+    >
       <NuxtLink to="/"> <PrismicImage :field="data.Logo" /> </NuxtLink>
-
-      <nav>
-        <ul>
-          <li
-            v-for="menuLink in $store.state.menu.menu_links"
-            :key="menuLink.id"
-          >
-            <prismic-link :field="menuLink.link">{{
-              $prismic.asText(menuLink.label)
-            }}</prismic-link>
-          </li>
-        </ul>
-      </nav>
-      <PrismicRichText :field="data.GetContactsBtn" />
-      <LangSwitcher />
+      <div class="sm:hidden">
+        <img src="/menu.svg" alt="" />
+      </div>
+      <div class="hidden justify-end items-center sm:flex">
+        <nav>
+          <ul>
+            <li
+              v-for="menuLink in $store.state.menu.menu_links"
+              :key="menuLink.id"
+              class="px-8 py-2"
+            >
+              <prismic-link :field="menuLink.link" class="md:text-lg">{{
+                $prismic.asText(menuLink.label)
+              }}</prismic-link>
+            </li>
+          </ul>
+        </nav>
+        <BtnDefault class="mx-4">
+          <PrismicRichText :field="data.GetContactsBtn" />
+        </BtnDefault>
+        <LangSwitcher />
+      </div>
     </div>
   </header>
 </template>

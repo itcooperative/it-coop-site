@@ -1,4 +1,5 @@
 export default function (doc) {
+  console.log(doc);
   if (doc.type === "main") {
     return `/${doc.lang}`;
   }
@@ -7,5 +8,5 @@ export default function (doc) {
     return `/${doc.lang}/projects`;
   }
 
-  return "/not-found";
+  return `/`;
 }

@@ -1,25 +1,32 @@
 <template>
-  <section class="section" :style="`background: ${slice.primary.Background}`">
-    <PrismicRichText :field="slice.primary.title" />
-    <form action="">
-      <input
-        type="text"
-        :placeholder="$prismic.asText(slice.primary.InputName)"
-      />
-      <input
-        type="text"
-        :placeholder="$prismic.asText(slice.primary.InputContacts)"
-      />
-      <input
-        type="text"
-        :placeholder="$prismic.asText(slice.primary.InputMessage)"
-      />
-      <label>{{ $prismic.asText(slice.primary.InputMessage) }}</label>
-      <input type="checkbox" />
-      <button type="submit">
-        <PrismicRichText :field="slice.primary.SubmitBtn" />
-      </button>
-    </form>
+  <section class="py-20" :style="`background: ${slice.primary.Background}`">
+    <div class="container px-3 mx-auto">
+      <H2><PrismicRichText :field="slice.primary.title" /></H2>
+      <form action="" class="flex flex-col">
+        <InputText
+          type="text"
+          class="mb-4"
+          :placeholder="$prismic.asText(slice.primary.InputName)"
+        />
+        <InputText
+          type="text"
+          class="mb-4"
+          :placeholder="$prismic.asText(slice.primary.InputContacts)"
+        />
+        <InputTextArea
+          type="text"
+          class="mb-4"
+          :placeholder="$prismic.asText(slice.primary.InputMessage)"
+        />
+        <label>{{ $prismic.asText(slice.primary.InputMessage) }}</label>
+        <input type="checkbox" checked />
+        <div class="text-left">
+          <BtnDefault type="submit">
+            <PrismicRichText :field="slice.primary.SubmitBtn" />
+          </BtnDefault>
+        </div>
+      </form>
+    </div>
   </section>
 </template>
 
@@ -33,14 +40,3 @@ export default {
 };
 </script>
 
-<style scoped>
-.section {
-  background: #f7f7f7;
-  color: #111;
-  padding: 4em;
-  text-align: center;
-}
-.title {
-  margin-bottom: 2em;
-}
-</style>

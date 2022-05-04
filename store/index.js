@@ -3,7 +3,10 @@ export const state = () => ({
   footer: {},
   header: {},
   page: {},
-  lang: [],
+  lang: {
+    current: null,
+    other: null,
+  },
 });
 
 export const mutations = {
@@ -22,8 +25,11 @@ export const mutations = {
   SET_PAGE(state, page) {
     state.page = page;
   },
-  SET_LANG(state, lang) {
-    state.lang = lang;
+  SET_LANG_CURRENT(state, lang) {
+    state.lang.current = lang;
+  },
+  SET_LANG_OTHER(state, lang) {
+    state.lang.other = lang;
   },
 };
 

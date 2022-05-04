@@ -1,5 +1,3 @@
-import smConfig from "./sm.json";
-
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   ssr: false,
@@ -33,21 +31,30 @@ export default {
     "@nuxtjs/tailwindcss",
     "@nuxtjs/pwa",
     "@nuxtjs/prismic",
+    "@nuxtjs/google-fonts",
   ],
+  googleFonts: {
+    families: {
+      "Russo One": [400, 500, 600, 700],
+      "IBM Plex Sans": [400, 500, 600, 700],
+    },
+  },
   prismic: {
     modern: true,
-    endpoint: smConfig.apiEndpoint || "",
-    routes: [
-      // Resolves the Homepage document to "/"
-      {
-        type: "homepage",
-        path: "/:lang?",
-      },
-      {
-        type: "projects",
-        path: "/:lang?/projects",
-      },
-    ],
+    endpoint: "https://itcoop.prismic.io/api/v2",
+    apiOptions: {
+      routes: [
+        // Resolves the Homepage document to "/"
+        {
+          type: "main",
+          path: "/:lang?",
+        },
+        {
+          type: "projects",
+          path: "/:lang?/projects",
+        },
+      ],
+    },
     /* see configuration for more */
   },
 
@@ -58,50 +65,50 @@ export default {
   pwa: {
     icon: false, // disables the icon module
   },
-  i18n: {
-    vueI18nLoader: true,
-    pluralizationRules: {
-      ru(choice, choicesLength) {
-        if (choice === 0) {
-          return 0;
-        }
+  // i18n: {
+  //   vueI18nLoader: true,
+  //   pluralizationRules: {
+  //     ru(choice, choicesLength) {
+  //       if (choice === 0) {
+  //         return 0;
+  //       }
 
-        const teen = choice > 10 && choice < 20;
-        const endsWithOne = choice % 10 === 1;
+  //       const teen = choice > 10 && choice < 20;
+  //       const endsWithOne = choice % 10 === 1;
 
-        if (choicesLength < 4) {
-          return !teen && endsWithOne ? 1 : 2;
-        }
-        if (!teen && endsWithOne) {
-          return 1;
-        }
-        if (!teen && choice % 10 >= 2 && choice % 10 <= 4) {
-          return 2;
-        }
+  //       if (choicesLength < 4) {
+  //         return !teen && endsWithOne ? 1 : 2;
+  //       }
+  //       if (!teen && endsWithOne) {
+  //         return 1;
+  //       }
+  //       if (!teen && choice % 10 >= 2 && choice % 10 <= 4) {
+  //         return 2;
+  //       }
 
-        return choicesLength < 4 ? 2 : 3;
-      },
-    },
-    locales: [
-      {
-        code: "ru",
-        name: "RU",
-        nameFull: "Русский",
-        iso: "ru-RU",
-      },
-      {
-        code: "en",
-        name: "EN",
-        nameFull: "English",
-        iso: "en-US",
-      },
-    ],
-    defaultLocale: "en",
-    strategy: "prefix_except_default",
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: "itcoop_lang",
-      onlyOnRoot: true, // recommended
-    },
-  },
+  //       return choicesLength < 4 ? 2 : 3;
+  //     },
+  //   },
+  //   locales: [
+  //     {
+  //       code: "ru",
+  //       name: "RU",
+  //       nameFull: "Русский",
+  //       iso: "ru-RU",
+  //     },
+  //     {
+  //       code: "en",
+  //       name: "EN",
+  //       nameFull: "English",
+  //       iso: "en-US",
+  //     },
+  //   ],
+  //   defaultLocale: "en",
+  //   strategy: "prefix_except_default",
+  //   detectBrowserLanguage: {
+  //     useCookie: true,
+  //     cookieKey: "itcoop_lang",
+  //     onlyOnRoot: true, // recommended
+  //   },
+  // },
 };
