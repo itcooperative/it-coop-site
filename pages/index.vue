@@ -14,6 +14,8 @@ export default {
 
     if (document) {
       store.commit("SET_LANG_OTHER", document.alternate_languages[0]);
+      store.commit("SET_LANG_CURRENT", document.lang);
+
       return { document };
     } else {
       error({ statusCode: 404, message: "Page not found" });

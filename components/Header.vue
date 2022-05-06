@@ -15,9 +15,11 @@
               :key="menuLink.id"
               class="px-8 py-2"
             >
-              <prismic-link :field="menuLink.link" class="md:text-lg">{{
-                $prismic.asText(menuLink.label)
-              }}</prismic-link>
+              <NuxtLink
+                :to="'/' + $store.state.lang.current + '/' + menuLink.link.slug"
+                class="md:text-lg"
+                >{{ $prismic.asText(menuLink.label) }}</NuxtLink
+              >
             </li>
           </ul>
         </nav>
