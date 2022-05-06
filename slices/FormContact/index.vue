@@ -2,7 +2,7 @@
   <section class="py-20" :style="`background: ${slice.primary.Background}`">
     <div class="container px-3 mx-auto">
       <H2><PrismicRichText :field="slice.primary.title" /></H2>
-      <form action="" class="flex flex-col">
+      <Form>
         <InputText
           type="text"
           class="mb-4"
@@ -18,14 +18,16 @@
           class="mb-4"
           :placeholder="$prismic.asText(slice.primary.InputMessage)"
         />
-        <label>{{ $prismic.asText(slice.primary.InputMessage) }}</label>
-        <input type="checkbox" checked />
+        <InputCheckbox
+          class="mb-4"
+          :label="$prismic.asText(slice.primary.InputMessage)"
+        />
         <div class="text-left">
           <BtnDefault type="submit">
             <PrismicRichText :field="slice.primary.SubmitBtn" />
           </BtnDefault>
         </div>
-      </form>
+      </Form>
     </div>
   </section>
 </template>
