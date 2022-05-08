@@ -7,7 +7,15 @@
   >
     <div class="container px-3 mx-auto">
       <H2><PrismicRichText :field="slice.primary.title" /></H2>
-      <Form name="contact" method="POST" data-netlify="true" id="contact">
+      <Form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        id="contact"
+        netlify-honeypot="bot-field"
+      >
+        <input type="hidden" name="form-name" value="contactus" />
+
         <InputText
           type="text"
           class="mb-4"
@@ -48,20 +56,6 @@ export default {
   name: "FormContact",
   // The array passed to `getSliceComponentProps` is purely optional and acts as a visual hint for you
   props: getSliceComponentProps(["slice", "index", "slices", "context"]),
-  mounted() {
-    document.querySelector("form").addEventListener("submit", handleSubmit);
-
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      let myForm = document.getElementById("contact");
-      let formData = new FormData(myForm);
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData).toString(),
-      }).then(() => console.log("Form successfully submitted"));
-    };
-  },
 };
 </script>
 
