@@ -48,6 +48,22 @@ export default {
   name: "FormContact",
   // The array passed to `getSliceComponentProps` is purely optional and acts as a visual hint for you
   props: getSliceComponentProps(["slice", "index", "slices", "context"]),
+  mounted() {
+    document.querySelector("form").addEventListener("submit", handleSubmit);
+
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      let myForm = document.getElementById("pizzaOrder");
+      let formData = new FormData(myForm);
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      })
+        .then(() => console.log("Form successfully submitted"))
+        .catch((error) => alert(error));
+    };
+  },
 };
 </script>
 
