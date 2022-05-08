@@ -5,7 +5,6 @@ import FormContact from './FormContact';
 import Hero from './Hero';
 import Logos from './Logos';
 import Projects from './Projects';
-import SitePrice from './SitePrice';
 import Team from './Team';
 import WriteUsSnippet from './WriteUsSnippet';
 
@@ -15,7 +14,6 @@ export {
 	Hero,
 	Logos,
 	Projects,
-	SitePrice,
 	Team,
 	WriteUsSnippet,
 };
@@ -26,7 +24,6 @@ export const components = {
 	hero: Hero,
 	logos: Logos,
 	projects: Projects,
-	site_price: SitePrice,
 	team: Team,
 	write_us_snippet: WriteUsSnippet,
 };

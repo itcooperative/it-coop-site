@@ -5,7 +5,18 @@
         "primary": {}
       }
     },
-    "Hero": {},
+    "Hero": {
+      "default": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
     "Logos": {
       "default": {
         "primary": {}

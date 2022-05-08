@@ -249,6 +249,31 @@
                     "placeholder_true": "true",
                     "placeholder_false": "false"
                   }
+                },
+                "price-descr": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Price Descr",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "price-title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Price Title",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "price-background": {
+                  "type": "Color",
+                  "config": {
+                    "label": "Price Background",
+                    "placeholder": ""
+                  }
                 }
               },
               "items": {},
@@ -266,47 +291,62 @@
               "title": [
                 {
                   "type": "heading1",
-                  "text": "Recontextualize plug-and-play content",
+                  "text": "Maximize innovative action-items",
                   "spans": []
                 }
               ],
-              "Background": "#91db67",
+              "Background": "#f7b6da",
               "InputName": [
                 {
                   "type": "paragraph",
-                  "text": "Eu nostrud reprehenderit reprehenderit id cillum do enim duis aute. Aliqua elit amet tempor laborum et dolor esse incididunt. Fugiat Lorem cillum aliqua velit irure sunt ea.",
+                  "text": "Ea nostrud eiusmod deserunt ipsum. Cillum quis exercitation cupidatat velit incididunt duis voluptate sunt fugiat esse. Laborum anim laboris amet irure ut reprehenderit aliqua aute culpa occaecat.",
                   "spans": []
                 }
               ],
               "InputContacts": [
                 {
                   "type": "paragraph",
-                  "text": "Exercitation magna aliquip laborum officia eiusmod quis et aute proident id consectetur cillum. Nulla anim magna ipsum velit voluptate irure nostrud pariatur nulla proident incididunt.",
+                  "text": "Do do dolore sit. Reprehenderit proident consectetur qui deserunt consequat laboris. Minim occaecat commodo quis.",
                   "spans": []
                 }
               ],
               "InputMessage": [
                 {
                   "type": "paragraph",
-                  "text": "Lorem laboris voluptate mollit pariatur sunt laborum ullamco proident ipsum aliquip. Deserunt ad qui aliqua magna occaecat ut.",
+                  "text": "Dolor qui occaecat anim. Cupidatat tempor laborum elit id. Est pariatur fugiat occaecat reprehenderit reprehenderit sint duis excepteur tempor commodo tempor quis ut commodo et.",
                   "spans": []
                 }
               ],
               "PersonalData": [
                 {
                   "type": "paragraph",
-                  "text": "Irure Lorem et exercitation nulla elit. Anim commodo do dolore eu consequat tempor amet elit anim ullamco nulla. In cupidatat pariatur sit.",
+                  "text": "Qui in reprehenderit reprehenderit cillum tempor. Nisi commodo in officia exercitation culpa cupidatat nisi tempor.",
                   "spans": []
                 }
               ],
               "SubmitBtn": [
                 {
                   "type": "paragraph",
-                  "text": "Et do deserunt incididunt excepteur proident esse est proident ipsum anim quis veniam anim.",
+                  "text": "Magna ea fugiat est.",
                   "spans": []
                 }
               ],
-              "status": true
+              "status": true,
+              "price-descr": [
+                {
+                  "type": "paragraph",
+                  "text": "Culpa in mollit incididunt magna tempor id in ipsum.",
+                  "spans": []
+                }
+              ],
+              "price-title": [
+                {
+                  "type": "paragraph",
+                  "text": "Occaecat aliquip occaecat nostrud commodo sit ipsum id dolore qui nisi aliquip adipisicing do dolor sunt.",
+                  "spans": []
+                }
+              ],
+              "price-background": "#9663dc"
             }
           }
         },
@@ -340,7 +380,7 @@
                     "label": "Title",
                     "placeholder": "This is where it all begins...",
                     "allowTargetBlank": true,
-                    "single": "heading1"
+                    "multi": "paragraph"
                   }
                 },
                 "description": {
@@ -392,26 +432,26 @@
             "primary": {
               "title": [
                 {
-                  "type": "heading1",
-                  "text": "Scale open-source deliverables",
+                  "type": "paragraph",
+                  "text": "Elit ut consectetur proident. Ex sint occaecat aute sunt velit tempor laborum. Laborum deserunt Lorem velit ad.",
                   "spans": []
                 }
               ],
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Eiusmod aliqua reprehenderit velit aute. Proident esse ex pariatur tempor. Sunt magna veniam et aliqua.",
+                  "text": "Sunt sunt nostrud sunt quis id velit reprehenderit. Quis magna tempor fugiat officia nulla id culpa eiusmod deserunt aliqua et exercitation ex quis. Laboris aliquip officia irure excepteur enim consectetur proident enim.",
                   "spans": []
                 }
               ],
               "BannerText": [
                 {
                   "type": "paragraph",
-                  "text": "Cupidatat duis ad proident sunt nisi consectetur consequat aliquip aute deserunt ut amet.",
+                  "text": "Aliqua ex culpa sunt cillum pariatur.",
                   "spans": []
                 }
               ],
-              "Background": "#9459f4",
+              "Background": "#377f28",
               "status": true
             }
           }
@@ -1189,94 +1229,6 @@
               }
             ],
             "primary": {}
-          }
-        },
-        "meta": {
-          "fileName": "index",
-          "extension": "vue"
-        },
-        "screenshotPaths": {}
-      },
-      "site_price": {
-        "library": "slices",
-        "id": "site_price",
-        "name": "SitePrice",
-        "description": "SitePrice",
-        "model": {
-          "id": "site_price",
-          "type": "SharedSlice",
-          "name": "SitePrice",
-          "description": "SitePrice",
-          "variations": [
-            {
-              "id": "default",
-              "name": "Default",
-              "docURL": "...",
-              "version": "sktwi1xtmkfgx8626",
-              "description": "SitePrice",
-              "primary": {
-                "title": {
-                  "type": "StructuredText",
-                  "config": {
-                    "single": "heading1",
-                    "label": "Title",
-                    "placeholder": "This is where it all begins..."
-                  }
-                },
-                "description": {
-                  "type": "StructuredText",
-                  "config": {
-                    "single": "paragraph",
-                    "label": "Description",
-                    "placeholder": "A nice description of your product"
-                  }
-                },
-                "Background": {
-                  "config": {
-                    "label": "Background",
-                    "placeholder": ""
-                  },
-                  "type": "Color"
-                },
-                "status": {
-                  "type": "Boolean",
-                  "config": {
-                    "label": "Status",
-                    "default_value": false,
-                    "placeholder_true": "true",
-                    "placeholder_false": "false"
-                  }
-                }
-              },
-              "items": {},
-              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
-            }
-          ]
-        },
-        "mocks": {
-          "default": {
-            "variation": "default",
-            "name": "Default",
-            "slice_type": "site_price",
-            "items": [],
-            "primary": {
-              "title": [
-                {
-                  "type": "heading1",
-                  "text": "Benchmark back-end e-markets",
-                  "spans": []
-                }
-              ],
-              "description": [
-                {
-                  "type": "paragraph",
-                  "text": "Anim reprehenderit sunt cillum eiusmod commodo. In laborum est est quis anim adipisicing ut minim dolore ex laborum dolor excepteur. Eiusmod reprehenderit amet reprehenderit est id dolor consequat tempor tempor quis fugiat.",
-                  "spans": []
-                }
-              ],
-              "Background": "#84c0d9",
-              "status": false
-            }
           }
         },
         "meta": {

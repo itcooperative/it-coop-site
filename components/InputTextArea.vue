@@ -8,7 +8,8 @@
       bg-transparent
       border-b-2 border-black
       text-black
-      placeholder:text-red placeholder:text-lg
+      sm:text-xl
+      placeholder:text-red placeholder:text-xl
     "
   />
 </template>

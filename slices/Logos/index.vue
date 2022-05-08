@@ -1,7 +1,7 @@
 <template>
   <section
     v-if="slice.primary.status ? 'true' : 'false'"
-    class="items-center py-20"
+    class="items-center py-20 sm:py-32"
     :style="`background: ${slice.primary.Background}`"
   >
     <VueSlickCarousel :options="slickOptions" class="flex">

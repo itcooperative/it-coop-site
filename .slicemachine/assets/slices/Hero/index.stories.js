@@ -18,7 +18,7 @@ export const _Default = () => ({
   },
   data() {
     return {
-      mock: {"variation":"default","name":"Default","slice_type":"hero","items":[],"primary":{"title":[{"type":"heading1","text":"Scale open-source deliverables","spans":[]}],"description":[{"type":"paragraph","text":"Eiusmod aliqua reprehenderit velit aute. Proident esse ex pariatur tempor. Sunt magna veniam et aliqua.","spans":[]}],"BannerText":[{"type":"paragraph","text":"Cupidatat duis ad proident sunt nisi consectetur consequat aliquip aute deserunt ut amet.","spans":[]}],"Background":"#9459f4","status":true},"id":"_Default"}
+      mock: {"variation":"default","name":"Default","slice_type":"hero","items":[],"primary":{"title":[{"type":"paragraph","text":"Elit ut consectetur proident. Ex sint occaecat aute sunt velit tempor laborum. Laborum deserunt Lorem velit ad.","spans":[]}],"description":[{"type":"paragraph","text":"Sunt sunt nostrud sunt quis id velit reprehenderit. Quis magna tempor fugiat officia nulla id culpa eiusmod deserunt aliqua et exercitation ex quis. Laboris aliquip officia irure excepteur enim consectetur proident enim.","spans":[]}],"BannerText":[{"type":"paragraph","text":"Aliqua ex culpa sunt cillum pariatur.","spans":[]}],"Background":"#377f28","status":true},"id":"_Default"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'

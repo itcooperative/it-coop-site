@@ -8,47 +8,62 @@
       "title": [
         {
           "type": "heading1",
-          "text": "Recontextualize plug-and-play content",
+          "text": "Maximize innovative action-items",
           "spans": []
         }
       ],
-      "Background": "#91db67",
+      "Background": "#f7b6da",
       "InputName": [
         {
           "type": "paragraph",
-          "text": "Eu nostrud reprehenderit reprehenderit id cillum do enim duis aute. Aliqua elit amet tempor laborum et dolor esse incididunt. Fugiat Lorem cillum aliqua velit irure sunt ea.",
+          "text": "Ea nostrud eiusmod deserunt ipsum. Cillum quis exercitation cupidatat velit incididunt duis voluptate sunt fugiat esse. Laborum anim laboris amet irure ut reprehenderit aliqua aute culpa occaecat.",
           "spans": []
         }
       ],
       "InputContacts": [
         {
           "type": "paragraph",
-          "text": "Exercitation magna aliquip laborum officia eiusmod quis et aute proident id consectetur cillum. Nulla anim magna ipsum velit voluptate irure nostrud pariatur nulla proident incididunt.",
+          "text": "Do do dolore sit. Reprehenderit proident consectetur qui deserunt consequat laboris. Minim occaecat commodo quis.",
           "spans": []
         }
       ],
       "InputMessage": [
         {
           "type": "paragraph",
-          "text": "Lorem laboris voluptate mollit pariatur sunt laborum ullamco proident ipsum aliquip. Deserunt ad qui aliqua magna occaecat ut.",
+          "text": "Dolor qui occaecat anim. Cupidatat tempor laborum elit id. Est pariatur fugiat occaecat reprehenderit reprehenderit sint duis excepteur tempor commodo tempor quis ut commodo et.",
           "spans": []
         }
       ],
       "PersonalData": [
         {
           "type": "paragraph",
-          "text": "Irure Lorem et exercitation nulla elit. Anim commodo do dolore eu consequat tempor amet elit anim ullamco nulla. In cupidatat pariatur sit.",
+          "text": "Qui in reprehenderit reprehenderit cillum tempor. Nisi commodo in officia exercitation culpa cupidatat nisi tempor.",
           "spans": []
         }
       ],
       "SubmitBtn": [
         {
           "type": "paragraph",
-          "text": "Et do deserunt incididunt excepteur proident esse est proident ipsum anim quis veniam anim.",
+          "text": "Magna ea fugiat est.",
           "spans": []
         }
       ],
-      "status": true
+      "status": true,
+      "price-descr": [
+        {
+          "type": "paragraph",
+          "text": "Culpa in mollit incididunt magna tempor id in ipsum.",
+          "spans": []
+        }
+      ],
+      "price-title": [
+        {
+          "type": "paragraph",
+          "text": "Occaecat aliquip occaecat nostrud commodo sit ipsum id dolore qui nisi aliquip adipisicing do dolor sunt.",
+          "spans": []
+        }
+      ],
+      "price-background": "#9663dc"
     }
   }
 ]
