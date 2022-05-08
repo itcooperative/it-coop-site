@@ -8,7 +8,15 @@
     <div class="container px-3 mx-auto">
       <H2><PrismicRichText :field="slice.primary.title" /></H2>
 
-      <Form name="contact" method="POST" data-netlify="true" id="contact">
+      <Form
+        name="contact-form"
+        method="post"
+        action="/contact/thankyou/"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+      >
+        <input type="hidden" name="form-name" value="contact-form" />
+
         <InputText
           type="text"
           class="mb-4"
