@@ -4,7 +4,7 @@ export const state = () => ({
   header: {},
   page: {},
   lang: {
-    current: en-us,
+    current: "en-us",
     other: null,
   },
 });
