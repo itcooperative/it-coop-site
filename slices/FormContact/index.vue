@@ -2,19 +2,23 @@
   <section class="py-20" :style="`background: ${slice.primary.Background}`">
     <div class="container px-3 mx-auto">
       <H2><PrismicRichText :field="slice.primary.title" /></H2>
-      <Form>
+      <Form name="contact" netlify>
         <InputText
           type="text"
           class="mb-4"
           :placeholder="$prismic.asText(slice.primary.InputName)"
+          name="name"
+          required
         />
         <InputText
           type="text"
           class="mb-4"
+          name="contact"
+          required
           :placeholder="$prismic.asText(slice.primary.InputContacts)"
         />
         <InputTextArea
-          type="text"
+          name="about"
           class="mb-4"
           :placeholder="$prismic.asText(slice.primary.InputMessage)"
         />
