@@ -11,6 +11,7 @@
         name="contact"
         method="POST"
         data-netlify="true"
+        action="/"
         id="contact"
         netlify-honeypot="bot-field"
       >
