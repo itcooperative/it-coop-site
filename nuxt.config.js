@@ -1,7 +1,7 @@
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   ssr: true,
-  target: "serverless", // default is 'server'
+  target: "static", // default is 'server'
 
   head: {
     title: "Кооператив It-coop",
