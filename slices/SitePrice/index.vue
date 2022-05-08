@@ -1,5 +1,9 @@
 <template>
-  <section class="section">
+  <section
+    class="section"
+    v-if="slice.primary.status ? 'true' : 'false'"
+    :style="`background: ${slice.primary.Background}`"
+  >
     <PrismicRichText :field="slice.primary.title" class="title" />
     <PrismicRichText :field="slice.primary.description" />
   </section>
@@ -12,7 +16,7 @@ export default {
   name: "SitePrice",
   // The array passed to `getSliceComponentProps` is purely optional and acts as a visual hint for you
   props: getSliceComponentProps(["slice", "index", "slices", "context"]),
-}
+};
 </script>
 
 <style scoped>

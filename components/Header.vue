@@ -8,7 +8,7 @@
         <img src="/menu.svg" alt="" />
       </div>
       <div class="hidden justify-end items-center sm:flex">
-        <nav>
+        <!-- <nav>
           <ul>
             <li
               v-for="menuLink in $store.state.menu.menu_links"
@@ -22,9 +22,11 @@
               >
             </li>
           </ul>
-        </nav>
+        </nav> -->
         <BtnDefault class="mx-4">
-          <PrismicRichText :field="data.GetContactsBtn" />
+          <a href="/#contacts">
+            <PrismicRichText :field="data.GetContactsBtn" />
+          </a>
         </BtnDefault>
         <LangSwitcher />
       </div>

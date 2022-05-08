@@ -10,7 +10,17 @@
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
       "description": "AboutUs",
-      "primary": {},
+      "primary": {
+        "status": {
+          "type": "Boolean",
+          "config": {
+            "label": "Status",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        }
+      },
       "items": {
         "title": {
           "type": "StructuredText",

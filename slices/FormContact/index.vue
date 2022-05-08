@@ -1,8 +1,13 @@
 <template>
-  <section class="py-20" :style="`background: ${slice.primary.Background}`">
+  <section
+    v-if="slice.primary.status ? 'true' : 'false'"
+    id="contacts"
+    class="py-20"
+    :style="`background: ${slice.primary.Background}`"
+  >
     <div class="container px-3 mx-auto">
       <H2><PrismicRichText :field="slice.primary.title" /></H2>
-      <Form name="contact" netlify>
+      <Form name="contact" method="POST" data-netlify="true">
         <InputText
           type="text"
           class="mb-4"

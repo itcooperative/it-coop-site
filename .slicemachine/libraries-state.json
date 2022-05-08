@@ -18,7 +18,17 @@
               "docURL": "...",
               "version": "sktwi1xtmkfgx8626",
               "description": "AboutUs",
-              "primary": {},
+              "primary": {
+                "status": {
+                  "type": "Boolean",
+                  "config": {
+                    "label": "Status",
+                    "default_value": false,
+                    "placeholder_true": "true",
+                    "placeholder_false": "false"
+                  }
+                }
+              },
               "items": {
                 "title": {
                   "type": "StructuredText",
@@ -60,89 +70,91 @@
                 "title": [
                   {
                     "type": "heading2",
-                    "text": "Redefine cross-platform web-readiness",
+                    "text": "Matrix web-enabled experiences",
                     "spans": []
                   }
                 ],
                 "description": [
                   {
                     "type": "paragraph",
-                    "text": "Velit nulla in ex aliquip ut sunt occaecat ut aute pariatur officia enim ea in. Nostrud ea labore ad fugiat.",
+                    "text": "Excepteur commodo laboris adipisicing amet eiusmod cillum irure nostrud ex.",
                     "spans": []
                   }
                 ],
-                "background": "#70cc5d"
+                "background": "#57227d"
               },
               {
                 "title": [
                   {
                     "type": "heading2",
-                    "text": "Synthesize out-of-the-box web-readiness",
+                    "text": "Transform sticky metrics",
                     "spans": []
                   }
                 ],
                 "description": [
                   {
                     "type": "paragraph",
-                    "text": "Ut laboris exercitation consequat fugiat in aute ullamco voluptate et ex. Et ut laborum id.",
+                    "text": "Incididunt anim deserunt minim qui amet cillum.",
                     "spans": []
                   }
                 ],
-                "background": "#3d7af9"
+                "background": "#62ca58"
               },
               {
                 "title": [
                   {
                     "type": "heading2",
-                    "text": "Envisioneer enterprise eyeballs",
+                    "text": "Generate end-to-end niches",
                     "spans": []
                   }
                 ],
                 "description": [
                   {
                     "type": "paragraph",
-                    "text": "Culpa fugiat nulla cupidatat et ut magna labore veniam nisi ad occaecat amet laborum id. Consectetur mollit non sint ex deserunt ad pariatur ipsum dolor.",
+                    "text": "Ea occaecat culpa sunt et mollit elit magna excepteur irure do deserunt esse.",
                     "spans": []
                   }
                 ],
-                "background": "#021dea"
+                "background": "#99dc86"
               },
               {
                 "title": [
                   {
                     "type": "heading2",
-                    "text": "Brand compelling interfaces",
+                    "text": "Incubate bleeding-edge partnerships",
                     "spans": []
                   }
                 ],
                 "description": [
                   {
                     "type": "paragraph",
-                    "text": "Laboris ullamco officia consequat adipisicing amet consequat. Qui est pariatur veniam ullamco sint fugiat labore laborum cupidatat.",
+                    "text": "Ad veniam irure occaecat aute aute ipsum quis. Ipsum sint ad et mollit in laboris tempor proident labore qui mollit consequat non elit sunt.",
                     "spans": []
                   }
                 ],
-                "background": "#848259"
+                "background": "#74ba25"
               },
               {
                 "title": [
                   {
                     "type": "heading2",
-                    "text": "Harness world-class functionalities",
+                    "text": "Utilize viral communities",
                     "spans": []
                   }
                 ],
                 "description": [
                   {
                     "type": "paragraph",
-                    "text": "Labore aliquip amet aliqua deserunt qui ea. Elit minim ullamco ipsum anim velit nostrud nostrud. Elit fugiat consequat eu id sunt ipsum ad in sunt ullamco.",
+                    "text": "Velit officia voluptate sit veniam cillum Lorem officia minim incididunt nisi sit laborum voluptate deserunt veniam.",
                     "spans": []
                   }
                 ],
-                "background": "#3f3fe0"
+                "background": "#37660a"
               }
             ],
-            "primary": {}
+            "primary": {
+              "status": true
+            }
           }
         },
         "meta": {
@@ -228,6 +240,15 @@
                     "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
                   },
                   "type": "StructuredText"
+                },
+                "status": {
+                  "type": "Boolean",
+                  "config": {
+                    "label": "Status",
+                    "default_value": false,
+                    "placeholder_true": "true",
+                    "placeholder_false": "false"
+                  }
                 }
               },
               "items": {},
@@ -245,46 +266,47 @@
               "title": [
                 {
                   "type": "heading1",
-                  "text": "Reintermediate efficient networks",
+                  "text": "Recontextualize plug-and-play content",
                   "spans": []
                 }
               ],
-              "Background": "#d0dfae",
+              "Background": "#91db67",
               "InputName": [
                 {
                   "type": "paragraph",
-                  "text": "Nisi deserunt nisi do officia excepteur. Consequat cillum adipisicing quis amet cillum nulla nulla aute amet ex commodo laborum velit. Amet veniam cillum officia irure.",
+                  "text": "Eu nostrud reprehenderit reprehenderit id cillum do enim duis aute. Aliqua elit amet tempor laborum et dolor esse incididunt. Fugiat Lorem cillum aliqua velit irure sunt ea.",
                   "spans": []
                 }
               ],
               "InputContacts": [
                 {
                   "type": "paragraph",
-                  "text": "Qui est officia sunt culpa minim commodo occaecat reprehenderit aliquip mollit. Reprehenderit incididunt nostrud occaecat magna. Occaecat pariatur duis dolore ipsum et dolor velit sit irure anim id dolor ad aliquip.",
+                  "text": "Exercitation magna aliquip laborum officia eiusmod quis et aute proident id consectetur cillum. Nulla anim magna ipsum velit voluptate irure nostrud pariatur nulla proident incididunt.",
                   "spans": []
                 }
               ],
               "InputMessage": [
                 {
                   "type": "paragraph",
-                  "text": "Tempor elit laborum deserunt aute exercitation labore excepteur ad elit deserunt. Ipsum duis anim pariatur dolor veniam voluptate dolor Lorem exercitation excepteur do.",
+                  "text": "Lorem laboris voluptate mollit pariatur sunt laborum ullamco proident ipsum aliquip. Deserunt ad qui aliqua magna occaecat ut.",
                   "spans": []
                 }
               ],
               "PersonalData": [
                 {
                   "type": "paragraph",
-                  "text": "Laborum aliqua deserunt incididunt velit cillum laboris. Magna aliqua ipsum sint sit ex anim aliqua sit.",
+                  "text": "Irure Lorem et exercitation nulla elit. Anim commodo do dolore eu consequat tempor amet elit anim ullamco nulla. In cupidatat pariatur sit.",
                   "spans": []
                 }
               ],
               "SubmitBtn": [
                 {
                   "type": "paragraph",
-                  "text": "Est minim anim velit qui quis nulla velit voluptate anim est voluptate commodo consequat anim exercitation. Amet mollit tempor consectetur duis nisi aute adipisicing pariatur incididunt culpa amet. Id consequat id consequat amet sit consequat irure ad officia ipsum ex.",
+                  "text": "Et do deserunt incididunt excepteur proident esse est proident ipsum anim quis veniam anim.",
                   "spans": []
                 }
-              ]
+              ],
+              "status": true
             }
           }
         },
@@ -345,6 +367,15 @@
                     "placeholder": ""
                   },
                   "type": "Color"
+                },
+                "status": {
+                  "type": "Boolean",
+                  "config": {
+                    "label": "Status",
+                    "default_value": false,
+                    "placeholder_true": "true",
+                    "placeholder_false": "false"
+                  }
                 }
               },
               "items": {},
@@ -362,25 +393,26 @@
               "title": [
                 {
                   "type": "heading1",
-                  "text": "Syndicate scalable infomediaries",
+                  "text": "Scale open-source deliverables",
                   "spans": []
                 }
               ],
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Enim in consectetur voluptate deserunt et.",
+                  "text": "Eiusmod aliqua reprehenderit velit aute. Proident esse ex pariatur tempor. Sunt magna veniam et aliqua.",
                   "spans": []
                 }
               ],
               "BannerText": [
                 {
                   "type": "paragraph",
-                  "text": "Occaecat irure tempor officia magna aute ad consectetur non dolor eu.",
+                  "text": "Cupidatat duis ad proident sunt nisi consectetur consequat aliquip aute deserunt ut amet.",
                   "spans": []
                 }
               ],
-              "Background": "#2cf44b"
+              "Background": "#9459f4",
+              "status": true
             }
           }
         },
@@ -388,13 +420,7 @@
           "fileName": "index",
           "extension": "vue"
         },
-        "screenshotPaths": {
-          "default": {
-            "path": "/home/oem/projects/noda_site/.slicemachine/assets/slices/Hero/default/preview.png",
-            "width": 800,
-            "height": 232
-          }
-        }
+        "screenshotPaths": {}
       },
       "logos": {
         "library": "slices",
@@ -420,6 +446,15 @@
                     "placeholder": ""
                   },
                   "type": "Color"
+                },
+                "status": {
+                  "type": "Boolean",
+                  "config": {
+                    "label": "Status",
+                    "default_value": false,
+                    "placeholder_true": "true",
+                    "placeholder_false": "false"
+                  }
                 }
               },
               "items": {
@@ -450,7 +485,7 @@
                   },
                   "alt": "Placeholder image",
                   "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?w=900&h=500&fit=crop"
+                  "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=900&h=500&fit=crop"
                 }
               },
               {
@@ -461,12 +496,46 @@
                   },
                   "alt": "Placeholder image",
                   "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51?w=900&h=500&fit=crop"
+                  "url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?w=900&h=500&fit=crop"
+                }
+              },
+              {
+                "logo": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?w=900&h=500&fit=crop"
+                }
+              },
+              {
+                "logo": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1587905069134-008460d7a636?w=900&h=500&fit=crop"
+                }
+              },
+              {
+                "logo": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117?w=900&h=500&fit=crop"
                 }
               }
             ],
             "primary": {
-              "Background": "#af0be7"
+              "Background": "#a2cd3b",
+              "status": false
             }
           }
         },
@@ -474,13 +543,7 @@
           "fileName": "index",
           "extension": "vue"
         },
-        "screenshotPaths": {
-          "default": {
-            "path": "/home/oem/projects/noda_site/.slicemachine/assets/slices/Logos/default/preview.png",
-            "width": 800,
-            "height": 315
-          }
-        }
+        "screenshotPaths": {}
       },
       "projects": {
         "library": "slices",
@@ -524,6 +587,15 @@
                     "placeholder": ""
                   },
                   "type": "Color"
+                },
+                "status": {
+                  "type": "Boolean",
+                  "config": {
+                    "label": "Status",
+                    "default_value": false,
+                    "placeholder_true": "true",
+                    "placeholder_false": "false"
+                  }
                 }
               },
               "items": {
@@ -664,25 +736,25 @@
             "slice_type": "projects",
             "items": [
               {
-                "background": "#cfa3f6",
+                "background": "#b1d057",
                 "title": [
                   {
                     "type": "heading2",
-                    "text": "Deploy synergistic e-commerce",
+                    "text": "Incubate global solutions",
                     "spans": []
                   }
                 ],
                 "client": [
                   {
                     "type": "paragraph",
-                    "text": "Culpa aute excepteur cillum fugiat aliquip minim mollit voluptate. Sit ex culpa consequat irure officia ex eiusmod consectetur eiusmod non consectetur ipsum occaecat duis.",
+                    "text": "Commodo cillum pariatur elit ad. Laboris veniam exercitation quis occaecat irure cillum minim. Cupidatat ipsum do enim velit.",
                     "spans": []
                   }
                 ],
                 "description": [
                   {
                     "type": "paragraph",
-                    "text": "Ex culpa elit proident est id sit consectetur fugiat sunt ut amet elit ex.",
+                    "text": "Cillum laborum pariatur enim voluptate magna.",
                     "spans": []
                   }
                 ],
@@ -693,9 +765,9 @@
                   },
                   "alt": "Placeholder image",
                   "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&h=500&fit=crop"
+                  "url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab?w=900&h=500&fit=crop"
                 },
-                "WhatWeDo": "generate end-to-end models",
+                "WhatWeDo": "architect value-added infrastructures",
                 "Logo": {
                   "dimensions": {
                     "width": 900,
@@ -703,179 +775,29 @@
                   },
                   "alt": "Placeholder image",
                   "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a?w=900&h=500&fit=crop"
+                  "url": "https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?w=900&h=500&fit=crop"
                 }
               },
               {
-                "background": "#eefb4e",
+                "background": "#e6c224",
                 "title": [
                   {
                     "type": "heading2",
-                    "text": "Grow revolutionary initiatives",
+                    "text": "Aggregate B2B supply-chains",
                     "spans": []
                   }
                 ],
                 "client": [
                   {
                     "type": "paragraph",
-                    "text": "Do nulla consectetur cillum enim quis deserunt consectetur labore magna id culpa tempor exercitation nulla veniam. Cillum ea consectetur officia. Ea aliquip consectetur sint aliqua adipisicing.",
+                    "text": "Ad velit exercitation irure proident minim ea elit et non consequat est ullamco consectetur amet.",
                     "spans": []
                   }
                 ],
                 "description": [
                   {
                     "type": "paragraph",
-                    "text": "Laborum id aute commodo.",
-                    "spans": []
-                  }
-                ],
-                "Image": {
-                  "dimensions": {
-                    "width": 900,
-                    "height": 500
-                  },
-                  "alt": "Placeholder image",
-                  "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=900&h=500&fit=crop"
-                },
-                "WhatWeDo": "disintermediate interactive mindshare",
-                "Logo": {
-                  "dimensions": {
-                    "width": 900,
-                    "height": 500
-                  },
-                  "alt": "Placeholder image",
-                  "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=900&h=500&fit=crop"
-                }
-              }
-            ],
-            "primary": {
-              "showalllink": {
-                "link_type": "Web",
-                "url": "https://slicemachine.dev"
-              },
-              "ShowAllText": [
-                {
-                  "type": "paragraph",
-                  "text": "Proident dolore duis non mollit ut duis Lorem labore magna irure nostrud ipsum proident non aliquip.",
-                  "spans": []
-                }
-              ],
-              "Background": "#18c594"
-            }
-          },
-          "projectsIndex": {
-            "variation": "projectsIndex",
-            "name": "Projects Index",
-            "slice_type": "projects",
-            "items": [
-              {
-                "background": "#b4fd1d",
-                "title": [
-                  {
-                    "type": "heading2",
-                    "text": "Exploit efficient infomediaries",
-                    "spans": []
-                  }
-                ],
-                "client": [
-                  {
-                    "type": "paragraph",
-                    "text": "Dolore do consectetur tempor esse ipsum proident proident ut tempor proident enim amet occaecat. Sunt irure ea sit sit cillum fugiat est aliqua. Esse amet consectetur ex nulla enim consequat.",
-                    "spans": []
-                  }
-                ],
-                "description": [
-                  {
-                    "type": "paragraph",
-                    "text": "Ipsum irure eu cupidatat sit id. Dolore consequat deserunt ut laborum consequat.",
-                    "spans": []
-                  }
-                ],
-                "Image": {
-                  "dimensions": {
-                    "width": 900,
-                    "height": 500
-                  },
-                  "alt": "Placeholder image",
-                  "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51?w=900&h=500&fit=crop"
-                },
-                "WhatWeDo": "seize e-business bandwidth",
-                "Logo": {
-                  "dimensions": {
-                    "width": 900,
-                    "height": 500
-                  },
-                  "alt": "Placeholder image",
-                  "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1560762484-813fc97650a0?w=900&h=500&fit=crop"
-                }
-              },
-              {
-                "background": "#a91f4b",
-                "title": [
-                  {
-                    "type": "heading2",
-                    "text": "Evolve killer action-items",
-                    "spans": []
-                  }
-                ],
-                "client": [
-                  {
-                    "type": "paragraph",
-                    "text": "Ex incididunt do do reprehenderit magna sit amet elit do exercitation fugiat. Laborum sunt sit est.",
-                    "spans": []
-                  }
-                ],
-                "description": [
-                  {
-                    "type": "paragraph",
-                    "text": "Minim minim eu fugiat occaecat culpa ullamco duis esse duis in.",
-                    "spans": []
-                  }
-                ],
-                "Image": {
-                  "dimensions": {
-                    "width": 900,
-                    "height": 500
-                  },
-                  "alt": "Placeholder image",
-                  "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=900&h=500&fit=crop"
-                },
-                "WhatWeDo": "synthesize scalable e-commerce",
-                "Logo": {
-                  "dimensions": {
-                    "width": 900,
-                    "height": 500
-                  },
-                  "alt": "Placeholder image",
-                  "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=900&h=500&fit=crop"
-                }
-              },
-              {
-                "background": "#705eb5",
-                "title": [
-                  {
-                    "type": "heading2",
-                    "text": "Exploit compelling e-commerce",
-                    "spans": []
-                  }
-                ],
-                "client": [
-                  {
-                    "type": "paragraph",
-                    "text": "Est cupidatat reprehenderit eiusmod dolor. Ullamco commodo cillum laborum minim exercitation deserunt cupidatat eiusmod ex fugiat tempor adipisicing elit laboris nostrud. Qui aliquip qui aliquip laboris ex mollit cupidatat laboris consectetur elit exercitation.",
-                    "spans": []
-                  }
-                ],
-                "description": [
-                  {
-                    "type": "paragraph",
-                    "text": "Consequat aliqua enim eu nulla ad officia consectetur incididunt culpa anim Lorem et quis magna ex. Sit commodo sunt anim excepteur qui aute enim ut ea ullamco aute Lorem laboris nisi. Tempor officia ex qui et veniam laboris Lorem duis pariatur anim occaecat tempor.",
+                    "text": "Magna commodo eu ad aliqua est sint sit nisi velit culpa duis do mollit incididunt. Proident cillum officia ex occaecat ea exercitation et ullamco enim magna et ipsum sit ea. Cupidatat cupidatat occaecat aliquip.",
                     "spans": []
                   }
                 ],
@@ -888,7 +810,7 @@
                   "copyright": null,
                   "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?w=900&h=500&fit=crop"
                 },
-                "WhatWeDo": "brand distributed e-markets",
+                "WhatWeDo": "integrate leading-edge ROI",
                 "Logo": {
                   "dimensions": {
                     "width": 900,
@@ -896,29 +818,29 @@
                   },
                   "alt": "Placeholder image",
                   "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117?w=900&h=500&fit=crop"
+                  "url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea?w=900&h=500&fit=crop"
                 }
               },
               {
-                "background": "#d43718",
+                "background": "#0dd7c4",
                 "title": [
                   {
                     "type": "heading2",
-                    "text": "Cultivate mission-critical models",
+                    "text": "Architect wireless mindshare",
                     "spans": []
                   }
                 ],
                 "client": [
                   {
                     "type": "paragraph",
-                    "text": "Minim magna officia ut aute est amet irure consequat est ullamco sint pariatur mollit et. Excepteur exercitation officia laboris laboris duis occaecat laborum fugiat veniam. Quis consectetur nisi culpa pariatur enim ex nostrud duis consectetur consequat pariatur sunt labore tempor.",
+                    "text": "Adipisicing proident exercitation veniam nisi ipsum. Culpa laborum ea anim duis Lorem officia sint veniam nisi nulla esse. Reprehenderit eiusmod duis fugiat proident sunt Lorem elit sunt elit velit incididunt voluptate.",
                     "spans": []
                   }
                 ],
                 "description": [
                   {
                     "type": "paragraph",
-                    "text": "Amet eiusmod eiusmod ad. Magna qui incididunt est excepteur officia deserunt dolor qui magna nostrud ut quis consectetur.",
+                    "text": "Culpa sint ea pariatur sint nisi pariatur quis ipsum dolor officia quis dolore incididunt quis. Aliqua qui tempor aliquip dolor irure fugiat ex amet esse non sit irure ipsum sit pariatur. Pariatur eu Lorem Lorem adipisicing nulla sunt ipsum sint ex pariatur elit ipsum consectetur.",
                     "spans": []
                   }
                 ],
@@ -929,9 +851,246 @@
                   },
                   "alt": "Placeholder image",
                   "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869?w=900&h=500&fit=crop"
+                  "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?w=900&h=500&fit=crop"
                 },
-                "WhatWeDo": "benchmark enterprise action-items",
+                "WhatWeDo": "orchestrate best-of-breed technologies",
+                "Logo": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1587840171670-8b850147754e?w=900&h=500&fit=crop"
+                }
+              },
+              {
+                "background": "#e5190b",
+                "title": [
+                  {
+                    "type": "heading2",
+                    "text": "Integrate impactful methodologies",
+                    "spans": []
+                  }
+                ],
+                "client": [
+                  {
+                    "type": "paragraph",
+                    "text": "Commodo est aute veniam voluptate culpa amet culpa occaecat excepteur proident est ea proident magna. Velit quis Lorem sunt reprehenderit quis nisi ex nisi esse do sunt et ea amet. Cillum fugiat ipsum mollit dolor ipsum laborum ut velit nisi.",
+                    "spans": []
+                  }
+                ],
+                "description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Exercitation est fugiat do fugiat eu pariatur adipisicing fugiat velit ipsum non cupidatat enim in est.",
+                    "spans": []
+                  }
+                ],
+                "Image": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1560457079-9a6532ccb118?w=900&h=500&fit=crop"
+                },
+                "WhatWeDo": "synergize seamless e-commerce",
+                "Logo": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a?w=900&h=500&fit=crop"
+                }
+              }
+            ],
+            "primary": {
+              "showalllink": {
+                "link_type": "Web",
+                "url": "http://google.com"
+              },
+              "ShowAllText": [
+                {
+                  "type": "paragraph",
+                  "text": "Sunt ad non id ipsum officia cillum cupidatat enim anim eu tempor ad.",
+                  "spans": []
+                }
+              ],
+              "Background": "#b5863d",
+              "status": false
+            }
+          },
+          "projectsIndex": {
+            "variation": "projectsIndex",
+            "name": "Projects Index",
+            "slice_type": "projects",
+            "items": [
+              {
+                "background": "#cb2d34",
+                "title": [
+                  {
+                    "type": "heading2",
+                    "text": "Orchestrate cross-media technologies",
+                    "spans": []
+                  }
+                ],
+                "client": [
+                  {
+                    "type": "paragraph",
+                    "text": "Culpa elit velit fugiat eiusmod veniam officia aliqua eiusmod. Sint aliqua ut cillum id sit enim minim.",
+                    "spans": []
+                  }
+                ],
+                "description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Ullamco in ex cillum deserunt velit nostrud tempor do proident ad elit duis ullamco esse cillum. Eiusmod id aute ex proident culpa anim laboris ad magna labore. Est in dolore commodo tempor pariatur magna.",
+                    "spans": []
+                  }
+                ],
+                "Image": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c?w=900&h=500&fit=crop"
+                },
+                "WhatWeDo": "enable bricks-and-clicks convergence",
+                "Logo": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=900&h=500&fit=crop"
+                }
+              },
+              {
+                "background": "#55c9cc",
+                "title": [
+                  {
+                    "type": "heading2",
+                    "text": "Deploy 24/7 initiatives",
+                    "spans": []
+                  }
+                ],
+                "client": [
+                  {
+                    "type": "paragraph",
+                    "text": "Aute minim Lorem do ex Lorem cupidatat anim irure pariatur sint aliqua officia magna eiusmod labore.",
+                    "spans": []
+                  }
+                ],
+                "description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Fugiat reprehenderit enim nostrud consequat pariatur minim sint ex elit non adipisicing esse laborum. Duis voluptate cupidatat proident elit occaecat.",
+                    "spans": []
+                  }
+                ],
+                "Image": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?w=900&h=500&fit=crop"
+                },
+                "WhatWeDo": "brand web-enabled bandwidth",
+                "Logo": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=900&h=500&fit=crop"
+                }
+              },
+              {
+                "background": "#5ba506",
+                "title": [
+                  {
+                    "type": "heading2",
+                    "text": "Aggregate robust applications",
+                    "spans": []
+                  }
+                ],
+                "client": [
+                  {
+                    "type": "paragraph",
+                    "text": "Cupidatat laborum ad qui ut voluptate. Exercitation deserunt labore sunt nisi officia occaecat.",
+                    "spans": []
+                  }
+                ],
+                "description": [
+                  {
+                    "type": "paragraph",
+                    "text": "In aliquip anim velit.",
+                    "spans": []
+                  }
+                ],
+                "Image": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8?w=900&h=500&fit=crop"
+                },
+                "WhatWeDo": "brand compelling models",
+                "Logo": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764?w=900&h=500&fit=crop"
+                }
+              },
+              {
+                "background": "#22e039",
+                "title": [
+                  {
+                    "type": "heading2",
+                    "text": "Matrix sexy channels",
+                    "spans": []
+                  }
+                ],
+                "client": [
+                  {
+                    "type": "paragraph",
+                    "text": "Labore qui consectetur sunt voluptate ea ullamco. Quis eiusmod culpa cupidatat occaecat aliquip. Ipsum ea quis labore ipsum et pariatur nulla.",
+                    "spans": []
+                  }
+                ],
+                "description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Amet culpa laboris consectetur cillum aliqua aliqua veniam excepteur non pariatur.",
+                    "spans": []
+                  }
+                ],
+                "Image": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04?w=900&h=500&fit=crop"
+                },
+                "WhatWeDo": "incubate proactive platforms",
                 "Logo": {
                   "dimensions": {
                     "width": 900,
@@ -940,6 +1099,92 @@
                   "alt": "Placeholder image",
                   "copyright": null,
                   "url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?w=900&h=500&fit=crop"
+                }
+              },
+              {
+                "background": "#1f8f3e",
+                "title": [
+                  {
+                    "type": "heading2",
+                    "text": "Embrace killer markets",
+                    "spans": []
+                  }
+                ],
+                "client": [
+                  {
+                    "type": "paragraph",
+                    "text": "Mollit tempor incididunt minim aliquip cillum occaecat anim veniam cupidatat aute elit esse duis ea consectetur. Do quis adipisicing fugiat deserunt quis. Sunt laboris sint nostrud velit tempor incididunt culpa sint irure officia eu pariatur veniam.",
+                    "spans": []
+                  }
+                ],
+                "description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Proident exercitation nostrud consectetur voluptate non est qui tempor sint ad mollit. Id proident officia do sit id magna labore elit. Lorem qui dolore aliqua nisi minim cillum Lorem Lorem nisi commodo minim.",
+                    "spans": []
+                  }
+                ],
+                "Image": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&h=500&fit=crop"
+                },
+                "WhatWeDo": "incentivize innovative metrics",
+                "Logo": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&h=500&fit=crop"
+                }
+              },
+              {
+                "background": "#a61659",
+                "title": [
+                  {
+                    "type": "heading2",
+                    "text": "Disintermediate rich applications",
+                    "spans": []
+                  }
+                ],
+                "client": [
+                  {
+                    "type": "paragraph",
+                    "text": "Enim exercitation excepteur do amet do aliquip deserunt minim ea est aute. Amet elit consectetur do tempor occaecat occaecat.",
+                    "spans": []
+                  }
+                ],
+                "description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Sint minim ex esse elit. Incididunt deserunt est esse do excepteur fugiat qui amet veniam do tempor magna id minim cupidatat.",
+                    "spans": []
+                  }
+                ],
+                "Image": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8?w=900&h=500&fit=crop"
+                },
+                "WhatWeDo": "mesh e-business applications",
+                "Logo": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=900&h=500&fit=crop"
                 }
               }
             ],
@@ -992,6 +1237,15 @@
                     "placeholder": ""
                   },
                   "type": "Color"
+                },
+                "status": {
+                  "type": "Boolean",
+                  "config": {
+                    "label": "Status",
+                    "default_value": false,
+                    "placeholder_true": "true",
+                    "placeholder_false": "false"
+                  }
                 }
               },
               "items": {},
@@ -1009,18 +1263,19 @@
               "title": [
                 {
                   "type": "heading1",
-                  "text": "Evolve efficient initiatives",
+                  "text": "Benchmark back-end e-markets",
                   "spans": []
                 }
               ],
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Fugiat culpa consectetur nulla et reprehenderit aliquip ex anim mollit. Lorem incididunt do excepteur excepteur in veniam exercitation aliqua anim sunt.",
+                  "text": "Anim reprehenderit sunt cillum eiusmod commodo. In laborum est est quis anim adipisicing ut minim dolore ex laborum dolor excepteur. Eiusmod reprehenderit amet reprehenderit est id dolor consequat tempor tempor quis fugiat.",
                   "spans": []
                 }
               ],
-              "Background": "#196306"
+              "Background": "#84c0d9",
+              "status": false
             }
           }
         },
@@ -1071,9 +1326,9 @@
                   },
                   "type": "Color"
                 },
-                "Show": {
+                "status": {
                   "config": {
-                    "label": "Show",
+                    "label": "status",
                     "placeholder_false": "false",
                     "placeholder_true": "true",
                     "default_value": false
@@ -1130,7 +1385,33 @@
                 "Name": [
                   {
                     "type": "paragraph",
-                    "text": "Irure enim pariatur ullamco sit minim esse occaecat. Nulla Lorem ullamco qui et fugiat culpa nostrud aliqua reprehenderit laboris adipisicing non. Eu sint excepteur eu ad amet sint id laborum duis dolor aliquip aliqua duis in et.",
+                    "text": "Exercitation veniam adipisicing laborum adipisicing commodo magna adipisicing. Velit qui mollit magna cillum minim eiusmod enim et consectetur culpa sit do pariatur.",
+                    "spans": []
+                  }
+                ],
+                "Photo": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e?w=900&h=500&fit=crop"
+                },
+                "Job": "recontextualize killer solutions",
+                "Descr": [
+                  {
+                    "type": "paragraph",
+                    "text": "Ut Lorem voluptate esse. Adipisicing tempor consectetur occaecat laboris sint. Cillum pariatur enim deserunt.",
+                    "spans": []
+                  }
+                ]
+              },
+              {
+                "Name": [
+                  {
+                    "type": "paragraph",
+                    "text": "Aliqua aliqua adipisicing ullamco minim officia dolore in nostrud nostrud ipsum qui do qui.",
                     "spans": []
                   }
                 ],
@@ -1143,11 +1424,11 @@
                   "copyright": null,
                   "url": "https://images.unsplash.com/photo-1494173853739-c21f58b16055?w=900&h=500&fit=crop"
                 },
-                "Job": "iterate one-to-one methodologies",
+                "Job": "productize dynamic networks",
                 "Descr": [
                   {
                     "type": "paragraph",
-                    "text": "Magna fugiat ut sit sit officia cupidatat dolor culpa nisi non.",
+                    "text": "Ut do veniam nisi quis duis. Aliquip magna consectetur veniam anim nostrud et ex commodo.",
                     "spans": []
                   }
                 ]
@@ -1156,7 +1437,7 @@
                 "Name": [
                   {
                     "type": "paragraph",
-                    "text": "Incididunt id aliqua commodo id deserunt et tempor id non do aliqua.",
+                    "text": "Ex magna officia in tempor reprehenderit labore culpa eu. Occaecat eiusmod duis fugiat non nostrud incididunt id veniam in. Aliquip labore velit labore voluptate quis amet laborum fugiat.",
                     "spans": []
                   }
                 ],
@@ -1167,65 +1448,13 @@
                   },
                   "alt": "Placeholder image",
                   "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1494173853739-c21f58b16055?w=900&h=500&fit=crop"
+                  "url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&h=500&fit=crop"
                 },
-                "Job": "incentivize synergistic web services",
+                "Job": "transition real-time markets",
                 "Descr": [
                   {
                     "type": "paragraph",
-                    "text": "Velit veniam do duis mollit consectetur veniam mollit irure fugiat ea id Lorem laboris do.",
-                    "spans": []
-                  }
-                ]
-              },
-              {
-                "Name": [
-                  {
-                    "type": "paragraph",
-                    "text": "Sint commodo ad deserunt consequat. Laboris aliqua ex est consectetur do consectetur veniam consequat adipisicing pariatur cupidatat.",
-                    "spans": []
-                  }
-                ],
-                "Photo": {
-                  "dimensions": {
-                    "width": 900,
-                    "height": 500
-                  },
-                  "alt": "Placeholder image",
-                  "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?w=900&h=500&fit=crop"
-                },
-                "Job": "expedite mission-critical deliverables",
-                "Descr": [
-                  {
-                    "type": "paragraph",
-                    "text": "Dolore incididunt pariatur est incididunt consequat laborum labore adipisicing magna duis consequat proident.",
-                    "spans": []
-                  }
-                ]
-              },
-              {
-                "Name": [
-                  {
-                    "type": "paragraph",
-                    "text": "Sint dolor non consectetur ut esse quis ex aliqua aliqua sint cupidatat ex aute officia. Culpa eu cupidatat quis exercitation aliquip amet fugiat eu et deserunt occaecat minim duis.",
-                    "spans": []
-                  }
-                ],
-                "Photo": {
-                  "dimensions": {
-                    "width": 900,
-                    "height": 500
-                  },
-                  "alt": "Placeholder image",
-                  "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72?w=900&h=500&fit=crop"
-                },
-                "Job": "matrix transparent technologies",
-                "Descr": [
-                  {
-                    "type": "paragraph",
-                    "text": "Id non aliquip enim nostrud eiusmod minim velit mollit et commodo laboris. Duis qui in ullamco.",
+                    "text": "Nulla aute culpa laboris in in. Amet nisi consectetur aliquip ex mollit officia officia et laborum. Id enim sint incididunt sint anim aliquip non aute ad amet.",
                     "spans": []
                   }
                 ]
@@ -1235,19 +1464,19 @@
               "title": [
                 {
                   "type": "heading1",
-                  "text": "Visualize 24/7 networks",
+                  "text": "Drive visionary initiatives",
                   "spans": []
                 }
               ],
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Officia est consectetur qui tempor ut. In ipsum nisi proident magna cupidatat ipsum sit dolor quis ullamco. Ipsum exercitation culpa excepteur quis.",
+                  "text": "Est laborum aliqua dolor voluptate ullamco anim sunt magna ipsum quis ipsum amet enim eu. Cillum nisi eiusmod sit veniam. Aute sit consectetur est dolor nulla.",
                   "spans": []
                 }
               ],
-              "Background": "#6652e5",
-              "Show": true
+              "Background": "#b953b5",
+              "status": true
             }
           }
         },
@@ -1255,13 +1484,7 @@
           "fileName": "index",
           "extension": "vue"
         },
-        "screenshotPaths": {
-          "default": {
-            "path": "/home/oem/projects/noda_site/.slicemachine/assets/slices/Team/default/preview.png",
-            "width": 800,
-            "height": 232
-          }
-        }
+        "screenshotPaths": {}
       },
       "write_us_snippet": {
         "library": "slices",
@@ -1307,6 +1530,15 @@
                     "select": null
                   },
                   "type": "Link"
+                },
+                "status": {
+                  "type": "Boolean",
+                  "config": {
+                    "label": "Status",
+                    "default_value": false,
+                    "placeholder_true": "true",
+                    "placeholder_false": "false"
+                  }
                 }
               },
               "items": {},
@@ -1324,21 +1556,22 @@
               "title": [
                 {
                   "type": "paragraph",
-                  "text": "Nisi ex laborum cillum consectetur labore duis deserunt nostrud ad.",
+                  "text": "Aliquip incididunt laborum officia sunt irure sit non non. Dolore ex mollit dolore sint exercitation est commodo non veniam sunt nisi non.",
                   "spans": []
                 }
               ],
               "BtnText": [
                 {
                   "type": "paragraph",
-                  "text": "Veniam consequat eiusmod incididunt duis enim fugiat ex nulla aliquip labore.",
+                  "text": "Tempor ullamco cupidatat ex ullamco enim. Id cupidatat officia id. Laboris velit magna do.",
                   "spans": []
                 }
               ],
               "BtnLink": {
                 "link_type": "Web",
                 "url": "http://google.com"
-              }
+              },
+              "status": false
             }
           }
         },

@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section v-if="slice.primary.status ? 'true' : 'false'">
     <div class="sm:grid sm:grid-cols-2">
       <div
         class="flex"

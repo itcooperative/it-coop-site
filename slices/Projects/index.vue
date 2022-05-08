@@ -1,8 +1,12 @@
 <template>
-  <section class="py-20" :style="`background: ${slice.primary.Background}`">
+  <section
+    class="py-20"
+    :style="`background: ${slice.primary.Background}`"
+    v-if="slice.primary.status ? 'true' : 'false'"
+  >
     <div class="container mx-auto px-3">
       <article
-        class="sm:p-16"
+        class="sm:p-16 mb-8 sm:mb-16"
         v-for="(item, i) in slice.items"
         :key="`slice-item-${i}`"
         :style="`background: ${item.background}`"
@@ -16,7 +20,7 @@
         <div class="p-8 sm:p-0 sm:grid grid-cols-12 gap-8">
           <div class="col-span-12 sm:col-span-5">
             <PrismicRichText
-              class="text-white font-bold text-lg mb-4"
+              class="text-white font-bold text-xl mb-4"
               :field="item.client"
             />
             <div class="text-white font-bold mb-4">{{ item.WhatWeDo }}</div>

@@ -8,88 +8,90 @@
         "title": [
           {
             "type": "heading2",
-            "text": "Redefine cross-platform web-readiness",
+            "text": "Matrix web-enabled experiences",
             "spans": []
           }
         ],
         "description": [
           {
             "type": "paragraph",
-            "text": "Velit nulla in ex aliquip ut sunt occaecat ut aute pariatur officia enim ea in. Nostrud ea labore ad fugiat.",
+            "text": "Excepteur commodo laboris adipisicing amet eiusmod cillum irure nostrud ex.",
             "spans": []
           }
         ],
-        "background": "#70cc5d"
+        "background": "#57227d"
       },
       {
         "title": [
           {
             "type": "heading2",
-            "text": "Synthesize out-of-the-box web-readiness",
+            "text": "Transform sticky metrics",
             "spans": []
           }
         ],
         "description": [
           {
             "type": "paragraph",
-            "text": "Ut laboris exercitation consequat fugiat in aute ullamco voluptate et ex. Et ut laborum id.",
+            "text": "Incididunt anim deserunt minim qui amet cillum.",
             "spans": []
           }
         ],
-        "background": "#3d7af9"
+        "background": "#62ca58"
       },
       {
         "title": [
           {
             "type": "heading2",
-            "text": "Envisioneer enterprise eyeballs",
+            "text": "Generate end-to-end niches",
             "spans": []
           }
         ],
         "description": [
           {
             "type": "paragraph",
-            "text": "Culpa fugiat nulla cupidatat et ut magna labore veniam nisi ad occaecat amet laborum id. Consectetur mollit non sint ex deserunt ad pariatur ipsum dolor.",
+            "text": "Ea occaecat culpa sunt et mollit elit magna excepteur irure do deserunt esse.",
             "spans": []
           }
         ],
-        "background": "#021dea"
+        "background": "#99dc86"
       },
       {
         "title": [
           {
             "type": "heading2",
-            "text": "Brand compelling interfaces",
+            "text": "Incubate bleeding-edge partnerships",
             "spans": []
           }
         ],
         "description": [
           {
             "type": "paragraph",
-            "text": "Laboris ullamco officia consequat adipisicing amet consequat. Qui est pariatur veniam ullamco sint fugiat labore laborum cupidatat.",
+            "text": "Ad veniam irure occaecat aute aute ipsum quis. Ipsum sint ad et mollit in laboris tempor proident labore qui mollit consequat non elit sunt.",
             "spans": []
           }
         ],
-        "background": "#848259"
+        "background": "#74ba25"
       },
       {
         "title": [
           {
             "type": "heading2",
-            "text": "Harness world-class functionalities",
+            "text": "Utilize viral communities",
             "spans": []
           }
         ],
         "description": [
           {
             "type": "paragraph",
-            "text": "Labore aliquip amet aliqua deserunt qui ea. Elit minim ullamco ipsum anim velit nostrud nostrud. Elit fugiat consequat eu id sunt ipsum ad in sunt ullamco.",
+            "text": "Velit officia voluptate sit veniam cillum Lorem officia minim incididunt nisi sit laborum voluptate deserunt veniam.",
             "spans": []
           }
         ],
-        "background": "#3f3fe0"
+        "background": "#37660a"
       }
     ],
-    "primary": {}
+    "primary": {
+      "status": true
+    }
   }
 ]

@@ -1,6 +1,10 @@
 {
   "slices": {
-    "Team": {},
+    "Team": {
+      "default": {
+        "primary": {}
+      }
+    },
     "Hero": {},
     "Logos": {
       "default": {
@@ -35,7 +39,10 @@
           }
         }
       }
-    }
+    },
+    "FormContact": {},
+    "SitePrice": {},
+    "WriteUsSnippet": {}
   },
   "_cts": {
     "header": {},

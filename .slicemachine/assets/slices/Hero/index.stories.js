@@ -18,7 +18,7 @@ export const _Default = () => ({
   },
   data() {
     return {
-      mock: {"variation":"default","name":"Default","slice_type":"hero","items":[],"primary":{"title":[{"type":"heading1","text":"Syndicate scalable infomediaries","spans":[]}],"description":[{"type":"paragraph","text":"Enim in consectetur voluptate deserunt et.","spans":[]}],"BannerText":[{"type":"paragraph","text":"Occaecat irure tempor officia magna aute ad consectetur non dolor eu.","spans":[]}],"Background":"#2cf44b"},"id":"_Default"}
+      mock: {"variation":"default","name":"Default","slice_type":"hero","items":[],"primary":{"title":[{"type":"heading1","text":"Scale open-source deliverables","spans":[]}],"description":[{"type":"paragraph","text":"Eiusmod aliqua reprehenderit velit aute. Proident esse ex pariatur tempor. Sunt magna veniam et aliqua.","spans":[]}],"BannerText":[{"type":"paragraph","text":"Cupidatat duis ad proident sunt nisi consectetur consequat aliquip aute deserunt ut amet.","spans":[]}],"Background":"#9459f4","status":true},"id":"_Default"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'

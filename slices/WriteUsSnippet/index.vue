@@ -1,5 +1,5 @@
 <template>
-  <section class="section">
+  <section class="section" v-if="slice.primary.status ? 'true' : 'false'" >
     <PrismicRichText :field="slice.primary.title" class="title" />
     <PrismicRichText :field="slice.primary.description" />
   </section>
@@ -12,7 +12,7 @@ export default {
   name: "WriteUsSnippet",
   // The array passed to `getSliceComponentProps` is purely optional and acts as a visual hint for you
   props: getSliceComponentProps(["slice", "index", "slices", "context"]),
-}
+};
 </script>
 
 <style scoped>

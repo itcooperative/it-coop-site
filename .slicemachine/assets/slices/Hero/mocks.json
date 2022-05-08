@@ -8,25 +8,26 @@
       "title": [
         {
           "type": "heading1",
-          "text": "Syndicate scalable infomediaries",
+          "text": "Scale open-source deliverables",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Enim in consectetur voluptate deserunt et.",
+          "text": "Eiusmod aliqua reprehenderit velit aute. Proident esse ex pariatur tempor. Sunt magna veniam et aliqua.",
           "spans": []
         }
       ],
       "BannerText": [
         {
           "type": "paragraph",
-          "text": "Occaecat irure tempor officia magna aute ad consectetur non dolor eu.",
+          "text": "Cupidatat duis ad proident sunt nisi consectetur consequat aliquip aute deserunt ut amet.",
           "spans": []
         }
       ],
-      "Background": "#2cf44b"
+      "Background": "#9459f4",
+      "status": true
     }
   }
 ]

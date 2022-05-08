@@ -1,5 +1,6 @@
 <template>
   <section
+    v-if="slice.primary.status ? 'true' : 'false'"
     class="items-center py-20"
     :style="`background: ${slice.primary.Background}`"
   >
