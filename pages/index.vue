@@ -8,8 +8,13 @@ import { components } from "~/slices";
 export default {
   async asyncData({ $prismic, params, error, store }) {
     // Languages from API response
+    const lang = params.lang
+      ? params.lang
+      : store.state.lang.current
+      ? store.state.lang.current.lang
+      : "en-us";
     const document = await $prismic.api.getSingle("main", {
-      lang: store.state.lang.current ? store.state.lang.current.lang : "en-us",
+      lang: lang,
     });
 
     if (document) {
