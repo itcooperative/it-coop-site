@@ -24,9 +24,9 @@
           </ul>
         </nav> -->
         <BtnDefault class="mx-4">
-          <a href="/#contacts">
+          <NuxtLink :to="'/' + $store.state.lang.current + '/' + '#contacts'">
             <PrismicRichText :field="data.GetContactsBtn" />
-          </a>
+          </NuxtLink>
         </BtnDefault>
         <LangSwitcher />
       </div>
