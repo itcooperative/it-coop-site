@@ -4,10 +4,10 @@
       class="flex items-center container mx-auto px-3 justify-between relative"
     >
       <NuxtLink to="/"> <PrismicImage :field="data.Logo" /> </NuxtLink>
-      <div class="sm:hidden">
+      <div class="hidden">
         <img src="/menu.svg" alt="" />
       </div>
-      <div class="hidden justify-end items-center sm:flex">
+      <div class="justify-end items-center flex">
         <!-- <nav>
           <ul>
             <li
@@ -30,6 +30,14 @@
         </BtnDefault>
         <LangSwitcher />
       </div>
+      <div v-show="showMenu">
+        <BtnDefault class="mx-4">
+          <NuxtLink :to="'/' + $store.state.lang.current + '/' + '#contacts'">
+            <PrismicRichText :field="data.GetContactsBtn" />
+          </NuxtLink>
+        </BtnDefault>
+        <LangSwitcher />
+      </div>
     </div>
   </header>
 </template>
@@ -39,7 +47,7 @@ import { components } from "~/slices";
 export default {
   props: ["data", "altLangs"],
   data: function () {
-    return { components };
+    return { components, showMenu: false };
   },
 };
 </script>
