@@ -34,7 +34,7 @@
             <PrismicImage :field="item.Image" />
           </div>
         </div>
-        <div class="flex justify-end pt-4">
+        <div class="flex justify-end pt-4 pr-4 pb-4 sm:pb-0 sm:pr-0">
           <PrismicImage class="w-16" :field="item.Logo" />
         </div>
       </article>
