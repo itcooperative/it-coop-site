@@ -10,7 +10,7 @@
   </button>
 </template><script>
 export default {
-  props: [{ invert: { type: Boolean, default: false } }],
+  props: { invert: { type: Boolean, default: false } },
 };
 </script>
 

@@ -1,6 +1,6 @@
 <template>
   <section
-    v-if="slice.primary.status ? 'true' : 'false'"
+    v-if="slice.primary.status ? true : false"
     id="contacts"
     class="py-20 sm:py-32"
     :style="`background: ${slice.primary.Background}`"

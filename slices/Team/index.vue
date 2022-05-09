@@ -2,7 +2,7 @@
   <section
     class="py-20 sm:py-32"
     :style="`background: ${slice.primary.Background}`"
-    v-if="slice.primary.status ? 'true' : 'false'"
+    v-if="slice.primary.status ? true : false"
   >
     <div class="container mx-auto px-3">
       <H2> <PrismicRichText :field="slice.primary.title" class="title" /> </H2>

@@ -2,7 +2,7 @@
   <section
     class="py-20 sm:py-32"
     :style="`background: ${slice.primary.Background}`"
-    v-if="slice.primary.status ? 'true' : 'false'"
+    v-if="slice.primary.status ? true : false"
   >
     <div class="container mx-auto px-3">
       <article
@@ -39,13 +39,13 @@
         </div>
       </article>
     </div>
-    <div class="text-center mt-10">
+    <!-- <div class="text-center mt-10">
       <BtnDefault>
         <PrismicLink :field="slice.primary.showalllink">{{
           $prismic.asText(slice.primary.ShowAllText)
         }}</PrismicLink>
       </BtnDefault>
-    </div>
+    </div> -->
   </section>
 </template>
 

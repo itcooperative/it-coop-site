@@ -1,12 +1,12 @@
 <template>
   <section
-    v-if="slice.primary.status ? 'true' : 'false'"
-    class="items-center py-8 sm:py-12"
+    v-if="slice.primary.status ? true : false"
+    class="py-8 sm:py-12"
     :style="`background: ${slice.primary.Background}`"
   >
-    <VueSlickCarousel :options="slickOptions" class="flex">
+    <VueSlickCarousel :options="slickOptions" class="flex items-center">
       <div v-for="(item, i) in slice.items" :key="`slice-item-${i}`">
-        <PrismicImage :field="item.logo" class="h-10 mx-3" />
+        <PrismicImage :field="item.logo" class="mx-8" />
       </div>
     </VueSlickCarousel>
     <!-- <div class="container mx-auto px-3 flex justify-center"></div> -->
@@ -28,6 +28,7 @@ export default {
       slickOptions: {
         slidesToShow: 8,
         arrows: false,
+        variableWidth: true,
         responsive: [
           {
             breakpoint: 768,
@@ -48,4 +49,9 @@ export default {
 };
 </script>
 
-
+<style>
+.slick-track {
+  display: flex;
+  align-items: center;
+}
+</style>

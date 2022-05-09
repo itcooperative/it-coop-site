@@ -1,5 +1,5 @@
 <template>
-  <section class="section" v-if="slice.primary.status ? 'true' : 'false'" >
+  <section class="section" v-if="slice.primary.status ? true : false">
     <PrismicRichText :field="slice.primary.title" class="title" />
     <PrismicRichText :field="slice.primary.description" />
   </section>
