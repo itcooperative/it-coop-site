@@ -2,14 +2,14 @@
   <section
     v-if="slice.primary.status ? true : false"
     id="contacts"
-    class="py-20 sm:py-32"
+    class="py-20 sm:py-32 relative"
     :style="`background: ${slice.primary.Background}`"
   >
     <div class="container px-3 mx-auto">
       <H2 class="mb-8"><PrismicRichText :field="slice.primary.title" /></H2>
-      <div class="grid gap-8 grid-cols-12">
+      <div class="sm:grid gap-8 sm:grid-cols-12">
         <Form
-          class="col-span-12 md:col-span-6"
+          class="sm:col-span-12 md:col-span-6"
           name="contact-form"
           method="post"
           action="/contact/thankyou/"
@@ -47,21 +47,38 @@
             </BtnDefault>
           </div>
         </Form>
-        <div class="col-span-12 md:col-span-6 flex items-center justify-center">
+        <div
+          class="
+            sm:col-span-12
+            md:col-span-6
+            flex
+            items-center
+            justify-center
+            mt-8
+            sm:mt-0
+          "
+        >
           <div
-            class="text-lg p-8"
+            class="sm:text-xl p-8"
             :class="[
               showAboutPrice
-                ? 'rounded-xl'
-                : 'cursor-pointer flex h-48 w-48 rounded-full p-8   text-center justify-center items-center',
+                ? 'sm:rounded-lg fixed sm:static top-0 bottom-0'
+                : 'cursor-pointer flex h-48 w-48 rounded-full p-8   text-center justify-center items-center ',
             ]"
             :style="`background-color: ${slice.primary['price-background']}`"
+            @click="
+              showAboutPrice === true
+                ? (showAboutPrice = false)
+                : (showAboutPrice = true)
+            "
           >
+            <div v-show="showAboutPrice" class="py-2 sm:hidden">
+              <img src="/close-icon.svg" class="h-8 ml-auto" alt="" />
+            </div>
             <PrismicRichText
               style="transform: rotate(8deg)"
               :field="slice.primary['price-title']"
               v-show="!showAboutPrice"
-              @click="showAboutPrice = true"
             /><PrismicRichText
               v-show="showAboutPrice"
               :field="slice.primary['price-descr']"

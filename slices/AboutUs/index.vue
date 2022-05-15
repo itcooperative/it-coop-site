@@ -1,6 +1,6 @@
 <template>
-  <section v-if="slice.primary.status ? true : false">
-    <div class="sm:grid sm:grid-cols-2">
+  <section class="about-us" v-if="slice.primary.status ? true : false">
+    <div class="md:grid md:grid-cols-2">
       <div
         class="flex"
         v-for="(item, i) in slice.items"
@@ -10,10 +10,10 @@
       >
         <div
           class="container-half py-20"
-          :class="[i % 2 ? 'pl-3 sm:pl-20 pr-3' : 'pr-3 sm:pr-20 pl-3']"
+          :class="[i % 2 ? 'pl-3 md:pl-20 pr-3' : 'pr-3 md:pr-20 pl-3']"
         >
-          <PrismicRichText class="text-3xl font-bold" :field="item.title" />
-          <PrismicRichText class="text-xl" :field="item.description" />
+          <H2><PrismicRichText :field="item.title" /></H2>
+          <PrismicRichText class="sm:text-xl" :field="item.description" />
         </div>
       </div>
     </div>
@@ -30,16 +30,14 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+.about-us p {
+  margin-bottom: 10px;
+}
 .container-half {
   width: 100%;
 }
 
-@media (min-width: 640px) {
-  .container-half {
-    max-width: 320px;
-  }
-}
 @media (min-width: 768px) {
   .container-half {
     max-width: 374px;

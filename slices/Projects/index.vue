@@ -14,13 +14,13 @@
         <div class="sm:hidden">
           <PrismicImage :field="item.Image" />
         </div>
-        <div class="p-8 sm:p-0 sm:mb-8 text-white text-3xl font-secondary-font">
+        <H2 class="p-8 sm:p-0 sm:mb-8 text-white">
           <PrismicRichText :field="item.title" />
-        </div>
+        </H2>
         <div class="p-8 sm:p-0 sm:grid grid-cols-12 gap-8">
           <div class="col-span-12 sm:col-span-5">
             <PrismicRichText
-              class="text-white font-bold text-xl mb-4"
+              class="text-white font-bold text-lg sm:text-xl mb-4"
               :field="item.client"
             />
             <div class="text-white font-bold mb-4">{{ item.WhatWeDo }}</div>
