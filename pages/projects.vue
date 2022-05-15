@@ -1,7 +1,5 @@
 <template>
-  <div class="container mx-auto">
-    <slice-zone :components="components" :slices="document.data.slices" />
-  </div>
+  <slice-zone :components="components" :slices="document.data.slices" />
 </template>
 
 <script>
@@ -9,14 +7,18 @@ import { components } from "~/slices";
 
 export default {
   async asyncData({ $prismic, params, error, store }) {
+    const lang = params.lang
+      ? params.lang
+      : store.state.lang.current
+      ? store.state.lang.current.lang
+      : "en-us";
     const document = await $prismic.api.getSingle("projects", {
-      lang: store.state.lang.current ? store.state.lang.current.lang : "en-us",
+      lang: lang,
     });
 
     if (document) {
-      store.commit("SET_LANG_OTHER", document.alternate_languages[0]);
+       store.commit("SET_LANG_OTHER", document.alternate_languages[0]);
       store.commit("SET_LANG_CURRENT", document.lang);
-
       return { document };
     } else {
       error({ statusCode: 404, message: "Page not found" });

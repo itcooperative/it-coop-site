@@ -113,7 +113,17 @@
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
       "description": "Projects",
-      "primary": {},
+      "primary": {
+        "status": {
+          "type": "Boolean",
+          "config": {
+            "label": "Status",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        }
+      },
       "items": {
         "background": {
           "config": {

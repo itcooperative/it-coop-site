@@ -8,7 +8,7 @@
         <img src="/menu.svg" alt="" />
       </div>
       <div class="justify-end items-center flex">
-        <nav class="hidden md:block">
+        <!-- <nav class="hidden md:block">
           <ul>
             <li
               v-for="menuLink in $store.state.menu.menu_links"
@@ -22,7 +22,7 @@
               >
             </li>
           </ul>
-        </nav>
+        </nav> -->
         <BtnDefault class="mx-4 hidden md:block">
           <NuxtLink :to="'/' + $store.state.lang.current + '/' + '#contacts'">
             <PrismicRichText :field="data.GetContactsBtn" />
@@ -45,7 +45,7 @@
       class="absolute border-black mt-1 border-t-2 border-b-2 py-8 w-full z-20"
       :style="`background: ${data.Background}`"
     >
-      <nav>
+      <!-- <nav>
         <ul>
           <li
             v-for="menuLink in $store.state.menu.menu_links"
@@ -59,7 +59,7 @@
             >
           </li>
         </ul>
-      </nav>
+      </nav> -->
       <BtnDefault invert class="mx-4">
         <NuxtLink
           invert
