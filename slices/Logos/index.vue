@@ -5,7 +5,7 @@
     :style="`background: ${slice.primary.Background}`"
   >
     <div class="marquee overflow-hidden py-3">
-      <span class="flex">
+      <span>
         <div
           class="mx-8"
           v-for="(item, i) in slice.items"
@@ -36,6 +36,27 @@ export default {
   display: flex;
   align-items: center;
 }
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+  }
+}
+
+@-moz-keyframes scroll {
+  0% {
+    -moz-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  100% {
+    -moz-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+  }
+}
 @keyframes scroll {
   0% {
     transform: translate(0, 0);
@@ -52,11 +73,11 @@ export default {
 }
 
 .marquee span {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   padding-left: 100%;
-  -webkit-animation: scroll 15s infinite linear;
-  -moz-animation: scroll 15s infinite linear;
-  animation: scroll 15s infinite linear;
+  -webkit-animation: scroll 20s infinite linear;
+  -moz-animation: scroll 20s infinite linear;
+  animation: scroll 20s infinite linear;
 }
 </style>

@@ -19,11 +19,10 @@
     <div
       class="marquee overflow-hidden py-3 border-t-2 border-b-2 border-black"
     >
-      <span>
-        <PrismicRichText
-          :field="slice.primary.BannerText"
-          class="text-2xl uppercase whitespace-no-wrap"
-      /></span>
+      <PrismicRichText
+        :field="slice.primary.BannerText"
+        class="string text-2xl uppercase whitespace-no-wrap"
+      />
     </div>
   </section>
 </template>
@@ -39,6 +38,27 @@ export default {
 </script>
 
 <style>
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+  }
+}
+
+@-moz-keyframes scroll {
+  0% {
+    -moz-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  100% {
+    -moz-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+  }
+}
 @keyframes scroll {
   0% {
     transform: translate(0, 0);
@@ -54,11 +74,11 @@ export default {
   overflow: hidden;
 }
 
-.marquee span {
+.marquee .string {
   display: inline-block;
   padding-left: 100%;
-  -webkit-animation: scroll 15s infinite linear;
-  -moz-animation: scroll 15s infinite linear;
-  animation: scroll 15s infinite linear;
+  -webkit-animation: scroll 20s infinite linear;
+  -moz-animation: scroll 20s infinite linear;
+  animation: scroll 20s infinite linear;
 }
 </style>
