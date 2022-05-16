@@ -34,9 +34,18 @@ export const mutations = {
 };
 
 export const actions = {
-  async fetchMenu({ commit }, $prismic) {
+  async fetchMenu({ commit, state }, params) {
+    const lang = params.params.lang
+      ? params.params.lang
+      : state.lang.current
+      ? state.lang.current.lang
+      : "en-us";
     try {
-      const menu = (await $prismic.api.getSingle("menu")).data;
+      const menu = (
+        await params.api.api.getSingle("menu", {
+          lang: lang,
+        })
+      ).data;
 
       commit("SET_MENU", menu);
     } catch (e) {
@@ -45,17 +54,31 @@ export const actions = {
       commit("SET_ERROR", error);
     }
   },
-  async fetchHeader({ commit }, $prismic) {
-    const header = (await $prismic.api.getSingle("header")).data;
+  async fetchHeader({ commit, state }, params) {
+    const lang = params.params.lang
+      ? params.params.lang
+      : state.lang.current
+      ? state.lang.current.lang
+      : "en-us";
+    const header = (
+      await params.api.api.getSingle("header", {
+        lang: lang,
+      })
+    ).data;
 
     commit("SET_HEADER", header);
   },
-  async fetchFooter({ commit }, $prismic) {
-    const footer = (await $prismic.api.getSingle("footer")).data;
-    commit("SET_FOOTER", footer);
-  },
-  async fetchPage({ commit }, $prismic) {
-    const footer = (await $prismic.api.getSingle("footer")).data;
+  async fetchFooter({ commit, state }, params) {
+    const lang = params.params.lang
+      ? params.params.lang
+      : state.lang.current
+      ? state.lang.current.lang
+      : "en-us";
+    const footer = (
+      await params.api.api.getSingle("footer", {
+        lang: lang,
+      })
+    ).data;
     commit("SET_FOOTER", footer);
   },
 };

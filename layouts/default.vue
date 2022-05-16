@@ -7,10 +7,16 @@
 </template>
 <script>
 export default {
-  async middleware({ store, $prismic }) {
-    await store.dispatch("fetchHeader", $prismic);
-    await store.dispatch("fetchFooter", $prismic);
-    await store.dispatch("fetchMenu", $prismic);
+  async middleware({ store, $prismic, params }) {
+    await store.dispatch("fetchHeader", {
+      params: params,
+      api: $prismic,
+    });
+    await store.dispatch("fetchFooter", {
+      params: params,
+      api: $prismic,
+    });
+    await store.dispatch("fetchMenu", { params: params, api: $prismic });
   },
 };
 </script>
