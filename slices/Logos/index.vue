@@ -55,8 +55,8 @@ export default {
   display: flex;
   align-items: center;
   padding-left: 100%;
-  -webkit-animation: scroll 25s infinite linear;
-  -moz-animation: scroll 25s infinite linear;
-  animation: scroll 25s infinite linear;
+  -webkit-animation: scroll 15s infinite linear;
+  -moz-animation: scroll 15s infinite linear;
+  animation: scroll 15s infinite linear;
 }
 </style>

@@ -59,6 +59,7 @@ export default {
   },
   prismic: {
     modern: true,
+    preview: false,
     endpoint: "https://itcoop.prismic.io/api/v2",
     apiOptions: {
       routes: [

@@ -57,8 +57,8 @@ export default {
 .marquee span {
   display: inline-block;
   padding-left: 100%;
-  -webkit-animation: scroll 35s infinite linear;
-  -moz-animation: scroll 35s infinite linear;
-  animation: scroll 35s infinite linear;
+  -webkit-animation: scroll 15s infinite linear;
+  -moz-animation: scroll 15s infinite linear;
+  animation: scroll 15s infinite linear;
 }
 </style>
