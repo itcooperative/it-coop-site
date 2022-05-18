@@ -1,12 +1,12 @@
 <template>
-  <div class="flex items-center h-5">
+  <div class="flex items-center">
     <input
       id="remember"
       type="checkbox"
       value=""
       class="
-        w-4
-        h-4
+        w-6
+        h-6
         border border-gray-300
         bg-gray-50
         focus:ring-3 focus:ring-black
