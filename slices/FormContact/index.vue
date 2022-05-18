@@ -39,9 +39,9 @@
           />
           <InputCheckbox
             class="mb-4"
-            :label="$prismic.asText(slice.primary.InputMessage)"
+            :label="$prismic.asText(slice.primary.PersonalData)"
           />
-          <div class="text-left">
+          <div class="text-left mt-3">
             <BtnDefault type="submit" invert>
               <PrismicRichText :field="slice.primary.SubmitBtn" />
             </BtnDefault>

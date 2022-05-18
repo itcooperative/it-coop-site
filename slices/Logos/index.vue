@@ -7,11 +7,11 @@
     <div class="marquee overflow-hidden py-3">
       <span>
         <div
-          class="mx-8"
+          class="h-12 w-40 mx-8 flex items-center"
           v-for="(item, i) in slice.items"
           :key="`slice-item-${i}`"
         >
-          <PrismicImage :field="item.logo" class="mx-8 h-16" /></div
+          <PrismicImage :field="item.logo" /></div
       ></span>
     </div>
     <!-- <div class="container mx-auto px-3 flex justify-center"></div> -->
@@ -76,8 +76,8 @@ export default {
   display: inline-flex;
   align-items: center;
   padding-left: 100%;
-  -webkit-animation: scroll 20s infinite linear;
-  -moz-animation: scroll 20s infinite linear;
-  animation: scroll 20s infinite linear;
+  -webkit-animation: scroll 35s infinite linear;
+  -moz-animation: scroll 35s infinite linear;
+  animation: scroll 35s infinite linear;
 }
 </style>

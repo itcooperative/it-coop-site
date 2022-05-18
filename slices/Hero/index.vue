@@ -21,7 +21,7 @@
     >
       <PrismicRichText
         :field="slice.primary.BannerText"
-        class="string text-2xl uppercase whitespace-no-wrap"
+        class="string text-lg sm:text-2xl uppercase whitespace-no-wrap"
       />
     </div>
   </section>
@@ -77,8 +77,8 @@ export default {
 .marquee .string {
   display: inline-block;
   padding-left: 100%;
-  -webkit-animation: scroll 20s infinite linear;
-  -moz-animation: scroll 20s infinite linear;
-  animation: scroll 20s infinite linear;
+  -webkit-animation: scroll 25s infinite linear;
+  -moz-animation: scroll 25s infinite linear;
+  animation: scroll 25s infinite linear;
 }
 </style>
