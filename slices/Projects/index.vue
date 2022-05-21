@@ -6,7 +6,7 @@
   >
     <div class="container mx-auto px-3">
       <article
-        class="sm:p-16 mb-8 sm:mb-16"
+        class="sm:p-16 mb-8 sm:mb-16 project"
         v-for="(item, i) in slice.items"
         :key="`slice-item-${i}`"
         :style="`background: ${item.background}`"
@@ -14,7 +14,7 @@
         <div class="sm:hidden">
           <PrismicImage :field="item.Image" />
         </div>
-        <H2 class="p-8 sm:p-0 sm:mb-8 text-white">
+        <H2 class="title p-8 sm:p-0 sm:mb-8 text-white">
           <PrismicRichText :field="item.title" />
         </H2>
         <div class="p-8 sm:p-0 sm:grid grid-cols-12 gap-8">
@@ -26,7 +26,7 @@
             <div class="text-white font-bold mb-4">{{ item.WhatWeDo }}</div>
 
             <PrismicRichText
-              class="text-white font-medium"
+              class="descr text-white font-medium"
               :field="item.description"
             />
           </div>
@@ -35,7 +35,7 @@
           </div>
         </div>
         <div class="flex justify-end pt-4 pr-4 pb-4 sm:pb-0 sm:pr-0">
-          <PrismicImage class="w-16" :field="item.Logo" />
+          <PrismicImage class="logo" :field="item.Logo" />
         </div>
       </article>
     </div>
@@ -59,14 +59,16 @@ export default {
 };
 </script>
 
-<style scoped>
-.section {
-  background: #f7f7f7;
-  color: #111;
-  padding: 4em;
-  text-align: center;
+<style>
+.project .logo {
+  max-width: 200px;
 }
-.title {
-  margin-bottom: 2em;
+.project .descr a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.project .title a {
+  cursor: pointer;
 }
 </style>

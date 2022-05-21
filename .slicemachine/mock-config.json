@@ -25,6 +25,16 @@
     "Projects": {
       "projectsIndex": {
         "primary": {}
+      },
+      "default": {
+        "items": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        }
       }
     },
     "Menu": {

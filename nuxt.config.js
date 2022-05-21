@@ -45,18 +45,6 @@ export default {
     // add '~tailwind.config` alias
     exposeConfig: true,
   },
-  purge: {
-    // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
-    enabled: process.env.NODE_ENV === "production",
-    content: [
-      "components/**/*.vue",
-      "layouts/**/*.vue",
-      "pages/**/*.vue",
-      "plugins/**/*.js",
-      "nuxt.config.js",
-    ],
-    defaultExtractor: (content) => content.match(/[\w-/.:]+(?<!:)/g) || [],
-  },
   prismic: {
     modern: true,
     preview: false,
@@ -84,50 +72,4 @@ export default {
   pwa: {
     icon: false, // disables the icon module
   },
-  // i18n: {
-  //   vueI18nLoader: true,
-  //   pluralizationRules: {
-  //     ru(choice, choicesLength) {
-  //       if (choice === 0) {
-  //         return 0;
-  //       }
-
-  //       const teen = choice > 10 && choice < 20;
-  //       const endsWithOne = choice % 10 === 1;
-
-  //       if (choicesLength < 4) {
-  //         return !teen && endsWithOne ? 1 : 2;
-  //       }
-  //       if (!teen && endsWithOne) {
-  //         return 1;
-  //       }
-  //       if (!teen && choice % 10 >= 2 && choice % 10 <= 4) {
-  //         return 2;
-  //       }
-
-  //       return choicesLength < 4 ? 2 : 3;
-  //     },
-  //   },
-  //   locales: [
-  //     {
-  //       code: "ru",
-  //       name: "RU",
-  //       nameFull: "Русский",
-  //       iso: "ru-RU",
-  //     },
-  //     {
-  //       code: "en",
-  //       name: "EN",
-  //       nameFull: "English",
-  //       iso: "en-US",
-  //     },
-  //   ],
-  //   defaultLocale: "en",
-  //   strategy: "prefix_except_default",
-  //   detectBrowserLanguage: {
-  //     useCookie: true,
-  //     cookieKey: "itcoop_lang",
-  //     onlyOnRoot: true, // recommended
-  //   },
-  // },
 };

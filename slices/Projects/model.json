@@ -59,7 +59,7 @@
             "label": "Title",
             "placeholder": "",
             "allowTargetBlank": true,
-            "single": "heading2"
+            "single": "heading2,hyperlink"
           },
           "type": "StructuredText"
         },
