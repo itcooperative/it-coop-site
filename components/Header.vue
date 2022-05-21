@@ -60,14 +60,15 @@
           </li>
         </ul>
       </nav> -->
-      <BtnDefault invert class="mx-4">
-        <NuxtLink
+       <NuxtLink
           invert
           :to="'/' + $store.state.lang.current + '/' + '#contacts'"
         >
+        <BtnDefault invert class="mx-4">
+
           <PrismicRichText :field="data.GetContactsBtn" />
-        </NuxtLink>
       </BtnDefault>
+      </NuxtLink>
     </div>
     <div
       v-show="showMenu"
