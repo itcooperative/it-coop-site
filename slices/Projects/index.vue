@@ -1,12 +1,12 @@
 <template>
   <section
-    class="py-20 sm:py-32"
+    class="pb-20 sm:pb-32"
     :style="`background: ${slice.primary.Background}`"
     v-if="slice.primary.status ? true : false"
   >
     <div class="container mx-auto px-3">
       <article
-        class="sm:p-16 mb-8 sm:mb-16 project"
+        class="sm:px-16 sm:py-12 mb-8 sm:mb-20 project"
         v-for="(item, i) in slice.items"
         :key="`slice-item-${i}`"
         :style="`background: ${item.background}`"
@@ -20,13 +20,13 @@
         <div class="p-8 sm:p-0 sm:grid grid-cols-12 gap-8">
           <div class="col-span-12 sm:col-span-5">
             <PrismicRichText
-              class="text-white font-bold text-lg sm:text-xl mb-4"
+              class="text-white font-bold text-lg sm:text-xl mb-6"
               :field="item.client"
             />
-            <div class="text-white font-bold mb-4">{{ item.WhatWeDo }}</div>
+            <div class="text-white font-bold mb-6">{{ item.WhatWeDo }}</div>
 
             <PrismicRichText
-              class="descr text-white font-medium"
+              class="descr text-white font-medium text-sm leading-normal"
               :field="item.description"
             />
           </div>
@@ -34,7 +34,7 @@
             <PrismicImage :field="item.Image" />
           </div>
         </div>
-        <div class="flex justify-end pt-4 pr-4 pb-4 sm:pb-0 sm:pr-0">
+        <div class="flex justify-end pt-8 pr-4 pb-4 sm:pb-0 sm:pr-0">
           <PrismicImage class="logo" :field="item.Logo" />
         </div>
       </article>

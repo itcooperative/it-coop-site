@@ -9,11 +9,14 @@
         :style="`background: ${item.background}`"
       >
         <div
-          class="container-half py-20"
+          class="container-half pt-20 pb-40"
           :class="[i % 2 ? 'pl-3 md:pl-20 pr-3' : 'pr-3 md:pr-20 pl-3']"
         >
-          <H2><PrismicRichText :field="item.title" /></H2>
-          <PrismicRichText class="sm:text-xl" :field="item.description" />
+          <H2 class="pb-8"><PrismicRichText :field="item.title" /></H2>
+          <PrismicRichText
+            class="sm:text-xl leading-tight"
+            :field="item.description"
+          />
         </div>
       </div>
     </div>
@@ -32,7 +35,7 @@ export default {
 
 <style>
 .about-us p {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .container-half {
   width: 100%;

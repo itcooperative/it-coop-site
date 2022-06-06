@@ -7,7 +7,7 @@
     <div class="marquee overflow-hidden py-3">
       <span>
         <div
-          class="h-12 w-24 mx-4 flex items-center justify-center"
+          class="h-6 w-32 mx-4 flex items-center justify-center"
           v-for="(item, i) in slice.items"
           :key="`slice-item-${i}`"
         >
@@ -66,7 +66,8 @@ export default {
   }
 }
 .marquee {
-  display: block;
+  display: flex;
+  align-items: center;
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -76,8 +77,8 @@ export default {
   display: inline-flex;
   align-items: center;
   padding-left: 0%;
-  -webkit-animation: scroll 35s infinite linear;
-  -moz-animation: scroll 35s infinite linear;
-  animation: scroll 35s infinite linear;
+  -webkit-animation: scroll 25s infinite linear;
+  -moz-animation: scroll 25s infinite linear;
+  animation: scroll 25s infinite linear;
 }
 </style>

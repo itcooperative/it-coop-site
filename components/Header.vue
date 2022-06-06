@@ -1,5 +1,5 @@
 <template>
-  <header class="py-2" :style="`background: ${data.Background}`">
+  <header class="py-6" :style="`background: ${data.Background}`">
     <div
       class="flex items-center container mx-auto px-3 justify-between relative"
     >
@@ -60,14 +60,13 @@
           </li>
         </ul>
       </nav> -->
-       <NuxtLink
-          invert
-          :to="'/' + $store.state.lang.current + '/' + '#contacts'"
-        >
+      <NuxtLink
+        invert
+        :to="'/' + $store.state.lang.current + '/' + '#contacts'"
+      >
         <BtnDefault invert class="mx-4">
-
           <PrismicRichText :field="data.GetContactsBtn" />
-      </BtnDefault>
+        </BtnDefault>
       </NuxtLink>
     </div>
     <div
