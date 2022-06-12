@@ -1,16 +1,25 @@
 {
-  "id": "c4ab527e-9595-4797-9f8d-a7b0c8aa3459",
-  "uid": "molestiae-expedita-cupiditate",
+  "id": "ff35b7ba-acd6-4f96-8673-f1a5f4e02d49",
+  "uid": "aspernatur-enim-consectetur",
   "type": "projects",
   "data": {
     "Title": [
       {
         "type": "paragraph",
-        "text": "Voluptate non nostrud ex deserunt officia in. Qui fugiat eu eiusmod non nostrud eu incididunt amet. Labore enim minim esse do reprehenderit incididunt adipisicing cillum commodo.",
+        "text": "Ullamco laborum aliqua aute laborum id.",
         "spans": []
       }
     ],
-    "metaTitle": "architect customized ROI",
-    "metaDescr": "facilitate back-end partnerships"
+    "metaTitle": "orchestrate bricks-and-clicks schemas",
+    "metaDescr": "exploit e-business users",
+    "metaImage": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1579931794097-0ad001e51edb?w=900&h=500&fit=crop"
+    }
   }
 }

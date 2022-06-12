@@ -1,5 +1,5 @@
 <template>
-  <header class="py-6" :style="`background: ${data.Background}`">
+  <header class="py-[24px]" :style="`background: ${data.Background}`">
     <div
       class="flex items-center container mx-auto px-3 justify-between relative"
     >

@@ -35,6 +35,62 @@ export default {
           name: "description",
           content: this.document.data.metaDescr,
         },
+        {
+          hid: "twitter:image",
+          name: "twitter:image",
+          content: this.document.data.metaImage,
+        },
+        {
+          hid: "twitter:card",
+          name: "twitter:card",
+          content: "summary_large_image",
+        },
+        {
+          hid: "twitter:creator",
+          name: "twitter:creator",
+          content: "summary_large_image",
+        },
+        {
+          hid: "twitter:image",
+          name: "twitter:image",
+          content: this.document.data.metaImage,
+        },
+        {
+          hid: "twitter:image:alt",
+          name: "twitter:image:alt",
+          content: this.document.data.metaTitle,
+        },
+        {
+          hid: "og:image",
+          property: "og:image",
+          content: this.document.data.metaImage,
+        },
+
+        {
+          hid: "og:image:width",
+          property: "og:image:width",
+          content: this.width,
+        },
+        {
+          hid: "og:type",
+          property: "og:type",
+          content: "website",
+        },
+        {
+          hid: "og:image:secure_url",
+          property: "og:image:secure_url",
+          content: this.document.data.metaImage,
+        },
+        {
+          hid: "og:image:alt",
+          property: "og:image:alt",
+          content: this.document.data.metaImage,
+        },
+        {
+          hid: "vk:image",
+          property: "vk:image",
+          content: this.document.data.metaImage,
+        },
       ],
     };
   },

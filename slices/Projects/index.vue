@@ -6,7 +6,7 @@
   >
     <div class="container mx-auto px-3">
       <article
-        class="sm:px-16 sm:py-12 mb-8 sm:mb-20 project"
+        class="sm:px-16 sm:py-12 mb-8 sm:mb-[80px] project"
         v-for="(item, i) in slice.items"
         :key="`slice-item-${i}`"
         :style="`background: ${item.background}`"
@@ -14,9 +14,15 @@
         <div class="sm:hidden">
           <PrismicImage :field="item.Image" />
         </div>
-        <H2 class="title p-8 sm:p-0 sm:mb-8 text-white">
-          <PrismicRichText :field="item.title" />
-        </H2>
+
+        <PrismicLink
+          :field="item.siteLink"
+          class="col-span-12 sm:col-span-7 hidden sm:block w-full"
+        >
+          <H2 class="title p-8 sm:p-0 sm:mb-8 text-white">
+            <PrismicRichText :field="item.title" />
+          </H2>
+        </PrismicLink>
         <div class="p-8 sm:p-0 sm:grid grid-cols-12 gap-8">
           <div class="col-span-12 sm:col-span-5">
             <PrismicRichText
@@ -30,9 +36,12 @@
               :field="item.description"
             />
           </div>
-          <div class="col-span-12 sm:col-span-7 hidden sm:block">
-            <PrismicImage :field="item.Image" />
-          </div>
+          <PrismicLink
+            :field="item.siteLink"
+            class="col-span-12 sm:col-span-7 hidden sm:block w-full"
+          >
+            <PrismicImage class="w-full" :field="item.Image" />
+          </PrismicLink>
         </div>
         <div class="flex justify-end pt-8 pr-4 pb-4 sm:pb-0 sm:pr-0">
           <PrismicImage class="logo" :field="item.Logo" />
@@ -61,7 +70,10 @@ export default {
 
 <style>
 .project .logo {
-  max-width: 200px;
+  width: 200px;
+  height: 100px;
+  object-fit: contain;
+  object-position: right;
 }
 .project .descr a {
   text-decoration: underline;

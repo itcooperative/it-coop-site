@@ -46,6 +46,14 @@
           "placeholder": ""
         },
         "type": "Text"
+      },
+      "metaImage": {
+        "type": "Image",
+        "config": {
+          "label": "Meta Image",
+          "constraint": {},
+          "thumbnails": []
+        }
       }
     }
   }

@@ -10,10 +10,8 @@
     "slicemachine": "start-slicemachine"
   },
   "dependencies": {
-    "@nuxtjs/i18n": "^7.0.3",
     "@nuxtjs/prismic": "^1.4.1",
     "@prismicio/slice-simulator-vue": "^0.2.0",
-    "animate.css": "^4.1.1",
     "core-js": "^3.19.3",
     "jquery": "^3.6.0",
     "nuxt": "^2.15.8",
@@ -24,12 +22,13 @@
     "vue-template-compiler": "^2.6.14"
   },
   "devDependencies": {
-    "@iconify/icons-bx": "^1.1.2",
     "@iconify/vue2": "^1.0.0",
     "@nuxtjs/google-fonts": "^1.3.0",
     "@nuxtjs/pwa": "^3.3.5",
-    "@nuxtjs/tailwindcss": "^2.0.0",
-    "nuxt-social-meta": "^0.0.5",
+    "@nuxtjs/tailwindcss": "^4.2.1",
+    "@nuxtjs/vuetify": "^1.12.3",
+    "@tailwindcss/forms": "^0.5.2",
+    "postcss": "^8.4.4",
     "sass": "^1.32.5",
     "slice-machine-ui": "^0.3.4",
     "yarn": "^1.22.10"

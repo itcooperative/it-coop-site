@@ -66,7 +66,7 @@ export default {
   },
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: ["@nuxtjs/i18n"],
+  modules: [],
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: { transpile: ["@prismicio/vue"] },
   pwa: {

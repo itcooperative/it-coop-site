@@ -6,7 +6,7 @@
     :style="`background: ${slice.primary.Background}`"
   >
     <div class="container px-3 mx-auto">
-      <H2 class="mb-8"><PrismicRichText :field="slice.primary.title" /></H2>
+      <H2 class="mb-6"><PrismicRichText :field="slice.primary.title" /></H2>
       <div class="sm:grid gap-8 sm:grid-cols-12">
         <Form
           class="sm:col-span-12 md:col-span-6"
@@ -62,8 +62,8 @@
             class="sm:text-xl p-8"
             :class="[
               showAboutPrice
-                ? 'sm:rounded-lg fixed sm:static top-0 bottom-0'
-                : 'cursor-pointer flex h-48 w-48 rounded-full p-8   text-center justify-center items-center ',
+                ? 'sm:rounded-lg fixed sm:static top-0 bottom-0 '
+                : 'cursor-pointer flex h-48 w-48 rounded-full p-8  spin-animate		  text-center justify-center items-center ',
             ]"
             :style="`background-color: ${slice.primary['price-background']}`"
             @click="
@@ -103,3 +103,20 @@ export default {
 };
 </script>
 
+<style>
+.spin-animate {
+  animation: rotate 2s infinite;
+  transform-origin: center;
+}
+@keyframes rotate {
+  0%,
+  100% {
+    transform: rotate(15deg);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: rotate(-15deg);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+</style>

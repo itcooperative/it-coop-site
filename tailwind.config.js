@@ -33,5 +33,8 @@ module.exports = {
       "primary-font": ["IBM Plex Sans"],
       "secondary-font": ["Russo One"],
     },
+    plugins: [
+      // ...
+    ],
   },
 };

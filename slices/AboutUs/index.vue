@@ -56,4 +56,10 @@ export default {
     max-width: 640px;
   }
 }
+
+@media (min-width: 1536px) {
+  .container-half {
+    max-width: 768px;
+  }
+}
 </style>
