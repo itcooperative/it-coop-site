@@ -7,7 +7,7 @@
   >
     <div class="container px-3 mx-auto">
       <H2 class="mb-6"><PrismicRichText :field="slice.primary.title" /></H2>
-      <div class="sm:grid gap-8 sm:grid-cols-12">
+      <div class="sm:grid gap-8 sm:grid-cols-12 min-h-[500px]">
         <Form
           class="sm:col-span-12 md:col-span-6"
           name="contact-form"
@@ -53,17 +53,19 @@
             md:col-span-6
             flex
             items-center
-            justify-center
+            justify-end
+            sm:justify-center
             mt-8
             sm:mt-0
           "
         >
           <div
-            class="sm:text-xl p-8"
+            v-click-outside="close"
+            class="text-sm sm:text-xl p-8 z-[1000]"
             :class="[
               showAboutPrice
                 ? 'sm:rounded-lg fixed sm:static top-0 bottom-0 '
-                : 'cursor-pointer flex h-48 w-48 rounded-full p-8  spin-animate		  text-center justify-center items-center ',
+                : 'cursor-pointer flex h-36 w-36 sm:h-48 sm:w-48 rounded-full p-6 sm:p-8  spin-animate		  text-center justify-center items-center ',
             ]"
             :style="`background-color: ${slice.primary['price-background']}`"
             @click="
@@ -99,6 +101,11 @@ export default {
   props: getSliceComponentProps(["slice", "index", "slices", "context"]),
   data() {
     return { showAboutPrice: false };
+  },
+  methods: {
+    close() {
+      this.showAboutPrice = false;
+    },
   },
 };
 </script>
