@@ -49,19 +49,19 @@ export default {
     modern: true,
     preview: false,
     endpoint: "https://itcoop.prismic.io/api/v2",
-    apiOptions: {
-      routes: [
-        // Resolves the Homepage document to "/"
-        {
-          type: "main",
-          path: "/:lang?",
-        },
-        {
-          type: "projects",
-          path: "/:lang?/projects",
-        },
-      ],
-    },
+    // apiOptions: {
+    //   routes: [
+    //     // Resolves the Homepage document to "/"
+    //     {
+    //       type: "main",
+    //       path: "/:lang?",
+    //     },
+    //     {
+    //       type: "projects",
+    //       path: "/:lang?/projects",
+    //     },
+    //   ],
+    // },
     /* see configuration for more */
   },
 
