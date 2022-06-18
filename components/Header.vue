@@ -24,7 +24,7 @@
           </ul>
         </nav> -->
         <BtnDefault class="mx-4 hidden md:block">
-          <NuxtLink :to="'/' + $store.state.lang.current + '/' + '#contacts'">
+          <NuxtLink :to="'/' + $store.state.lang.current + '#contacts'">
             <PrismicRichText :field="data.GetContactsBtn" />
           </NuxtLink>
         </BtnDefault>
