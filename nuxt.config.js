@@ -72,4 +72,7 @@ export default {
   pwa: {
     icon: false, // disables the icon module
   },
+  generate: {
+    routes: ["/ru", "/en-us", "/projects/ru", "/projects/en-us"],
+  },
 };
