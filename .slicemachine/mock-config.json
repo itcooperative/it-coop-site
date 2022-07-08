@@ -24,7 +24,8 @@
     },
     "Projects": {
       "projectsIndex": {
-        "primary": {}
+        "primary": {},
+        "items": {}
       },
       "default": {
         "items": {

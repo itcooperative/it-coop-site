@@ -133,13 +133,6 @@
         }
       },
       "items": {
-        "background": {
-          "config": {
-            "label": "Background",
-            "placeholder": ""
-          },
-          "type": "Color"
-        },
         "title": {
           "config": {
             "label": "Title",
@@ -189,6 +182,14 @@
             "thumbnails": []
           },
           "type": "Image"
+        },
+        "siteLink": {
+          "type": "Link",
+          "config": {
+            "label": "Site Link",
+            "placeholder": "",
+            "select": null
+          }
         }
       },
       "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"

@@ -4,46 +4,109 @@
     :style="`background: ${slice.primary.Background}`"
     v-if="slice.primary.status ? true : false"
   >
-    <div class="container mx-auto px-3">
+      <div
+      class="container mx-auto px-3"
+      :class="[slice.variation === 'projectsIndex' ? 'grid grid-cols-12' : '']"
+    >
       <article
-        class="sm:px-16 sm:py-12 mb-8 sm:mb-[80px] project"
+        class="project"
         v-for="(item, i) in slice.items"
         :key="`slice-item-${i}`"
         :style="`background: ${item.background}`"
+        :class="[
+          slice.variation === 'projectsIndex'
+            ? 'col-span-12 sm:col-span-6 flex flex-wrap'
+            : 'sm:px-16 sm:py-12 mb-8 sm:mb-[80px]',
+        ]"
       >
-        <div class="sm:hidden">
-          <PrismicImage :field="item.Image" />
-        </div>
-
         <PrismicLink
           :field="item.siteLink"
-          class="col-span-12 sm:col-span-7 hidden sm:block w-full"
+          :class="[slice.variation === 'projectsIndex' ? 'mb-2' : 'sm:hidden']"
         >
-          <H2 class="title p-8 sm:p-0 sm:mb-8 text-white">
+          <PrismicImage :field="item.Image" />
+        </PrismicLink>
+        <PrismicLink
+          :field="item.siteLink"
+          class=""
+          :class="[
+            slice.variation === 'projectsIndex'
+              ? 'col-span-12'
+              : 'col-span-12 sm:col-span-7 hidden sm:block w-full',
+          ]"
+        >
+          <H2
+            class="title"
+            :class="[
+              slice.variation === 'projectsIndex'
+                ? 'text-xl sm:text-xl'
+                : ' p-8 sm:p-0 sm:mb-8 text-white',
+            ]"
+          >
             <PrismicRichText :field="item.title" />
           </H2>
         </PrismicLink>
-        <div class="p-8 sm:p-0 sm:grid grid-cols-12 gap-8">
-          <div class="col-span-12 sm:col-span-5">
+        <div
+          class=""
+          :class="[
+            slice.variation === 'projectsIndex'
+              ? 'basis-3/4 '
+              : 'p-8 sm:p-0 sm:grid grid-cols-12 gap-8',
+          ]"
+        >
+          <div
+            class=""
+            :class="[
+              slice.variation === 'projectsIndex'
+                ? 'flex flex-col'
+                : 'col-span-12 sm:col-span-5',
+            ]"
+          >
             <PrismicRichText
-              class="text-white font-bold text-lg sm:text-xl mb-6"
+              class="font-bold"
               :field="item.client"
+              :class="[
+                slice.variation === 'projectsIndex'
+                  ? 'text-sm order-1 mb-2'
+                  : 'text-white text-lg sm:text-xl mb-6',
+              ]"
             />
-            <div class="text-white font-bold mb-6">{{ item.WhatWeDo }}</div>
+            <div
+              class=""
+              :class="[
+                slice.variation === 'projectsIndex'
+                  ? 'text-sm order-3'
+                  : 'text-white  mb-6',
+              ]"
+            >
+              {{ item.WhatWeDo }}
+            </div>
 
             <PrismicRichText
-              class="descr text-white font-medium text-sm leading-normal"
+              class="font-bold"
               :field="item.description"
+              :class="[
+                slice.variation === 'projectsIndex'
+                  ? 'text-sm order-2 mb-2'
+                  : 'text-white font-medium text-sm leading-normal',
+              ]"
             />
           </div>
           <PrismicLink
+            v-if="!slice.variation === 'projectsIndex'"
             :field="item.siteLink"
             class="col-span-12 sm:col-span-7 hidden sm:block w-full"
           >
             <PrismicImage class="w-full" :field="item.Image" />
           </PrismicLink>
         </div>
-        <div class="flex justify-end pt-8 pr-4 pb-4 sm:pb-0 sm:pr-0">
+        <div
+          class="flex justify-end pt-8 pr-4 pb-4 sm:pb-0 sm:pr-0"
+          :class="[
+            slice.variation === 'projectsIndex'
+              ? 'basis-1/4 items-end pl-2'
+              : '',
+          ]"
+        >
           <PrismicImage class="logo" :field="item.Logo" />
         </div>
       </article>
