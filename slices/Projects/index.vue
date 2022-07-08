@@ -4,7 +4,7 @@
     :style="`background: ${slice.primary.Background}`"
     v-if="slice.primary.status ? true : false"
   >
-      <div
+    <div
       class="container mx-auto px-3"
       :class="[slice.variation === 'projectsIndex' ? 'grid grid-cols-12' : '']"
     >
@@ -111,13 +111,13 @@
         </div>
       </article>
     </div>
-    <!-- <div class="text-center mt-10">
+    <div class="text-center mt-10" v-if="!slice.variation === 'projectsIndex'">
       <BtnDefault>
         <PrismicLink :field="slice.primary.showalllink">{{
           $prismic.asText(slice.primary.ShowAllText)
         }}</PrismicLink>
       </BtnDefault>
-    </div> -->
+    </div>
   </section>
 </template>
 

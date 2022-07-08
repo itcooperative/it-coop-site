@@ -1,7 +1,17 @@
 <template>
-  <section class="section" v-if="slice.primary.status ? true : false">
-    <PrismicRichText :field="slice.primary.title" class="title" />
-    <PrismicRichText :field="slice.primary.description" />
+  <section class="pb-20 sm:pb-32" v-if="slice.primary.status ? true : false">
+    <div class="container mx-auto px-3">
+      <H2 class="mb-4 text-lg sm:text-lg">
+        <PrismicRichText :field="slice.primary.title" />
+      </H2>
+      <div class="mt-3">
+        <BtnDefault>
+          <NuxtLink :to="'/' + $store.state.lang.current + '#contacts'">
+            {{ $prismic.asText(slice.primary.BtnText) }}
+          </NuxtLink>
+        </BtnDefault>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -16,13 +26,4 @@ export default {
 </script>
 
 <style scoped>
-.section {
-  background: #f7f7f7;
-  color: #111;
-  padding: 4em;
-  text-align: center;
-}
-.title {
-  margin-bottom: 2em;
-}
 </style>
