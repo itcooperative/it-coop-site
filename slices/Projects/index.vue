@@ -18,12 +18,12 @@
         :class="[
           slice.variation === 'projectsIndex'
             ? 'col-span-12 sm:col-span-6 flex flex-wrap  mb-8'
-            : 'sm:px-16 sm:py-12 mb-8 sm:mb-[80px]',
+            : 'lg:px-16 lg:py-12 mb-8 lg:mb-[80px]',
         ]"
       >
         <PrismicLink
           :field="item.siteLink"
-          :class="[slice.variation === 'projectsIndex' ? 'mb-2' : 'sm:hidden']"
+          :class="[slice.variation === 'projectsIndex' ? 'mb-2' : 'lg:hidden']"
         >
           <PrismicImage :field="item.Image" />
         </PrismicLink>
@@ -33,7 +33,7 @@
           :class="[
             slice.variation === 'projectsIndex'
               ? 'col-span-12'
-              : 'col-span-12 sm:col-span-7 hidden sm:block w-full',
+              : 'col-span-12 lg:col-span-7 hidden lg:block w-full',
           ]"
         >
           <H2
@@ -41,7 +41,7 @@
             :class="[
               slice.variation === 'projectsIndex'
                 ? 'text-xl sm:text-xl'
-                : ' p-8 sm:p-0 sm:mb-8 text-white',
+                : ' p-8 sm:p-0 lg:mb-8 text-white',
             ]"
           >
             <PrismicRichText :field="item.title" />
@@ -52,7 +52,7 @@
           :class="[
             slice.variation === 'projectsIndex'
               ? 'basis-[80%] '
-              : 'p-8 sm:p-0 sm:grid grid-cols-12 gap-8',
+              : 'p-8 lg:p-0 lg:grid grid-cols-12 gap-8',
           ]"
         >
           <div
@@ -60,7 +60,7 @@
             :class="[
               slice.variation === 'projectsIndex'
                 ? 'flex flex-col'
-                : 'col-span-12 sm:col-span-5',
+                : 'col-span-12 lg:col-span-5',
             ]"
           >
             <PrismicRichText
@@ -69,7 +69,7 @@
               :class="[
                 slice.variation === 'projectsIndex'
                   ? 'text-sm mb-2'
-                  : 'text-white text-lg sm:text-xl mb-6',
+                  : 'text-white text-lg lg:text-xl mb-6',
               ]"
             />
             <div
@@ -96,13 +96,13 @@
           <PrismicLink
             v-if="slice.variation != 'projectsIndex'"
             :field="item.siteLink"
-            class="col-span-12 sm:col-span-7 hidden sm:block w-full"
+            class="col-span-12 sm:col-span-7 hidden lg:block w-full"
           >
             <PrismicImage class="w-full" :field="item.Image" />
           </PrismicLink>
         </div>
         <div
-          class="flex justify-end pt-8 pr-4 pb-4 sm:pb-0 sm:pr-0"
+          class="flex justify-end pt-8 pr-4 pb-4 lg:pb-0 lg:pr-0"
           :class="[
             slice.variation === 'projectsIndex'
               ? 'basis-[20%] items-end pl-2'
