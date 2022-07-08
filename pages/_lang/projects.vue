@@ -1,6 +1,6 @@
 
 <template>
-  <div class="pt-8">
+  <div class="pt-16 pb-8">
     <H1 class="text-4xl sm:text-4xl md:text-4xl container px-3 mx-auto"
       ><PrismicRichText :field="document.data.Title"
     /></H1>

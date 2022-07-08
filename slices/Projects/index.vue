@@ -51,7 +51,7 @@
           class=""
           :class="[
             slice.variation === 'projectsIndex'
-              ? 'basis-3/4 '
+              ? 'basis-4/5 '
               : 'p-8 sm:p-0 sm:grid grid-cols-12 gap-8',
           ]"
         >
@@ -105,7 +105,7 @@
           class="flex justify-end pt-8 pr-4 pb-4 sm:pb-0 sm:pr-0"
           :class="[
             slice.variation === 'projectsIndex'
-              ? 'basis-1/4 items-end pl-2'
+              ? 'basis-1/5 items-end pl-2'
               : '',
           ]"
         >
