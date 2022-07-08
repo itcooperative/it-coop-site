@@ -40,7 +40,12 @@ export default {
 .container-half {
   width: 100%;
 }
-
+@media (min-width: 640px) {
+  .container-half {
+    max-width: 640px;
+    margin: auto;
+  }
+}
 @media (min-width: 768px) {
   .container-half {
     max-width: 374px;
