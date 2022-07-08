@@ -6,7 +6,9 @@
   >
     <div
       class="container mx-auto px-3"
-      :class="[slice.variation === 'projectsIndex' ? 'grid grid-cols-12' : '']"
+      :class="[
+        slice.variation === 'projectsIndex' ? 'grid grid-cols-12 gap-8' : '',
+      ]"
     >
       <article
         class="project"
@@ -66,15 +68,15 @@
               :field="item.client"
               :class="[
                 slice.variation === 'projectsIndex'
-                  ? 'text-sm order-1 mb-2'
+                  ? 'text-sm mb-2'
                   : 'text-white text-lg sm:text-xl mb-6',
               ]"
             />
             <div
-              class=""
+              class="font-bold"
               :class="[
                 slice.variation === 'projectsIndex'
-                  ? 'text-sm order-3'
+                  ? 'text-sm mb-2'
                   : 'text-white  mb-6',
               ]"
             >
@@ -82,11 +84,11 @@
             </div>
 
             <PrismicRichText
-              class="font-bold"
+              class="descr"
               :field="item.description"
               :class="[
                 slice.variation === 'projectsIndex'
-                  ? 'text-sm order-2 mb-2'
+                  ? 'text-sm '
                   : 'text-white font-medium text-sm leading-normal',
               ]"
             />
