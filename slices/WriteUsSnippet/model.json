@@ -29,15 +29,6 @@
             "single": "paragraph"
           }
         },
-        "BtnLink": {
-          "config": {
-            "label": "Btn Link",
-            "placeholder": "",
-            "allowTargetBlank": false,
-            "select": null
-          },
-          "type": "Link"
-        },
         "status": {
           "type": "Boolean",
           "config": {

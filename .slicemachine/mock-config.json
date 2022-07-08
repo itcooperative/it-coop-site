@@ -64,7 +64,11 @@
     },
     "FormContact": {},
     "SitePrice": {},
-    "WriteUsSnippet": {}
+    "WriteUsSnippet": {
+      "default": {
+        "primary": {}
+      }
+    }
   },
   "_cts": {
     "header": {},
