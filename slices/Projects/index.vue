@@ -17,7 +17,7 @@
         :style="`background: ${item.background}`"
         :class="[
           slice.variation === 'projectsIndex'
-            ? 'col-span-12 sm:col-span-6 flex flex-wrap'
+            ? 'col-span-12 sm:col-span-6 flex flex-wrap  mb-8'
             : 'sm:px-16 sm:py-12 mb-8 sm:mb-[80px]',
         ]"
       >
@@ -94,7 +94,7 @@
             />
           </div>
           <PrismicLink
-            v-if="!slice.variation === 'projectsIndex'"
+            v-if="slice.variation != 'projectsIndex'"
             :field="item.siteLink"
             class="col-span-12 sm:col-span-7 hidden sm:block w-full"
           >
@@ -113,7 +113,7 @@
         </div>
       </article>
     </div>
-    <div class="text-center mt-10" v-if="!slice.variation === 'projectsIndex'">
+    <div class="text-center mt-10" v-if="slice.variation != 'projectsIndex'">
       <BtnDefault>
         <PrismicLink :field="slice.primary.showalllink">{{
           $prismic.asText(slice.primary.ShowAllText)
