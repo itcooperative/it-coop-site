@@ -38,6 +38,20 @@
           "placeholder": ""
         },
         "type": "Color"
+      },
+      "IdKey": {
+        "type": "Text",
+        "config": {
+          "label": "Id Key",
+          "placeholder": ""
+        }
+      },
+      "Fingerprint": {
+        "type": "Text",
+        "config": {
+          "label": "Fingerprint",
+          "placeholder": ""
+        }
       }
     }
   }

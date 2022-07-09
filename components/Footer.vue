@@ -4,7 +4,16 @@
     :style="`background: ${data.Background}`"
   >
     <div>
-      <PrismicRichText class="md:text-lg font-medium" :field="data.Email" />
+      <PrismicRichText
+        class="md:text-lg font-medium mb-2"
+        :field="data.Email"
+      />
+      <code class="break-all mb-2 block text-sm sm:text-lg">
+        {{ data.IdKey }}
+      </code>
+      <code class="break-all block text-sm sm:text-lg">
+        {{ data.Fingerprint }}
+      </code>
       <PrismicRichText class="md:text-lg font-medium" :field="data.Telegram" />
     </div>
     <PrismicRichText

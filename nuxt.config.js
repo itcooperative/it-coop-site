@@ -15,7 +15,7 @@ export default {
           "Сделаем ваши сайты, приложения, боты и другие проекты без добавления наёмного труда.",
       },
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    link: [{ rel: "icon", type: "image/png", href: "/favicon_16px.png" }],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
@@ -49,20 +49,6 @@ export default {
     modern: true,
     preview: false,
     endpoint: "https://itcoop.prismic.io/api/v2",
-    // apiOptions: {
-    //   routes: [
-    //     // Resolves the Homepage document to "/"
-    //     {
-    //       type: "main",
-    //       path: "/:lang?",
-    //     },
-    //     {
-    //       type: "projects",
-    //       path: "/:lang?/projects",
-    //     },
-    //   ],
-    // },
-    /* see configuration for more */
   },
 
   // Modules (https://go.nuxtjs.dev/config-modules)

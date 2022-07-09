@@ -23,7 +23,7 @@
     />
     <label
       :class="[contain ? 'contain' : '']"
-      class="absolute sm:text-xl top-0 font-medium bottom-[10px] left-0 z-0"
+      class="absolute lg:text-xl top-0 font-medium bottom-[10px] left-0 z-0"
       for=""
       >{{ placeholder }}</label
     >

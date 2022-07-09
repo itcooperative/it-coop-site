@@ -1,29 +1,31 @@
 {
-  "id": "ebb15a72-24d6-4924-bbf2-086bb6789368",
-  "uid": "qui-aut-alias",
+  "id": "bf011be2-df57-4b25-9950-5079308e5c17",
+  "uid": "aut-aut-eos",
   "type": "footer",
   "data": {
     "Copyright": [
       {
         "type": "paragraph",
-        "text": "Eiusmod deserunt ex aliqua cupidatat aliquip ipsum laborum anim.",
+        "text": "Ipsum mollit occaecat nisi minim non dolore mollit anim cillum commodo do amet nostrud culpa.",
         "spans": []
       }
     ],
     "Email": [
       {
         "type": "paragraph",
-        "text": "Deserunt adipisicing et ea veniam Lorem nisi tempor occaecat tempor est.",
+        "text": "Lorem excepteur et nostrud ullamco officia culpa.",
         "spans": []
       }
     ],
     "Telegram": [
       {
         "type": "paragraph",
-        "text": "Et anim dolor ad consequat non sunt in consequat ut eiusmod exercitation ad. Ad sint cupidatat mollit fugiat aliqua amet non voluptate ipsum voluptate sunt sit. Labore aliqua magna elit ad officia ex cillum cillum adipisicing culpa excepteur.",
+        "text": "Ullamco et et esse excepteur ut cillum consectetur id consectetur cillum. Laborum fugiat ex cupidatat dolor commodo.",
         "spans": []
       }
     ],
-    "Background": "#711c28"
+    "Background": "#da366f",
+    "IdKey": "morph intuitive portals",
+    "Fingerprint": "empower cutting-edge niches"
   }
 }
