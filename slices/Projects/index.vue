@@ -11,6 +11,7 @@
       ]"
     >
       <article
+        :data-aos="i % 2 == 0 ? 'fade-up-right' : 'fade-down-left'"
         class="project"
         v-for="(item, i) in slice.items"
         :key="`slice-item-${i}`"

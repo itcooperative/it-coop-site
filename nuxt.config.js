@@ -22,7 +22,10 @@ export default {
   css: ["~/assets/scss/main.scss"],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: ["~/plugins/click-outside.js"],
+  plugins: [
+    "~/plugins/click-outside.js",
+    { src: "@/plugins/aos", mode: "client" },
+  ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
@@ -60,5 +63,15 @@ export default {
   },
   generate: {
     routes: ["/ru", "/en-us", "/projects/ru", "/projects/en-us"],
+  },
+  purgeCSS: {
+    whitelist: [
+      "aos-init",
+      "aos-animate",
+      "data-aos-delay",
+      "data-aos-duration",
+      "fade-up",
+      "zoom-in",
+    ],
   },
 };

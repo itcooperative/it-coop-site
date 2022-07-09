@@ -12,6 +12,7 @@
   "dependencies": {
     "@nuxtjs/prismic": "^1.4.1",
     "@prismicio/slice-simulator-vue": "^0.2.0",
+    "aos": "^3.0.0-beta.6",
     "core-js": "^3.19.3",
     "jquery": "^3.6.0",
     "nuxt": "^2.15.8",
