@@ -64,7 +64,7 @@
             class="text-sm sm:text-xl p-8 z-[1000]"
             :class="[
               showAboutPrice
-                ? 'sm:rounded-lg fixed sm:static top-0 bottom-0 '
+                ? 'sm:rounded-lg fixed pb-12 sm:static top-0 bottom-0 '
                 : 'cursor-pointer flex h-36 w-36 sm:h-48 sm:w-48 rounded-full p-6 sm:p-8  spin-animate		  text-center justify-center items-center ',
             ]"
             :style="`background-color: ${slice.primary['price-background']}`"

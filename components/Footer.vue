@@ -1,13 +1,15 @@
 <template>
   <div
-    class="sm:flex justify-between py-8 px-8 border-t-2 border-black"
+    class="sm:flex justify-between pt-4 pb-8 px-8 border-t-2 border-black"
     :style="`background: ${data.Background}`"
   >
     <div>
-      <PrismicRichText
-        class="md:text-lg font-medium mb-2"
-        :field="data.Email"
-      />
+      <a :href="'mailto:' + $prismic.asText(data.Email)">
+        <PrismicRichText
+          class="md:text-lg font-medium mb-2"
+          :field="data.Email"
+      /></a>
+
       <code class="break-all mb-2 block text-sm sm:text-lg">
         {{ data.IdKey }}
       </code>
