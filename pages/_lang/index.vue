@@ -37,7 +37,7 @@ export default {
         {
           hid: "twitter:image",
           name: "twitter:image",
-          content: this.document.data.metaImage,
+          content: this.document.data.metaImage.url,
         },
         {
           hid: "twitter:card",
@@ -49,11 +49,7 @@ export default {
           name: "twitter:creator",
           content: "summary_large_image",
         },
-        {
-          hid: "twitter:image",
-          name: "twitter:image",
-          content: this.document.data.metaImage,
-        },
+
         {
           hid: "twitter:image:alt",
           name: "twitter:image:alt",
@@ -62,7 +58,7 @@ export default {
         {
           hid: "og:image",
           property: "og:image",
-          content: this.document.data.metaImage,
+          content: this.document.data.metaImage.url,
         },
 
         {
@@ -78,17 +74,17 @@ export default {
         {
           hid: "og:image:secure_url",
           property: "og:image:secure_url",
-          content: this.document.data.metaImage,
+          content: this.document.data.metaImage.url,
         },
         {
           hid: "og:image:alt",
           property: "og:image:alt",
-          content: this.document.data.metaImage,
+          content: this.document.data.metaImage.alt,
         },
         {
           hid: "vk:image",
           property: "vk:image",
-          content: this.document.data.metaImage,
+          content: this.document.data.metaImage.url,
         },
       ],
     };
