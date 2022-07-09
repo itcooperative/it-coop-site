@@ -10,7 +10,11 @@
       >
         <div
           class="container-half pt-20 pb-40"
-          :class="[i % 2 ? 'pl-3 md:pl-20 pr-3' : 'pr-3 md:pr-20 pl-3']"
+          :class="[
+            i % 2
+              ? 'pl-3 md:pl-20 pr-3 mr-auto ml-0'
+              : 'pr-3 md:pr-20 pl-3 ml-auto mr-0',
+          ]"
         >
           <H2 class="pb-8"><PrismicRichText :field="item.title" /></H2>
           <PrismicRichText
@@ -43,7 +47,6 @@ export default {
 @media (min-width: 640px) {
   .container-half {
     max-width: 640px;
-    margin: auto;
   }
 }
 @media (min-width: 768px) {
