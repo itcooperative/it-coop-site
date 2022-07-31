@@ -39,6 +39,8 @@ export default {
     "@nuxtjs/google-fonts",
   ],
   googleFonts: {
+    download: true,
+    inject: true,
     families: {
       "Russo One": [400, 500, 600, 700],
       "IBM Plex Sans": [400, 500, 600, 700],
