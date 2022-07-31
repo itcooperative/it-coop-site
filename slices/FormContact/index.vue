@@ -111,7 +111,7 @@ export default {
 </script>
 
 <style>
-.spin-animate {
+/* .spin-animate {
   animation: rotate 2s infinite;
   transform-origin: center;
 }
@@ -125,5 +125,5 @@ export default {
     transform: rotate(-15deg);
     animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
-}
+} */
 </style>
