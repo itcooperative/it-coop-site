@@ -17,12 +17,15 @@
       </div>
     </div>
     <div
+      id="heroMarguee"
       class="marquee overflow-hidden py-3 border-t-2 border-b-2 border-black"
     >
-      <PrismicRichText
-        :field="slice.primary.BannerText"
-        class="string text-lg sm:text-2xl uppercase whitespace-no-wrap"
-      />
+      <div class="marquee__inner">
+        <PrismicRichText
+          :field="slice.primary.BannerText"
+          class="string text-lg sm:text-2xl uppercase whitespace-no-wrap"
+        />
+      </div>
     </div>
   </section>
 </template>
@@ -34,51 +37,58 @@ export default {
   name: "Hero",
   // The array passed to `getSliceComponentProps` is purely optional and acts as a visual hint for you
   props: getSliceComponentProps(["slice", "index", "slices", "context"]),
+  mounted() {
+    if (process.client) {
+      const marquee2 = document.querySelector("#heroMarguee");
+      this.animateMarquee(marquee2, 15000);
+    }
+  },
+  methods: {
+    animateMarquee(el, duration) {
+      if (process.client) {
+        const innerEl = el.querySelector(".marquee__inner");
+        const innerWidth = innerEl.offsetWidth;
+        const cloneEl = innerEl.cloneNode(true);
+        el.appendChild(cloneEl);
+
+        let start = performance.now();
+        let progress;
+        let translateX;
+
+        requestAnimationFrame(function step(now) {
+          progress = (now - start) / duration;
+
+          if (progress > 1) {
+            progress %= 1;
+            start = now;
+          }
+
+          translateX = innerWidth * progress;
+
+          innerEl.style.transform = `translate3d(-${translateX}px, 0 , 0)`;
+          cloneEl.style.transform = `translate3d(-${translateX}px, 0 , 0)`;
+          requestAnimationFrame(step);
+        });
+      }
+    },
+  },
 };
 </script>
 
 <style>
-@-webkit-keyframes scroll {
-  0% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-  }
-  100% {
-    -webkit-transform: translate(-100%, 0);
-    transform: translate(-100%, 0);
-  }
-}
-
-@-moz-keyframes scroll {
-  0% {
-    -moz-transform: translate(0, 0);
-    transform: translate(0, 0);
-  }
-  100% {
-    -moz-transform: translate(-100%, 0);
-    transform: translate(-100%, 0);
-  }
-}
-@keyframes scroll {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(-100%, 0);
-  }
-}
 .marquee {
-  display: block;
-  width: 100%;
-  white-space: nowrap;
   overflow: hidden;
+  font-size: 0;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  white-space: nowrap;
+  cursor: default;
+  user-select: none;
 }
 
-.marquee .string {
+.marquee__inner {
+  font-size: 2rem;
+  white-space: nowrap;
   display: inline-block;
-  padding-left: 100%;
-  -webkit-animation: scroll 25s infinite linear;
-  -moz-animation: scroll 25s infinite linear;
-  animation: scroll 25s infinite linear;
 }
 </style>

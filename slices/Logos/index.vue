@@ -4,17 +4,17 @@
     class="py-8 sm:py-12"
     :style="`background: ${slice.primary.Background}`"
   >
-    <div class="marquee overflow-hidden py-3">
-      <span>
+    <div id="logoMarguee" class="marquee">
+      <div class="marquee__inner">
         <div
-          class="h-6 w-32 mx-4 flex items-center justify-center"
+          class="mx-6 flex items-center justify-center"
           v-for="(item, i) in slice.items"
           :key="`slice-item-${i}`"
         >
-          <PrismicImage :field="item.logo" /></div
-      ></span>
+          <PrismicImage class="max-h-10 max-w-32" :field="item.logo" />
+        </div>
+      </div>
     </div>
-    <!-- <div class="container mx-auto px-3 flex justify-center"></div> -->
   </section>
 </template>
 
@@ -28,57 +28,57 @@ export default {
   data() {
     return {};
   },
+  mounted() {
+    if (process.client) {
+      const marquee2 = document.querySelector("#logoMarguee");
+      this.animateMarquee(marquee2, 13000);
+    }
+  },
+  methods: {
+    animateMarquee(el, duration) {
+      if (process.client) {
+        const innerEl = el.querySelector(".marquee__inner");
+        const innerWidth = innerEl.offsetWidth;
+        const cloneEl = innerEl.cloneNode(true);
+        el.appendChild(cloneEl);
+
+        let start = performance.now();
+        let progress;
+        let translateX;
+
+        requestAnimationFrame(function step(now) {
+          progress = (now - start) / duration;
+
+          if (progress > 1) {
+            progress %= 1;
+            start = now;
+          }
+
+          translateX = innerWidth * progress;
+
+          innerEl.style.transform = `translate3d(-${translateX}px, 0 , 0)`;
+          cloneEl.style.transform = `translate3d(-${translateX}px, 0 , 0)`;
+          requestAnimationFrame(step);
+        });
+      }
+    },
+  },
 };
 </script>
 
 <style>
-.slick-track {
-  display: flex;
-  align-items: center;
-}
-@-webkit-keyframes scroll {
-  0% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-  }
-  100% {
-    -webkit-transform: translate(-100%, 0);
-    transform: translate(-100%, 0);
-  }
-}
-
-@-moz-keyframes scroll {
-  0% {
-    -moz-transform: translate(0, 0);
-    transform: translate(0, 0);
-  }
-  100% {
-    -moz-transform: translate(-100%, 0);
-    transform: translate(-100%, 0);
-  }
-}
-@keyframes scroll {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(-100%, 0);
-  }
-}
 .marquee {
-  display: flex;
-  align-items: center;
-  width: 100%;
+  font-size: 0;
+  font-family: sans-serif;
+  text-transform: uppercase;
   white-space: nowrap;
-  overflow: hidden;
+  cursor: default;
+  user-select: none;
 }
 
-.marquee span {
+.marquee__inner {
+  font-size: 2rem;
+  white-space: nowrap;
   display: inline-flex;
-  align-items: center;
-  padding-left: 0%;
-  -webkit-animation: scroll 25s infinite linear;
-  -moz-animation: scroll 25s infinite linear;
-  animation: scroll 25s infinite linear;
 }
 </style>

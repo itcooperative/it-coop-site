@@ -1,7 +1,7 @@
 <template>
   <section class="lang-switcher">
     <span @click="changeLang($store.state.lang.other)" class="cursor-pointer">
-      <span class="md:text-xl ml-5">{{
+      <span class="text-lg md:text-xl ml-5">{{
         langs[$store.state.lang.other.lang]
       }}</span>
     </span>
