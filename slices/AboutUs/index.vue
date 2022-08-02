@@ -9,7 +9,7 @@
         :style="`background: ${item.background}`"
       >
         <div
-          class="container-half pt-20 pb-40"
+          class="container-half pt-12 md:pt-20 pb-20 md:pb-40"
           :class="[
             i % 2
               ? 'pl-3 md:pl-20 pr-3 mr-auto ml-0'

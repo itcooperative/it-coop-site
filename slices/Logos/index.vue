@@ -7,7 +7,7 @@
     <div id="logoMarguee" class="marquee">
       <div class="marquee__inner">
         <div
-          class="mx-6 flex items-center justify-center"
+          class="mx-6 flex w-16 sm:w-auto items-center justify-center"
           v-for="(item, i) in slice.items"
           :key="`slice-item-${i}`"
         >
