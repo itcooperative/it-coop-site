@@ -11,7 +11,7 @@
         /></H1>
 
         <PrismicRichText
-          class="col-span-12 md:col-span-9 text-xl leading-snug"
+          class="col-span-12 md:col-span-6 text-xl leading-snug"
           :field="slice.primary.description"
         />
       </div>
@@ -23,7 +23,7 @@
       <div class="marquee__inner">
         <PrismicRichText
           :field="slice.primary.BannerText"
-          class="string text-lg sm:text-2xl uppercase whitespace-no-wrap"
+          class="string text-lg sm:text-2xl uppercase whitespace-no-wrap pr-5"
         />
       </div>
     </div>

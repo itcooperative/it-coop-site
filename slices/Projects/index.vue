@@ -52,15 +52,14 @@
           :class="[
             slice.variation === 'projectsIndex'
               ? 'basis-[80%] '
-              : 'p-8 lg:p-0 lg:grid grid-cols-12 gap-8',
+              : 'p-8 lg:p-0 lg:grid grid-cols-12 gap-8 ',
           ]"
         >
           <div
-            class=""
             :class="[
               slice.variation === 'projectsIndex'
                 ? 'flex flex-col'
-                : 'col-span-12 lg:col-span-5',
+                : `col-span-12 lg:col-span-5 ${i % 2 ? 'order-2' : ''}`,
             ]"
           >
             <PrismicRichText
@@ -92,17 +91,30 @@
                   : 'text-white font-medium text-sm leading-normal',
               ]"
             />
+            <div
+              class="flex justify-end pt-8 pr-4 pb-4 lg:pb-0 lg:pr-0"
+              v-if="slice.variation !== 'projectsIndex'"
+              :class="[
+                slice.variation === 'projectsIndex'
+                  ? 'basis-[20%] items-end pl-2'
+                  : '',
+              ]"
+            >
+              <PrismicImage class="logo" :field="item.Logo" />
+            </div>
           </div>
           <PrismicLink
             v-if="slice.variation != 'projectsIndex'"
             :field="item.siteLink"
             class="col-span-12 sm:col-span-7 hidden lg:block w-full"
+            :class="[i % 2 ? 'order-1' : '']"
           >
             <PrismicImage class="w-full" :field="item.Image" />
           </PrismicLink>
         </div>
         <div
           class="flex justify-end pt-8 pr-4 pb-4 lg:pb-0 lg:pr-0"
+          v-if="slice.variation === 'projectsIndex'"
           :class="[
             slice.variation === 'projectsIndex'
               ? 'basis-[20%] items-end pl-2'
