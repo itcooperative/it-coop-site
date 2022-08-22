@@ -28,20 +28,21 @@
           <PrismicImage :field="item.Image" />
         </PrismicLink>
         <PrismicLink
+          v-on:mouseover="animate_start"
           :field="item.siteLink"
-          class=""
           :class="[
             slice.variation === 'projectsIndex'
               ? 'col-span-12'
-              : 'col-span-12 lg:col-span-7 hidden lg:block w-full',
+              : 'col-span-12 lg:col-span-7  w-full',
           ]"
         >
           <H2
-            class="title"
+            class="title text-lg sm:text-xl"
             :class="[
-              slice.variation === 'projectsIndex'
-                ? 'text-xl sm:text-xl'
-                : ' p-8 sm:p-0 lg:mb-8 text-white',
+                animate_class +
+                (slice.variation === 'projectsIndex'
+                  ? 'py-4'
+                  : ' px-8 lg:px-0 pt-8 lg:pt-0  lg:mb-8 text-white'),
             ]"
           >
             <PrismicRichText :field="item.title" />
@@ -142,6 +143,18 @@ export default {
   name: "Projects",
   // The array passed to `getSliceComponentProps` is purely optional and acts as a visual hint for you
   props: getSliceComponentProps(["slice", "index", "slices", "context"]),
+  data: function () {
+    return { animate_class: "" };
+  },
+  methods: {
+    animate_start() {
+      if (this.animate_class) {
+        this.animate_class = "";
+      } else {
+        this.animate_class = "bling";
+      }
+    },
+  },
 };
 </script>
 
@@ -159,5 +172,22 @@ export default {
 
 .project .title a {
   cursor: pointer;
+}
+
+.bling {
+  animation-name: blinging;
+  animation-duration: 0.5s;
+}
+
+@keyframes blinging {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 </style>

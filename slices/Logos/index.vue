@@ -1,7 +1,7 @@
 <template>
   <section
     v-if="slice.primary.status ? true : false"
-    class="py-8 sm:py-12"
+    class="py-8 md:py-12"
     :style="`background: ${slice.primary.Background}`"
   >
     <div id="logoMarguee" class="marquee">

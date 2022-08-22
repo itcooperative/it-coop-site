@@ -12,6 +12,7 @@ module.exports = {
     `./app.{js,ts,vue}`,
   ],
   theme: {
+
     fontSize: {
       sm: ".875rem",
       base: "1rem",
@@ -33,8 +34,9 @@ module.exports = {
       "primary-font": ["IBM Plex Sans"],
       "secondary-font": ["Russo One"],
     },
+   
     plugins: [
-      // ...
-    ],
+
+  ],
   },
 };

@@ -1,6 +1,6 @@
 <template>
   <section class="about-us" v-if="slice.primary.status ? true : false">
-    <div class="md:grid md:grid-cols-2">
+    <div class="lg:grid lg:grid-cols-2">
       <div
         class="flex"
         v-for="(item, i) in slice.items"
@@ -9,11 +9,11 @@
         :style="`background: ${item.background}`"
       >
         <div
-          class="container-half pt-12 md:pt-20 pb-20 md:pb-40"
+          class="container-half mx-auto pt-12 lg:pt-20 pb-20 lg:pb-40"
           :class="[
             i % 2
-              ? 'pl-3 md:pl-20 pr-3 mr-auto ml-0'
-              : 'pr-3 md:pr-20 pl-3 ml-auto mr-0',
+              ? 'pl-3 xl:pl-20 pr-3 lg:mr-auto lg:ml-0'
+              : 'pr-3 xl:pr-20 pl-3 lg:ml-auto lg:mr-0',
           ]"
         >
           <H2 class="pb-8"><PrismicRichText :field="item.title" /></H2>
@@ -46,28 +46,27 @@ export default {
 }
 @media (min-width: 640px) {
   .container-half {
-    max-width: 640px;
+    max-width: 480px;
   }
 }
 @media (min-width: 768px) {
   .container-half {
-    max-width: 374px;
+    max-width: 618px;
   }
 }
 @media (min-width: 1024px) {
   .container-half {
-    max-width: 512px;
+    max-width: 432px;
   }
 }
 @media (min-width: 1280px) {
   .container-half {
-    max-width: 640px;
+    max-width: 560px;
   }
 }
-
 @media (min-width: 1536px) {
   .container-half {
-    max-width: 768px;
+    max-width: 688px;
   }
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="sm:flex justify-between pt-4 pb-8 px-8 border-t-2 border-black"
+    class="sm:flex justify-between pt-4 pb-8 px-8 border-t-2 border-black "
     :style="`background: ${data.Background}`"
   >
     <div>
