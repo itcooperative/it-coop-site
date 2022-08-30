@@ -1,29 +1,25 @@
 <template>
   <button
-    class="relative"
-    v-on:mouseover="animate_start"
+    class="relative overflow-hidden translate"
     :class="[
       invert
-        ? 'border-2  text-white bg-black border-black px-[48px] py-[12px]  md:text-xl'
-        : 'border-2  border-black px-[48px] py-[12px]  md:text-xl',
+        ? 'border-2 hover:text-black duration-1000 text-white border-black px-[48px] py-[12px]  md:text-xl translate-invert'
+        : 'border-2 hover:text-white duration-1000 border-black px-[48px] py-[12px]  md:text-xl translate',
     ]"
   >
-    <div
-      :class="[animate_class]"
-      class="absolute w-0 left-0 bg-black top-0 bottom-0"
-    ></div>
+    <span class="relative z-40"><slot></slot></span>
 
-    <slot></slot>
+    <div
+      :class="[invert ? 'translate_bg-invert' : 'translate_bg']"
+      class="z-20 absolute w-full left-0 border-black bg-black top-0 bottom-0"
+    ></div>
   </button>
 </template><script>
-import { string } from "io-ts";
-
 export default {
   props: {
     invert: {
       type: Boolean,
       default: false,
-      animate: { type: string, default: "translate" },
     },
   },
   data: function () {
@@ -37,14 +33,31 @@ export default {
         this.animate_class = "translate";
       }
     },
+    animate_leave() {
+      if (this.animate_class) {
+        this.animate_class = "translate";
+      } else {
+        this.animate_class = "";
+      }
+    },
   },
 };
 </script>
 <style>
-.translate:hover {
-  color: white;
+.translate_bg {
+  left: -100%;
+}
+.translate-invert:hover .translate_bg-invert {
   animation-name: translate;
   animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.translate:hover .translate_bg {
+  animation-name: translate;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 @keyframes translate {
