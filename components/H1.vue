@@ -3,7 +3,8 @@
     class="
       text-2xl
       sm:text-4xl
-      md:text-7xl
+      lg:text-5xl
+      xl:text-7xl
       font-secondary-font
       leading-tight
       pb-6

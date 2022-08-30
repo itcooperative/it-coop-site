@@ -11,7 +11,7 @@
         /></H1>
 
         <PrismicRichText
-          class="col-span-12 lg:col-span-8 xl:col-span-6 text-xl leading-snug"
+          class="col-span-12 lg:col-span-8 xl:col-span-7 text-xl leading-snug"
           :field="slice.primary.description"
         />
       </div>

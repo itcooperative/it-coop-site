@@ -1,6 +1,6 @@
 <template>
   <div
-    class="sm:flex justify-between pt-4 pb-8 px-8 border-t-2 border-black "
+    class="sm:flex justify-between pt-4 pb-8 px-8 border-t-2 border-black"
     :style="`background: ${data.Background}`"
   >
     <div>
@@ -10,12 +10,12 @@
           :field="data.Email"
       /></a>
 
-      <code class="break-all mb-2 block text-sm sm:text-lg">
+      <span class="break-all mb-2 block text-sm sm:text-lg">
         {{ data.IdKey }}
-      </code>
-      <code class="break-all block text-sm sm:text-lg">
+      </span>
+      <span class="break-all block text-sm sm:text-lg">
         {{ data.Fingerprint }}
-      </code>
+      </span>
       <PrismicRichText class="md:text-lg font-medium" :field="data.Telegram" />
     </div>
     <PrismicRichText

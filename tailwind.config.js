@@ -23,7 +23,7 @@ module.exports = {
       "4xl": "2.25rem",
       "5xl": "3rem",
       "6xl": "4rem",
-      "7xl": "90px",
+      "7xl": "88px",
       "8xl": "7rem",
     },
     gradientColorStops: (theme) => ({
@@ -34,9 +34,9 @@ module.exports = {
       "primary-font": ["IBM Plex Sans"],
       "secondary-font": ["Russo One"],
     },
-   
+
     plugins: [
 
-  ],
+    ],
   },
 };
