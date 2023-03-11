@@ -4,7 +4,7 @@ export const state = () => ({
   header: {},
   page: {},
   lang: {
-    current: "en-us",
+    current: "ru",
     other: null,
   },
 });
@@ -34,12 +34,15 @@ export const mutations = {
 };
 
 export const actions = {
-  async fetchMenu({ commit, state }, params) {
-    const lang = params.params.lang
-      ? params.params.lang
-      : state.lang.current
-      ? state.lang.current.lang
-      : "en-us";
+  async fetchMenu({
+    commit,
+    state
+  }, params) {
+    const lang = params.params.lang ?
+      params.params.lang :
+      state.lang.current ?
+      state.lang.current.lang :
+      "ru";
     try {
       const menu = (
         await params.api.api.getSingle("menu", {
@@ -54,12 +57,15 @@ export const actions = {
       commit("SET_ERROR", error);
     }
   },
-  async fetchHeader({ commit, state }, params) {
-    const lang = params.params.lang
-      ? params.params.lang
-      : state.lang.current
-      ? state.lang.current.lang
-      : "en-us";
+  async fetchHeader({
+    commit,
+    state
+  }, params) {
+    const lang = params.params.lang ?
+      params.params.lang :
+      state.lang.current ?
+      state.lang.current.lang :
+      "ru";
     const header = (
       await params.api.api.getSingle("header", {
         lang: lang,
@@ -68,12 +74,15 @@ export const actions = {
 
     commit("SET_HEADER", header);
   },
-  async fetchFooter({ commit, state }, params) {
-    const lang = params.params.lang
-      ? params.params.lang
-      : state.lang.current
-      ? state.lang.current.lang
-      : "en-us";
+  async fetchFooter({
+    commit,
+    state
+  }, params) {
+    const lang = params.params.lang ?
+      params.params.lang :
+      state.lang.current ?
+      state.lang.current.lang :
+      "ru";
     const footer = (
       await params.api.api.getSingle("footer", {
         lang: lang,
