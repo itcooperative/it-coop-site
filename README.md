@@ -4,17 +4,21 @@
 
 ```bash
 # install dependencies
-$ yarn install
+$ pnpm install
 
 # serve with hot reload at localhost:3000
-$ yarn dev
+$ pnpm install dev
 
 # build for production and launch server
-$ yarn build
-$ yarn start
+$ pnpm build
+$ pnpm start
 
 # generate static project
-$ yarn generate
+$ pnpm generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+App integrated with [Prismic CMS](https://prismic.io/).
+
+Deploy in  [Netlify](https://www.netlify.com/).
