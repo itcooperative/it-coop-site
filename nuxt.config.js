@@ -64,7 +64,8 @@ export default {
     icon: false, // disables the icon module
   },
   generate: {
-    routes: ["/ru", "/en-us", "/projects/ru", "/projects/en-us"],
+    routes: ["/", "/en-us", "/ru/projects", "/en-us/projects"],
+    exclude:["/slice-simulator"]
   },
   purgeCSS: {
     whitelist: [
