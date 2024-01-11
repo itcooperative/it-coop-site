@@ -1,9 +1,10 @@
 # itcoop
 
-## Require
+## Requirements
 
-- Ensure that you have node v.16 in your local machine.
-- Credentials for prismic.io repository.
+- node v.16
+- yarn 
+- Account on prismic.io
 
 ## Build Setup
 
