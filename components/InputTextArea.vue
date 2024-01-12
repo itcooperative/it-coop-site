@@ -2,23 +2,11 @@
   <div class="relative">
     <textarea
       type="text"
+      :required="required"
+      :name="name"
       rows="1"
       v-model="content"
-      class="
-        textarea
-        input
-        py-2
-        bg-transparent
-        border-b-2 border-black
-        text-black
-        outline-none
-        placeholder:text-red placeholder:text-xl
-        w-full
-        font-medium
-        z-40
-        relative
-        overflow-hidden
-      "
+      class="textarea input py-2 bg-transparent border-b-2 border-black text-black outline-none placeholder:text-red placeholder:text-xl w-full font-medium z-40 relative overflow-hidden"
       @input="mixin_autoResize_resize"
     />
     <label
@@ -31,7 +19,14 @@
 </template>
 <script>
 export default {
-  props: ["placeholder"],
+  props: {
+    placeholder: String,
+    name: String,
+    required: {
+      type: Boolean,
+      default: false,
+    },
+  },
   data: function () {
     return { content: "" };
   },

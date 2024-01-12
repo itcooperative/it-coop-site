@@ -1,20 +1,11 @@
 <template>
   <div class="input relative">
     <input
+      :required="required"
+      :name="name"
       v-model="content"
       type="text"
-      class="
-        input
-        bg-transparent
-        border-b-2 border-black
-        text-black
-        py-2
-        placeholder:text-red placeholder:text-xl
-        outline-none
-        w-full
-        z-40
-        relative
-      "
+      class="input bg-transparent border-b-2 border-black text-black py-2 placeholder:text-red placeholder:text-xl outline-none w-full z-40 relative"
     />
     <label
       :class="[contain ? 'contain' : '']"
@@ -26,7 +17,14 @@
 </template>
 <script>
 export default {
-  props: ["placeholder"],
+  props: {
+    placeholder: String,
+    name: String,
+    required: {
+      type: Boolean,
+      default: false,
+    },
+  },
   data: function () {
     return { content: "" };
   },

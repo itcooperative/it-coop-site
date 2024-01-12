@@ -1,9 +1,9 @@
 <template>
   <section
-    v-if="slice.primary.status ? true : false"
+    v-if="slice.primary.status"
     id="contacts"
     class="py-20 sm:py-32 relative"
-    :style="`background: ${slice.primary.Background}`"
+    :style="{ background: slice.primary.Background }"
   >
     <div class="container px-3 mx-auto">
       <H2 class="mb-6"><PrismicRichText :field="slice.primary.title" /></H2>
@@ -12,10 +12,13 @@
           class="sm:col-span-12 md:col-span-6"
           name="contact-form"
           method="post"
-          action="/contact/thankyou/"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
         >
+          <!-- Honeypot Field -->
+          <input type="hidden" name="bot-field" />
+
+          <!-- Form Name (Important for Netlify to recognize the form) -->
           <input type="hidden" name="form-name" value="contact-form" />
 
           <InputText
@@ -40,6 +43,7 @@
           <InputCheckbox
             class="mb-4"
             :label="$prismic.asText(slice.primary.PersonalData)"
+            required
           />
           <div class="text-left mt-3">
             <BtnDefault type="submit" invert>
@@ -53,17 +57,14 @@
           <div
             v-click-outside="close"
             class="text-sm sm:text-xl p-8 z-[1000]"
-            :class="[
-              showAboutPrice
-                ? ' sm:rounded-lg sm:max-w-[474px] fixed pb-12 sm:static top-[50px] sm:top-0 left-[10px] sm:left-0 right-[10px] sm:right-0 sm:bottom-0  '
-                : ' relative cursor-pointer flex h-36 w-36 sm:h-48 sm:w-48 rounded-full p-3 sm:p-8  spin-animate text-center justify-center items-center ',
-            ]"
-            :style="`background-color: ${slice.primary['price-background']}`"
-            @click="
-              showAboutPrice === true
-                ? (showAboutPrice = false)
-                : (showAboutPrice = true)
-            "
+            :class="{
+              'sm:rounded-lg sm:max-w-[474px] fixed pb-12 sm:static top-[50px] sm:top-0 left-[10px] sm:left-0 right-[10px] sm:right-0 sm:bottom-0':
+                showAboutPrice,
+              'relative cursor-pointer flex h-36 w-36 sm:h-48 sm:w-48 rounded-full p-3 sm:p-8 spin-animate text-center justify-center items-center':
+                !showAboutPrice,
+            }"
+            :style="{ 'background-color': slice.primary['price-background'] }"
+            @click="showAboutPrice = !showAboutPrice"
           >
             <div
               v-show="showAboutPrice"

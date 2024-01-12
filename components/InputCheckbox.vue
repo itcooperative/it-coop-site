@@ -5,6 +5,8 @@
         <label class="item">
           <span :for="name">{{ label }}</span>
           <input
+            :required="required"
+            :name="name"
             :id="name"
             v-model="checked"
             type="checkbox"
@@ -55,8 +57,15 @@
 </template>
 <script>
 export default {
-  props: ["label", "value", "name"],
-
+  props: {
+    label: String,
+    name: String,
+    value: String,
+    required: {
+      type: Boolean,
+      default: false,
+    },
+  },
   data() {
     return {
       checked: [],
