@@ -7,7 +7,7 @@
   >
     <div class="container px-3 mx-auto">
       <H2 class="mb-6"><PrismicRichText :field="slice.primary.title" /></H2>
-      <div class="sm:grid gap-8 sm:grid-cols-12 min-h-[500px]">
+      <div class="sm:grid gap-8 sm:grid-cols-12 min-h-[600px]">
         <Form
           class="sm:col-span-12 md:col-span-6"
           name="contact-form"
@@ -48,15 +48,15 @@
           </div>
         </Form>
         <div
-          class="sm:col-span-12 md:col-span-6 flex items-center justify-end sm:justify-center mt-8 sm:mt-0"
+          class="relative sm:col-span-12 md:col-span-6 flex items-center justify-end sm:justify-center mt-8 sm:mt-0"
         >
           <div
             v-click-outside="close"
             class="text-sm sm:text-xl p-8 z-[1000]"
             :class="[
               showAboutPrice
-                ? 'sm:rounded-lg sm:max-w-[474px] fixed pb-12 sm:static top-[50px] sm:top-0 left-[10px] sm:left-0 right-[10px] sm:right-0 sm:bottom-0  '
-                : 'cursor-pointer flex h-36 w-36 sm:h-48 sm:w-48 rounded-full p-6 sm:p-8  spin-animate		  text-center justify-center items-center ',
+                ? ' sm:rounded-lg sm:max-w-[474px] fixed pb-12 sm:static top-[50px] sm:top-0 left-[10px] sm:left-0 right-[10px] sm:right-0 sm:bottom-0  '
+                : ' relative cursor-pointer flex h-36 w-36 sm:h-48 sm:w-48 rounded-full p-3 sm:p-8  spin-animate text-center justify-center items-center ',
             ]"
             :style="`background-color: ${slice.primary['price-background']}`"
             @click="
@@ -65,7 +65,10 @@
                 : (showAboutPrice = true)
             "
           >
-            <div v-show="showAboutPrice" class="py-2 sm:hidden">
+            <div
+              v-show="showAboutPrice"
+              class="sm:hidden absolute right-3 top-3 cursor-pointer"
+            >
               <img src="/close-icon.svg" class="h-8 ml-auto" alt="" />
             </div>
             <PrismicRichText
