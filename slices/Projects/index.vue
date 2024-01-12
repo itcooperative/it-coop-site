@@ -39,7 +39,7 @@
           <H2
             class="title text-lg sm:text-xl"
             :class="[
-                animate_class +
+              animate_class +
                 (slice.variation === 'projectsIndex'
                   ? 'py-4'
                   : ' px-8 lg:px-0 pt-8 lg:pt-0  lg:mb-8 text-white'),
@@ -93,7 +93,7 @@
               ]"
             />
             <div
-              class="flex justify-end pt-8 pr-4 pb-4 lg:pb-0 lg:pr-0"
+              class="flex justify-end pt-8 pr-4 pb-4 lg:pb-0 lg:pr-0 hidden"
               v-if="slice.variation !== 'projectsIndex'"
               :class="[
                 slice.variation === 'projectsIndex'
@@ -114,7 +114,7 @@
           </PrismicLink>
         </div>
         <div
-          class="flex justify-end pt-8 pr-4 pb-4 lg:pb-0 lg:pr-0"
+          class="flex justify-end pt-8 pr-4 pb-4 lg:pb-0 lg:pr-0 hidden"
           v-if="slice.variation === 'projectsIndex'"
           :class="[
             slice.variation === 'projectsIndex'
