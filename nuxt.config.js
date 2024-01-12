@@ -37,6 +37,7 @@ export default {
     "@nuxtjs/pwa",
     "@nuxtjs/prismic",
     "@nuxtjs/google-fonts",
+    "nuxt-gtag",
   ],
   googleFonts: {
     download: true,
@@ -45,6 +46,9 @@ export default {
       "Russo One": [400, 500, 600, 700],
       "IBM Plex Sans": [400, 500, 600, 700],
     },
+  },
+  gtag: {
+    id: "G-HCG6LK8G7D",
   },
   tailwindcss: {
     // add '~tailwind.config` alias
@@ -65,7 +69,7 @@ export default {
   },
   generate: {
     routes: ["/", "/en-us", "/ru/projects", "/en-us/projects"],
-    exclude:["/slice-simulator"]
+    exclude: ["/slice-simulator"],
   },
   purgeCSS: {
     whitelist: [
