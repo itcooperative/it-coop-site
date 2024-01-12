@@ -28,7 +28,6 @@
           <PrismicImage :field="item.Image" />
         </PrismicLink>
         <PrismicLink
-          v-on:mouseover="animate_start"
           :field="item.siteLink"
           :class="[
             slice.variation === 'projectsIndex'
@@ -151,7 +150,7 @@ export default {
       if (this.animate_class) {
         this.animate_class = "";
       } else {
-        this.animate_class = "bling";
+        this.animate_class = " bling ";
       }
     },
   },
