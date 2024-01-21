@@ -37,7 +37,6 @@ export default {
     "@nuxtjs/pwa",
     "@nuxtjs/prismic",
     "@nuxtjs/google-fonts",
-    "nuxt-gtag",
   ],
   googleFonts: {
     download: true,
@@ -47,9 +46,7 @@ export default {
       "IBM Plex Sans": [400, 500, 600, 700],
     },
   },
-  gtag: {
-    id: "G-HCG6LK8G7D",
-  },
+
   tailwindcss: {
     // add '~tailwind.config` alias
     exposeConfig: true,
@@ -61,7 +58,7 @@ export default {
   },
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: [],
+  modules: ["@nuxtjs/google-gtag"],
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: { transpile: ["@prismicio/vue"] },
   pwa: {
@@ -70,6 +67,9 @@ export default {
   generate: {
     routes: ["/", "/en-us", "/ru/projects", "/en-us/projects"],
     exclude: ["/slice-simulator"],
+  },
+  "google-gtag": {
+    id: "G-HCG6LK8G7D",
   },
   purgeCSS: {
     whitelist: [

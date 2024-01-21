@@ -10,6 +10,7 @@
     "slicemachine": "start-slicemachine"
   },
   "dependencies": {
+    "@nuxtjs/google-gtag": "^1.0.4",
     "@nuxtjs/prismic": "^1.5.0",
     "@prismicio/slice-simulator-vue": "^0.2.3",
     "aos": "3.0.0-beta.6",
@@ -29,7 +30,6 @@
     "@nuxtjs/tailwindcss": "^6.10.4",
     "@nuxtjs/vuetify": "^1.12.3",
     "@tailwindcss/forms": "^0.5.7",
-    "nuxt-gtag": "^1.1.2",
     "sass": "^1.69.7",
     "slice-machine-ui": "^0.3.8",
     "yarn": "^1.22.21"
