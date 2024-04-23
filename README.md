@@ -36,6 +36,16 @@ $ yarn slicemachine
 ```
 On `http://localhost:9999/` you can create new components and page and edit existing components.
 
+
+## Site content update
+- Prismic admin:
+  - change content
+  - save changes
+  - publish site
+- Netlify admin:
+  - Deploys > Trigger deploy > Clear cache and deploy site
+  
+
 ## Tailwind
 
 For styling used [Tailwind](https://tailwindcss.com/docs/) framework
