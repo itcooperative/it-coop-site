@@ -100,7 +100,7 @@
                   : '',
               ]"
             >
-              <PrismicImage class="logo" :field="item.Logo" />
+              <PrismicImage class="logo w-full" :field="item.Logo" />
             </div>
           </div>
           <PrismicLink
