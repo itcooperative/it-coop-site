@@ -5,15 +5,7 @@
       :style="`background: ${data.Background}`"
     >
       <div
-        class="
-          flex
-          items-center
-          container
-          mx-auto
-          px-3
-          justify-between
-          relative
-        "
+        class="flex items-center container mx-auto px-3 justify-between relative"
       >
         <NuxtLink to="/"> <PrismicImage :field="data.Logo" /> </NuxtLink>
         <div class="hidden">
@@ -38,9 +30,9 @@
             </ul>
           </nav>
           <BtnDefault class="mx-4 hidden md:block">
-            <NuxtLink :to="'/' + $store.state.lang.current + '#contacts'">
+            <span @click="scrollToContact" class="curor-pointer">
               <PrismicRichText :field="data.GetContactsBtn" />
-            </NuxtLink>
+            </span>
           </BtnDefault>
           <LangSwitcher />
           <div class="ml-8 md:hidden">
@@ -75,12 +67,9 @@
             >
           </li>
           <li class="px-8 py-4 md:py-2">
-            <NuxtLink
-              :to="'/' + $store.state.lang.current + '/' + '#contacts'"
-              class="text-xl block"
-            >
+            <span @click="scrollToContact" class="curor-pointer text-xl block">
               <PrismicRichText :field="data.GetContactsBtn" />
-            </NuxtLink>
+            </span>
           </li>
         </ul>
       </nav>
@@ -99,6 +88,16 @@ export default {
   props: ["data", "altLangs"],
   data: function () {
     return { components, showMenu: false };
+  },
+  methods: {
+    scrollToContact() {
+      // Проверка, существует ли элемент
+      const element = document.getElementById("contacts");
+      if (element) {
+        // Плавный скроллинг к элементу
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    },
   },
 };
 </script>
